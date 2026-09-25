@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ap-tan: #F7F3ED;
+  --color-ap-beige: #CAAE91;
+  --color-ap-pale: #E9DDCD;
+  --color-ap-brown: #634F40;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background-color: var(--color-ap-tan); font-family: 'Montserrat', sans-serif; }
+.bg-home { width: 100%; height: 100vh; background-image: url("https://atelierpascaleimages.blob.core.windows.net/product-images/Background/HomeBackground2.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; filter: brightness(0.3); }
