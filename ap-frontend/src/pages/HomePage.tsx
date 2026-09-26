@@ -99,7 +99,7 @@ function HomePage() {
               <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 A changing edit of recent finds, selected for texture, proportion and the feeling they bring to a room.
               </p>
-              <Link to="/products/new-arrival" className="group mt-8 inline-flex items-center gap-3 text-sm font-semibold">
+              <Link to="/products/new-arrival" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
                 Explore the edit
                 <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
               </Link>
@@ -151,7 +151,7 @@ function HomePage() {
               <p className="mt-5 text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 Expressive pieces selected to bring colour, character and a distinct point of view into a room.
               </p>
-              <Link to="/products/art" className="group mt-8 inline-flex items-center gap-3 text-sm font-semibold">
+              <Link to="/products/art" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
                 Explore art
                 <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
               </Link>
