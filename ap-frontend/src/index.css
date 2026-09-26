@@ -30,15 +30,6 @@ body {
   color: var(--color-ap-paper);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-ap-paper: #191b18;
-    --color-ap-ink: #ecece5;
-    --color-ap-muted: #292d28;
-    --color-ap-accent: #aebca8;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
