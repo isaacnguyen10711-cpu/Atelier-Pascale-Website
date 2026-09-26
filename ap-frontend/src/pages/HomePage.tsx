@@ -1,27 +1,41 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
+import newArrivalHomeDecor from '../assets/images/Home Decor/Pic 11.jpg'
+import newArrivalGiftOne from '../assets/images/Gift/Pic 11.jpg'
+import newArrivalGiftTwo from '../assets/images/Gift/Pic 16.jpeg'
+import homeDecorOne from '../assets/images/Home Decor/Pic 1.jpg'
+import homeDecorTwo from '../assets/images/Home Decor/Pic 2.jpg'
+import giftOne from '../assets/images/Gift/Pic 1.jpg'
+import giftTwo from '../assets/images/Gift/Pic 2.jpg'
+import giftThree from '../assets/images/Gift/Pic 3.jpg'
+import giftFour from '../assets/images/Gift/Pic 4.jpg'
+import jewelry from '../assets/images/Jewelry/Pic 3.jpg'
+import artOne from '../assets/images/Art/Pic 5.jpg'
+import artTwo from '../assets/images/Art/Pic 6.jpg'
+import artThree from '../assets/images/Art/Pic 7.jpg'
+import artFour from '../assets/images/Art/Pic 8.jpg'
 
 const newArrivalImages = [
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Home Decor/Pic 11.jpg',
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Gifts/Pic 11.jpg',
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Gifts/Pic 16.jpg',
+  newArrivalHomeDecor,
+  newArrivalGiftOne,
+  newArrivalGiftTwo,
 ]
 const homeDecorImages = [
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Home Decor/Pic 1.jpg',
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Home Decor/Pic 2.jpg',
+  homeDecorOne,
+  homeDecorTwo,
 ]
 const giftsImages = [
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Gifts/Pic 1.jpg',
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Gifts/Pic 2.jpg',
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Gifts/Pic 3.jpg',
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Gifts/Pic 4.jpg',
+  giftOne,
+  giftTwo,
+  giftThree,
+  giftFour,
 ]
-const jewelryImage = 'https://atelierpascaleimages.blob.core.windows.net/product-images/Jewelry/Pic 3.jpg'
+const jewelryImage = jewelry
 const artImages = [
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Art/Pic 5.jpg',
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Art/Pic 6.jpg',
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Art/Pic 7.jpg',
-  'https://atelierpascaleimages.blob.core.windows.net/product-images/Art/Pic 8.jpg',
+  artOne,
+  artTwo,
+  artThree,
+  artFour,
 ]
 
 const buttonClass = "mt-8 inline-block cursor-pointer border border-ap-brown px-7 py-3 text-xs uppercase tracking-[0.2em] transition duration-300 hover:-translate-y-1 hover:bg-ap-brown hover:text-ap-tan active:translate-y-0 md:px-8 md:text-sm lg:px-9 lg:py-4"
