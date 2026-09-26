@@ -8,7 +8,7 @@
   --color-ap-muted: #dedfd7;
   --color-ap-accent: #43533f;
   --font-sans: "Segoe UI", Arial, sans-serif;
-  --font-display: "Mea Culpa", cursive;
+  --font-title: "Mea Culpa", cursive;
 }
 
 html {
@@ -25,22 +25,4 @@ body {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-}
-
-::selection {
-  background: var(--color-ap-accent);
-  color: var(--color-ap-paper);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-  }
 }
