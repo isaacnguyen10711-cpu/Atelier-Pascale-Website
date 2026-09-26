@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import aboutImage from '../assets/images/About/Pic 2.jpg'
 import artImage from '../assets/images/Art/Pic 5.jpg'
+import artSecondaryImage from '../assets/images/Art/Pic 6.jpg'
 import heroImage from '../assets/images/Background/HomeBackground.jpg'
 import giftImage from '../assets/images/Gift/Pic 2.jpg'
 import homeDecorImage from '../assets/images/Home Decor/Pic 1.jpg'
@@ -145,12 +146,21 @@ function HomePage() {
       <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
         <Reveal>
           <div className="mx-auto max-w-7xl">
-            <div className="overflow-hidden bg-ap-muted">
-              <img
-                src={artImage}
-                alt="Art collection from Atelier Pascale"
-                className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[16/7]"
-              />
+            <div className="grid gap-5 md:grid-cols-[7fr_5fr] md:items-end">
+              <div className="overflow-hidden bg-ap-muted">
+                <img
+                  src={artImage}
+                  alt="Decorative artwork from Atelier Pascale"
+                  className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[4/3]"
+                />
+              </div>
+              <div className="overflow-hidden bg-ap-muted">
+                <img
+                  src={artSecondaryImage}
+                  alt="Artwork displayed by Atelier Pascale"
+                  className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[3/4]"
+                />
+              </div>
             </div>
             <div className="mt-8 max-w-lg">
               <h2 className="text-4xl font-medium tracking-tight md:text-5xl">Art</h2>
