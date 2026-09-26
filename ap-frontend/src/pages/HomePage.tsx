@@ -1,8 +1,8 @@
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import aboutImage from '../assets/images/About/Pic 2.jpg'
-import artFirstImage from '../assets/images/Art/Pic 7.jpg'
-import artSecondaryImage from '../assets/images/Art/Pic 8.jpg'
+import artFirstImage from '../assets/images/Art/Pic 1.jpg'
+import artSecondaryImage from '../assets/images/Art/Pic 7.jpg'
 import heroImage from '../assets/images/Background/HomeBackground.jpg'
 import giftImage from '../assets/images/Gift/Pic 2.jpg'
 import homeDecorImage from '../assets/images/Home Decor/Pic 1.jpg'
@@ -48,7 +48,7 @@ function HomePage() {
         <div className="relative mx-auto w-full max-w-7xl px-5 pt-50 sm:px-8 md:pb-32 lg:px-12 lg:pb-36">
           <div className="ml-auto max-w-2xl text-right">
             <h1 className="font-title text-7xl text-ap-paper sm:text-8xl lg:text-9xl">
-              <span className="block my-4 pr-24 md:pr-32 lg:pr-40">Atelier</span>
+              <span className="block pr-16 md:pr-24 lg:pr-32">Atelier</span>
               <span className="mt-2 block">Pascale</span>
             </h1>
             <p className="ml-auto mt-6 max-w-md text-base leading-7 text-ap-paper/90 md:text-lg">
@@ -72,7 +72,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="bg-ap-paper px-5 py-24 text-ap-ink sm:px-8 md:py-32 lg:px-12">
+      <section className="bg-ap-paper px-5 py-10 text-ap-ink sm:px-8 md:py-16 lg:px-12">
         <Reveal>
           <div className="mx-auto max-w-7xl">
             <p className="max-w-4xl font-title text-6xl font-normal leading-none text-balance md:text-7xl">
@@ -97,10 +97,10 @@ function HomePage() {
             <div className="md:col-span-5 md:pl-4">
               <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">New arrivals</h2>
               <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                A changing edit of recent finds, selected for texture, proportion and the feeling they bring to a room.
+                Recent finds, selected for texture, proportion and the feeling they bring to a room.
               </p>
               <Link to="/products/new-arrival" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
-                Explore the edit
+                Explore New Arrivals
                 <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
               </Link>
             </div>
