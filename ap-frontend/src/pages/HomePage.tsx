@@ -53,14 +53,14 @@ function HomePage() {
         <div className="absolute inset-0 bg-ap-ink/55" />
 
         <div className="relative mx-auto w-full max-w-7xl px-5 pb-16 pt-24 sm:px-8 md:pb-20 lg:px-12 lg:pb-24">
-          <div className="max-w-2xl">
-            <h1 className="mt-5 max-w-xl text-5xl font-medium leading-[0.98] tracking-[-0.045em] text-balance sm:text-6xl lg:text-7xl">
+          <div className="ml-auto max-w-2xl text-right">
+            <h1 className="ml-auto mt-5 max-w-xl text-5xl font-medium leading-[0.98] tracking-[-0.045em] text-balance sm:text-6xl lg:text-7xl">
               Atelier Pascale
             </h1>
-            <p className="mt-6 max-w-md text-base leading-7 text-ap-paper/82 md:text-lg">
+            <p className="ml-auto mt-6 max-w-md text-base leading-7 text-ap-paper/82 md:text-lg">
               Art, objects and gifts selected to bring lasting character into everyday spaces.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-5">
+            <div className="mt-8 flex flex-wrap items-center justify-end gap-5">
               <Link
                 to="/products/new-arrival"
                 className="inline-flex items-center gap-3 bg-ap-paper px-6 py-3.5 text-sm font-semibold text-ap-ink transition duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-paper active:translate-y-px"
