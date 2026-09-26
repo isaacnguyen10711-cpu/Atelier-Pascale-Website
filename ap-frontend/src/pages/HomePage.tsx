@@ -50,13 +50,12 @@ function HomePage() {
           className="absolute inset-0 h-full w-full object-cover object-center"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(20,22,18,0.76)_0%,rgba(20,22,18,0.35)_52%,rgba(20,22,18,0.12)_100%)]" />
+        <div className="absolute inset-0 bg-ap-ink/55" />
 
         <div className="relative mx-auto w-full max-w-7xl px-5 pb-16 pt-24 sm:px-8 md:pb-20 lg:px-12 lg:pb-24">
           <div className="max-w-2xl">
-            <p className="font-display text-3xl italic text-ap-paper/90 md:text-4xl">Atelier Pascale</p>
             <h1 className="mt-5 max-w-xl text-5xl font-medium leading-[0.98] tracking-[-0.045em] text-balance sm:text-6xl lg:text-7xl">
-              A home, thoughtfully collected.
+              Atelier Pascale
             </h1>
             <p className="mt-6 max-w-md text-base leading-7 text-ap-paper/82 md:text-lg">
               Art, objects and gifts selected to bring lasting character into everyday spaces.
@@ -133,7 +132,7 @@ function HomePage() {
                     alt={`${collection.name} collection`}
                     className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]"
                   />
-                  <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(18,20,17,0.72)_0%,rgba(18,20,17,0.04)_65%)]" />
+                  <div className="absolute inset-0 bg-ap-ink/45" />
                   <div className="absolute inset-x-0 bottom-0 p-6 text-ap-paper md:p-8">
                     <div className="flex items-end justify-between gap-5">
                       <div>
