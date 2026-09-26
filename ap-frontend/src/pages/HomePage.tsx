@@ -48,14 +48,14 @@ function HomePage() {
           src={heroImage}
           alt="Atelier Pascale home interior with decorative lacquerware"
           className="absolute inset-0 h-full w-full object-cover object-center"
-          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-ap-ink/55" />
 
-        <div className="relative mx-auto w-full max-w-7xl px-5 pb-16 pt-24 sm:px-8 md:pb-20 lg:px-12 lg:pb-24">
+        <div className="relative mx-auto w-full max-w-7xl px-5 pb-24 pt-24 sm:px-8 md:pb-32 lg:px-12 lg:pb-36">
           <div className="ml-auto max-w-2xl text-right">
-            <h1 className="ml-auto mt-5 max-w-xl text-5xl font-medium leading-none tracking-tight text-balance sm:text-6xl lg:text-7xl">
-              Atelier Pascale
+            <h1 className="font-title text-6xl leading-none text-ap-paper/90 sm:text-7xl lg:text-8xl">
+              <span className="block pr-16 md:pr-24 lg:pr-32">Atelier</span>
+              <span className="mt-2 block">Pascale</span>
             </h1>
             <p className="ml-auto mt-6 max-w-md text-base leading-7 text-ap-paper/82 md:text-lg">
               Art, objects and gifts selected to bring lasting character into everyday spaces.
@@ -133,7 +133,7 @@ function HomePage() {
                     className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-ap-ink/45" />
-                  <div className="absolute inset-x-0 bottom-0 p-6 text-ap-paper md:p-8">
+                  <div className="absolute bottom-0 p-6 text-ap-paper md:p-8">
                     <div className="flex items-end justify-between gap-5">
                       <div>
                         <h3 className="text-3xl font-medium tracking-tight">{collection.name}</h3>
