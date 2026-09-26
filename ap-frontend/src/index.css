@@ -1,4 +1,6 @@
 @import "@fontsource/mea-culpa";
+@import "@fontsource/tangerine/400.css";
+@import "@fontsource/tangerine/700.css";
 @import "tailwindcss";
 
 @theme {
@@ -7,6 +9,7 @@
   --color-ap-ink: #1d211c;
   --font-sans: "Segoe UI", Arial, sans-serif;
   --font-title: "Mea Culpa", cursive;
+  --font-about: "Tangerine", cursive;
 }
 
 html {
