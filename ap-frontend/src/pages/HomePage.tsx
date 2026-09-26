@@ -2,7 +2,6 @@ import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import aboutImage from '../assets/images/About/Pic 2.jpg'
 import artFirstImage from '../assets/images/Art/Pic 7.jpg'
-import artSecondaryImage from '../assets/images/Art/Pic 8.jpg'
 import heroImage from '../assets/images/Background/HomeBackground.jpg'
 import giftImage from '../assets/images/Gift/Pic 2.jpg'
 import homeDecorImage from '../assets/images/Home Decor/Pic 1.jpg'
@@ -31,6 +30,13 @@ const collections = [
     image: jewelryImage,
     href: '/products/jewelry',
     className: 'md:col-span-5',
+  },
+  {
+    name: 'Art',
+    description: 'Expressive pieces that bring colour and character to a room.',
+    image: artFirstImage,
+    href: '/products/art',
+    className: 'md:col-span-12',
   },
 ]
 
@@ -141,41 +147,6 @@ function HomePage() {
             ))}
           </div>
         </div>
-      </section>
-
-      <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
-        <Reveal>
-          <div className="mx-auto mb-10 max-w-7xl">
-            <div className="max-w-lg">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">Art</h2>
-              <p className="mt-5 text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                Expressive pieces selected to bring colour, character and a distinct point of view into a room.
-              </p>
-              <Link to="/products/art" className="group mt-8 inline-flex items-center gap-3 text-sm font-semibold">
-                Explore art
-                <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
-              </Link>
-            </div>
-          </div>
-          <div className="mx-auto max-w-7xl">
-            <div className="grid gap-5 md:grid-cols-2">
-              <div className="overflow-hidden bg-ap-muted">
-                <img
-                  src={artFirstImage}
-                  alt="Decorative artwork from Atelier Pascale"
-                  className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="overflow-hidden bg-ap-muted">
-                <img
-                  src={artSecondaryImage}
-                  alt="Artwork displayed by Atelier Pascale"
-                  className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
-                />
-              </div>
-            </div>
-          </div>
-        </Reveal>
       </section>
 
       <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
