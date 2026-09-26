@@ -19,7 +19,7 @@ function NavBar() {
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link
           to="/"
-          className="font-display text-2xl italic tracking-wide focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+          className="text-2xl font-medium tracking-wide focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
         >
           Atelier Pascale
         </Link>

@@ -54,7 +54,7 @@ function HomePage() {
         <div className="relative mx-auto w-full max-w-7xl px-5 pt-50 sm:px-8 md:pb-32 lg:px-12 lg:pb-36">
           <div className="ml-auto max-w-2xl text-right">
             <h1 className="font-title text-7xl text-ap-paper sm:text-8xl lg:text-9xl">
-              <span className="block pr-16 md:pr-24 lg:pr-32">Atelier</span>
+              <span className="block my-4 pr-24 md:pr-32 lg:pr-40">Atelier</span>
               <span className="mt-2 block">Pascale</span>
             </h1>
             <p className="ml-auto mt-6 max-w-md text-base leading-7 text-ap-paper/90 md:text-lg">
