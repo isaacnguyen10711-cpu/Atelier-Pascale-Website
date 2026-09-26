@@ -75,7 +75,7 @@ function HomePage() {
       <section className="bg-ap-paper px-5 py-24 text-ap-ink sm:px-8 md:py-32 lg:px-12">
         <Reveal>
           <div className="mx-auto max-w-7xl">
-            <p className="max-w-4xl text-3xl font-medium leading-tight tracking-tight text-balance md:text-5xl">
+            <p className="max-w-4xl font-title text-6xl font-normal leading-none text-balance md:text-7xl">
               Pieces chosen for how they live with you, not simply how they look on a shelf.
             </p>
           </div>
@@ -95,7 +95,7 @@ function HomePage() {
               </div>
             </div>
             <div className="md:col-span-5 md:pl-4">
-              <h2 className="text-4xl font-medium tracking-tight md:text-5xl">New arrivals</h2>
+              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">New arrivals</h2>
               <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 A changing edit of recent finds, selected for texture, proportion and the feeling they bring to a room.
               </p>
@@ -111,7 +111,7 @@ function HomePage() {
       <section id="collections" className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <Reveal>
-            <h2 className="max-w-2xl text-4xl font-medium tracking-tight md:text-5xl">Explore the collections</h2>
+            <h2 className="max-w-2xl font-title text-6xl font-normal leading-none md:text-7xl">Explore the collections</h2>
           </Reveal>
 
           <div className="mt-10 grid gap-5 md:grid-cols-12 md:auto-rows-[19rem]">
@@ -147,7 +147,7 @@ function HomePage() {
         <Reveal>
           <div className="mx-auto mb-10 max-w-7xl">
             <div className="max-w-lg">
-              <h2 className="text-4xl font-medium tracking-tight md:text-5xl">Art</h2>
+              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">Art</h2>
               <p className="mt-5 text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 Expressive pieces selected to bring colour, character and a distinct point of view into a room.
               </p>
@@ -184,7 +184,7 @@ function HomePage() {
             <img src={aboutImage} alt="The people behind Atelier Pascale" className="h-full min-h-[28rem] w-full object-cover" />
             <div className="flex items-center px-7 py-14 sm:px-10 md:px-14 lg:px-20">
               <div>
-                <h2 className="text-4xl font-medium tracking-tight md:text-5xl">A personal point of view</h2>
+                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">A personal point of view</h2>
                 <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                   Atelier Pascale brings together art, home pieces and thoughtful gifts with a focus on lasting beauty and personal service.
                 </p>

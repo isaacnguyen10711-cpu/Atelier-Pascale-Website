@@ -43,7 +43,7 @@ function AboutPage() {
         <div className="mx-auto max-w-7xl">
           <Reveal>
             <div className="grid gap-10 border-b border-ap-ink/30 pb-16 md:grid-cols-[5fr_7fr] md:gap-16 lg:pb-20">
-              <h2 className="font-about text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
                 Made to feel collected, not crowded.
               </h2>
               <div className="space-y-5 text-base leading-8 text-ap-ink/75 md:text-lg md:leading-9">
@@ -60,7 +60,7 @@ function AboutPage() {
           <Reveal>
             <section className="py-16 lg:py-20">
               <div className="mb-10 max-w-3xl">
-                <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
+                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
                   The people behind Atelier Pascale
                 </h2>
                 <p className="mt-5 max-w-2xl text-base leading-8 text-ap-ink/75 md:text-lg md:leading-9">
@@ -85,7 +85,7 @@ function AboutPage() {
 
           <Reveal>
             <section className="border-y border-ap-ink/30 py-14 text-center md:py-16">
-              <p className="mx-auto max-w-4xl font-about text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+              <p className="mx-auto max-w-4xl font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
                 A home should hold the things you love slowly.
               </p>
             </section>
@@ -94,7 +94,7 @@ function AboutPage() {
           <Reveal>
             <section className="grid gap-10 pt-16 md:grid-cols-[6fr_5fr] md:items-end md:gap-16 lg:pt-20">
               <div>
-                <h2 className="text-3xl font-medium tracking-tight md:text-4xl">
+                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
                   Explore the collection
                 </h2>
                 <p className="mt-5 max-w-xl text-base leading-8 text-ap-ink/75 md:text-lg md:leading-9">
