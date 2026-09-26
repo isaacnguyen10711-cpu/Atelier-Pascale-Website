@@ -36,7 +36,7 @@ const collections = [
     description: 'Expressive pieces that bring colour and character to a room.',
     image: artFirstImage,
     href: '/products/art',
-    className: 'md:col-span-12',
+    className: 'md:col-span-12 md:row-span-2',
   },
 ]
 
