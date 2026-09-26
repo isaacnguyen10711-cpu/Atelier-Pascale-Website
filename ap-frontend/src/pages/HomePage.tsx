@@ -146,19 +146,19 @@ function HomePage() {
       <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
         <Reveal>
           <div className="mx-auto max-w-7xl">
-            <div className="grid gap-5 md:grid-cols-[7fr_5fr] md:items-end">
+            <div className="grid gap-5 md:grid-cols-2">
               <div className="overflow-hidden bg-ap-muted">
                 <img
                   src={artImage}
                   alt="Decorative artwork from Atelier Pascale"
-                  className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[4/3]"
+                  className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
                 />
               </div>
               <div className="overflow-hidden bg-ap-muted">
                 <img
                   src={artSecondaryImage}
                   alt="Artwork displayed by Atelier Pascale"
-                  className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[3/4]"
+                  className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
                 />
               </div>
             </div>
