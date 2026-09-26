@@ -29,7 +29,7 @@ function NavBar() {
             <Link
               key={href}
               to={href}
-              className="text-sm font-medium text-white/88 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              className="text-base font-medium text-white/88 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >
               {label}
             </Link>
@@ -55,7 +55,7 @@ function NavBar() {
                 key={href}
                 to={href}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-lg font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                className="text-xl font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
                 {label}
               </Link>
