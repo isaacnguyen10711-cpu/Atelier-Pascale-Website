@@ -43,7 +43,7 @@ const collections = [
 function HomePage() {
   return (
     <main>
-      <section className="relative flex min-h-[100dvh] items-end overflow-hidden bg-ap-ink text-ap-paper">
+      <section className="relative flex min-h-[100dvh] items-start overflow-hidden bg-ap-ink text-ap-paper">
         <img
           src={heroImage}
           alt="Atelier Pascale home interior with decorative lacquerware"
@@ -51,13 +51,13 @@ function HomePage() {
         />
         <div className="absolute inset-0 bg-ap-ink/55" />
 
-        <div className="relative mx-auto w-full max-w-7xl px-5 pb-24 pt-24 sm:px-8 md:pb-32 lg:px-12 lg:pb-36">
+        <div className="relative mx-auto w-full max-w-7xl px-5 pt-50 sm:px-8 md:pb-32 lg:px-12 lg:pb-36">
           <div className="ml-auto max-w-2xl text-right">
-            <h1 className="font-title text-6xl leading-none text-ap-paper/90 sm:text-7xl lg:text-8xl">
+            <h1 className="font-title text-7xl text-ap-paper sm:text-8xl lg:text-9xl">
               <span className="block pr-16 md:pr-24 lg:pr-32">Atelier</span>
               <span className="mt-2 block">Pascale</span>
             </h1>
-            <p className="ml-auto mt-6 max-w-md text-base leading-7 text-ap-paper/82 md:text-lg">
+            <p className="ml-auto mt-6 max-w-md text-base leading-7 text-ap-paper/90 md:text-lg">
               Art, objects and gifts selected to bring lasting character into everyday spaces.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-end gap-5">
