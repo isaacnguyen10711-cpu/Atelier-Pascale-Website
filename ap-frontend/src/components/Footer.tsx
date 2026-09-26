@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 
+const footerLinkClassName = 'underline decoration-transparent underline-offset-4 transition-colors hover:decoration-current'
+
 function Footer() {
   return (
     <footer className="bg-ap-beige px-5 py-12 text-ap-ink sm:px-8 md:py-16 lg:px-12">
@@ -16,12 +18,19 @@ function Footer() {
 
           <div className="grid grid-cols-2 gap-8 text-sm md:justify-self-end md:text-right">
             <div className="flex flex-col gap-3">
-              <Link to="/products/new-arrival" className="transition hover:text-ap-accent">Collections</Link>
-              <Link to="/about" className="transition hover:text-ap-accent">About</Link>
+              <Link to="/products/new-arrival" className={footerLinkClassName}>Collections</Link>
+              <Link to="/about" className={footerLinkClassName}>About</Link>
             </div>
             <div className="flex flex-col gap-3">
-              <a href="mailto:isaac.nguyen10711@gmail.com" className="transition hover:text-ap-accent">Email</a>
-              <a href="https://www.instagram.com/" className="transition hover:text-ap-accent">Instagram</a>
+              <a href="mailto:isaac.nguyen10711@gmail.com" className={footerLinkClassName}>Email</a>
+              <a
+                href="https://www.facebook.com/TraditionalLacquer"
+                target="_blank"
+                rel="noreferrer"
+                className={footerLinkClassName}
+              >
+                Facebook
+              </a>
             </div>
           </div>
         </div>
