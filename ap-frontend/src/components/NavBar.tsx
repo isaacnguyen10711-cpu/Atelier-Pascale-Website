@@ -43,7 +43,7 @@ function NavBar() {
           onClick={() => setIsMenuOpen((open) => !open)}
           className="cursor-pointer p-2 text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white lg:hidden"
         >
-          {isMenuOpen ? <X className="h-6 w-6" strokeWidth={1.7} /> : <Menu className="h-6 w-6" strokeWidth={1.7} />}
+          {isMenuOpen ? <X className="h-6 w-6" strokeWidth={2} /> : <Menu className="h-6 w-6" strokeWidth={2} />}
         </button>
       </div>
 

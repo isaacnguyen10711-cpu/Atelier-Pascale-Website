@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 
 type RevealProps = { children: ReactNode; duration?: number; delay?: number; className?: string }
 
-function Reveal({ children, duration = 0.7, delay = 0, className }: RevealProps) {
+function Reveal({ children, duration = 1, delay = 0, className }: RevealProps) {
   const reduceMotion = useReducedMotion()
 
   return (
@@ -11,7 +11,7 @@ function Reveal({ children, duration = 0.7, delay = 0, className }: RevealProps)
       className={className}
       initial={reduceMotion ? false : { opacity: 0, y: 24 }}
       whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 'some' }}
       transition={{ duration, ease: 'easeInOut', delay }}
     >
       {children}
