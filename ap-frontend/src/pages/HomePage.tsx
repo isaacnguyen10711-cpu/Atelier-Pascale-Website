@@ -31,13 +31,6 @@ const collections = [
     href: '/products/jewelry',
     className: 'md:col-span-5',
   },
-  {
-    name: 'Art',
-    description: 'Expressive work made to hold a room.',
-    image: artImage,
-    href: '/products/art',
-    className: 'md:col-span-12',
-  },
 ]
 
 function HomePage() {
@@ -147,6 +140,30 @@ function HomePage() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
+        <Reveal>
+          <div className="mx-auto max-w-7xl">
+            <div className="overflow-hidden bg-ap-muted">
+              <img
+                src={artImage}
+                alt="Art collection from Atelier Pascale"
+                className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[16/7]"
+              />
+            </div>
+            <div className="mt-8 max-w-lg">
+              <h2 className="text-4xl font-medium tracking-tight md:text-5xl">Art</h2>
+              <p className="mt-5 text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
+                Expressive pieces selected to bring colour, character and a distinct point of view into a room.
+              </p>
+              <Link to="/products/art" className="group mt-8 inline-flex items-center gap-3 text-sm font-semibold">
+                Explore art
+                <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
+              </Link>
+            </div>
+          </div>
+        </Reveal>
       </section>
 
       <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
