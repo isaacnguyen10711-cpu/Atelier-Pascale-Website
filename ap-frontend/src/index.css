@@ -1,13 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-ap-tan: #F7F3ED;
-  --color-ap-beige: #CAAE91;
-  --color-ap-pale: #E9DDCD;
-  --color-ap-brown: #634F40;
+  --color-ap-paper: #f4f2ec;
+  --color-ap-ink: #1d211c;
+  --color-ap-muted: #dedfd7;
+  --color-ap-accent: #43533f;
+  --font-sans: "Segoe UI", Arial, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
 }
 
-html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; min-height: 100vh; background-color: var(--color-ap-tan); font-family: 'Montserrat', sans-serif; }
-.bg-home { width: 100%; height: 100vh; background-image: url("./assets/images/Background/HomeBackground.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; filter: brightness(0.3); }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-ap-paper);
+  color: var(--color-ap-ink);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-ap-accent);
+  color: var(--color-ap-paper);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-ap-paper: #191b18;
+    --color-ap-ink: #ecece5;
+    --color-ap-muted: #292d28;
+    --color-ap-accent: #aebca8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
