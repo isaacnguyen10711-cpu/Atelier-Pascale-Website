@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
+import ScrollToTop from './components/ScrollToTop'
 import AboutPage from './pages/AboutPage'
 import CategoryPage from './pages/CategoryPage'
 import HomePage from './pages/HomePage'
@@ -8,6 +9,7 @@ import HomePage from './pages/HomePage'
 function App() {
   return (
     <>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />

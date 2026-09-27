@@ -181,10 +181,10 @@ function HomePage() {
       <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
         <Reveal>
           <div className="mx-auto grid max-w-7xl overflow-hidden bg-ap-muted md:grid-cols-2">
-            <img src={aboutImage} alt="The people behind Atelier Pascale" className="h-full min-h-[28rem] w-full object-cover" />
-            <div className="flex items-center px-7 py-14 sm:px-10 md:px-14 lg:px-20">
+            <img src={aboutImage} alt="The people behind Atelier Pascale" className="h-full min-h-[28rem] w-full object-cover order-1" />
+            <div className="flex items-center px-7 py-14 sm:px-10 md:px-14 md:order-2 lg:px-20">
               <div>
-                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">A personal point of view</h2>
+                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">Our Story</h2>
                 <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                   Atelier Pascale brings together art, home pieces and thoughtful gifts with a focus on lasting beauty and personal service.
                 </p>
