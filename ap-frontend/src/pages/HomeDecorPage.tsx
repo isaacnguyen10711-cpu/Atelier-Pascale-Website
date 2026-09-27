@@ -1,7 +1,9 @@
 import homeDecorHeroImage from '../assets/images/Background/HomeDecorBackground.jpg'
-import homeDecorFirstImage from '../assets/images/Home Decor/Pic 1.jpg'
-import homeDecorSecondImage from '../assets/images/Home Decor/Pic 4.jpg'
-import homeDecorThirdImage from '../assets/images/Home Decor/Pic 9.jpg'
+import homeDecorFirstImage from '../assets/images/Home Decor/Pic 12.jpg'
+import homeDecorFourthImage from '../assets/images/Home Decor/Pic 1.jpg'
+import homeDecorSecondImage from '../assets/images/Home Decor/Pic 11.jpg'
+import homeDecorFifthImage from '../assets/images/Home Decor/Pic 7.jpg'
+import homeDecorSixthImage from '../assets/images/Home Decor/Pic 8.jpg'
 import CategoryHero from '../components/CategoryHero'
 import EnquiryLink from '../components/EnquiryLink'
 import Reveal from '../components/Reveal'
@@ -17,10 +19,23 @@ const homeDecorPieces = [
     name: 'Quiet detail',
     alt: 'Decorative home object with floral detail',
   },
+]
+
+const additionalHomeDecorPieces = [
   {
-    image: homeDecorThirdImage,
-    name: 'Collected character',
-    alt: 'Red decorative tray displayed in a living room',
+    image: homeDecorFourthImage,
+    name: 'Table setting',
+    alt: 'Tea cups and flowers arranged on a decorative tray',
+  },
+  {
+    image: homeDecorFifthImage,
+    name: 'Floral vase',
+    alt: 'Red lacquer vase decorated with pink blossoms',
+  },
+  {
+    image: homeDecorSixthImage,
+    name: 'Painted objects',
+    alt: 'Painted lacquer tray and box with red flower motifs',
   },
 ]
 
@@ -47,7 +62,7 @@ function HomeDecorPage() {
             </div>
           </Reveal>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-12">
+          <div className="mt-12 grid gap-8 md:grid-cols-12">
             <Reveal className="md:col-span-7">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
@@ -60,21 +75,71 @@ function HomeDecorPage() {
               </figure>
             </Reveal>
 
-            <div className="grid gap-5 md:col-span-5">
-              {homeDecorPieces.slice(1).map((piece) => (
-                <Reveal key={piece.name}>
-                  <figure>
-                    <div className="overflow-hidden bg-ap-beige">
-                      <img
-                        src={piece.image}
-                        alt={piece.alt}
-                        className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[18rem]"
-                      />
-                    </div>
-                  </figure>
-                </Reveal>
-              ))}
+            <Reveal className="md:col-span-5">
+              <figure>
+                <div className="overflow-hidden bg-ap-beige">
+                  <img
+                    src={homeDecorPieces[1].image}
+                    alt={homeDecorPieces[1].alt}
+                    className="aspect-[4/5] w-full object-cover object-[35%] transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
+                  />
+                </div>
+              </figure>
+            </Reveal>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="bg-ap-paper px-5 pb-20 pt-8 text-ap-ink sm:px-8 md:pb-28 md:pt-16 lg:px-12">
+        <div className="mx-auto max-w-7xl">
+          <Reveal>
+            <div className="max-w-2xl">
+              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+                Colour, form and finish
+              </h2>
+              <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
+                Vases, trays and decorative objects chosen to add a confident focal point without overwhelming a room.
+              </p>
             </div>
+          </Reveal>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-12 md:items-start">
+            <Reveal className="md:col-span-4 md:mt-16">
+              <figure>
+                <div className="overflow-hidden bg-ap-beige">
+                  <img
+                    src={additionalHomeDecorPieces[0].image}
+                    alt={additionalHomeDecorPieces[0].alt}
+                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
+                  />
+                </div>
+              </figure>
+            </Reveal>
+
+            <Reveal className="md:col-span-4">
+              <figure>
+                <div className="overflow-hidden bg-ap-beige">
+                  <img
+                    src={additionalHomeDecorPieces[1].image}
+                    alt={additionalHomeDecorPieces[1].alt}
+                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[36rem]"
+                  />
+                </div>
+              </figure>
+            </Reveal>
+
+            <Reveal className="md:col-span-4 md:mt-16">
+              <figure>
+                <div className="overflow-hidden bg-ap-beige">
+                  <img
+                    src={additionalHomeDecorPieces[2].image}
+                    alt={additionalHomeDecorPieces[2].alt}
+                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
+                  />
+                </div>
+              </figure>
+            </Reveal>
           </div>
 
           <div className="mt-14 flex flex-col gap-6 border-t border-ap-ink/25 pt-6 sm:flex-row sm:items-center sm:justify-between">

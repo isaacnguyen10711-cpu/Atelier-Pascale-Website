@@ -1,10 +1,10 @@
 import giftHeroImage from '../assets/images/Background/GiftBackground.jpg'
 import giftFirstImage from '../assets/images/Gift/Pic 1.jpg'
-import giftFourthImage from '../assets/images/Gift/Pic 2.jpg'
-import giftFifthImage from '../assets/images/Gift/Pic 3.jpg'
-import giftSixthImage from '../assets/images/Gift/Pic 4.jpg'
+import giftFourthImage from '../assets/images/Gift/Pic 15.jpg'
+import giftFifthImage from '../assets/images/Gift/Pic 11.jpg'
+import giftSixthImage from '../assets/images/Gift/Pic 16.jpg'
 import giftSecondImage from '../assets/images/Gift/Pic 6.jpg'
-import giftThirdImage from '../assets/images/Gift/Pic 11.jpg'
+import giftThirdImage from '../assets/images/Gift/Pic 4.jpg'
 import CategoryHero from '../components/CategoryHero'
 import EnquiryLink from '../components/EnquiryLink'
 import Reveal from '../components/Reveal'
@@ -68,7 +68,7 @@ function GiftsPage() {
             </div>
           </Reveal>
 
-          <div className="mt-12 grid gap-7 md:grid-cols-3 md:items-start">
+          <div className="mt-12 grid gap-8 md:grid-cols-3 md:items-start">
             {giftPieces.map((piece, index) => {
               const staggerClassName = index === 0 ? 'md:mt-14' : index === 2 ? 'md:mt-24' : ''
 
@@ -88,7 +88,18 @@ function GiftsPage() {
             })}
           </div>
 
-          <div className="mt-20 grid gap-5 md:grid-cols-12">
+          <Reveal>
+            <div className="mt-24 max-w-2xl">
+              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+                Keepsakes with character
+              </h2>
+              <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
+                Expressive lacquerware and decorative pieces made to bring colour, craft and personality to a thoughtful gift.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-12">
             <Reveal className="md:col-span-7">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
@@ -101,7 +112,7 @@ function GiftsPage() {
               </figure>
             </Reveal>
 
-            <div className="grid gap-5 md:col-span-5">
+            <div className="grid gap-8 md:col-span-5">
               {additionalGiftPieces.slice(1).map((piece) => (
                 <Reveal key={piece.name}>
                   <figure>
