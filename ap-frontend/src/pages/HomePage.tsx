@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import aboutImage from '../assets/images/About/Pic 2.jpg'
 import artFirstImage from '../assets/images/Art/Pic 1.jpg'
-import artSecondaryImage from '../assets/images/Art/Pic 7.jpg'
+import artSecondImage from '../assets/images/Art/Pic 7.jpg'
 import heroImage from '../assets/images/Background/HomeBackground.jpg'
 import giftImage from '../assets/images/Gift/Pic 2.jpg'
 import homeDecorImage from '../assets/images/Home Decor/Pic 1.jpg'
@@ -168,7 +168,7 @@ function HomePage() {
               </div>
               <div className="overflow-hidden bg-ap-muted">
                 <img
-                  src={artSecondaryImage}
+                  src={artSecondImage}
                   alt="Artwork displayed by Atelier Pascale"
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
                 />

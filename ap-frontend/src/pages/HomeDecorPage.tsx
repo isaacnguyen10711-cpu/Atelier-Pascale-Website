@@ -1,9 +1,9 @@
 import homeDecorHeroImage from '../assets/images/Background/HomeDecorBackground.jpg'
 import homeDecorFirstImage from '../assets/images/Home Decor/Pic 12.jpg'
-import homeDecorFourthImage from '../assets/images/Home Decor/Pic 1.jpg'
 import homeDecorSecondImage from '../assets/images/Home Decor/Pic 11.jpg'
-import homeDecorFifthImage from '../assets/images/Home Decor/Pic 7.jpg'
-import homeDecorSixthImage from '../assets/images/Home Decor/Pic 8.jpg'
+import homeDecorThirdImage from '../assets/images/Home Decor/Pic 1.jpg'
+import homeDecorFourthImage from '../assets/images/Home Decor/Pic 7.jpg'
+import homeDecorFifthImage from '../assets/images/Home Decor/Pic 8.jpg'
 import CategoryHero from '../components/CategoryHero'
 import EnquiryLink from '../components/EnquiryLink'
 import Reveal from '../components/Reveal'
@@ -23,17 +23,17 @@ const homeDecorPieces = [
 
 const additionalHomeDecorPieces = [
   {
-    image: homeDecorFourthImage,
+    image: homeDecorThirdImage,
     name: 'Table setting',
     alt: 'Tea cups and flowers arranged on a decorative tray',
   },
   {
-    image: homeDecorFifthImage,
+    image: homeDecorFourthImage,
     name: 'Floral vase',
     alt: 'Red lacquer vase decorated with pink blossoms',
   },
   {
-    image: homeDecorSixthImage,
+    image: homeDecorFifthImage,
     name: 'Painted objects',
     alt: 'Painted lacquer tray and box with red flower motifs',
   },
