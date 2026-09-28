@@ -22,7 +22,7 @@ function Footer() {
               <Link to="/about" className={footerLinkClassName}>About</Link>
             </div>
             <div className="flex flex-col gap-3">
-              <a href="mailto:isaac.nguyen10711@gmail.com" className={footerLinkClassName}>Email</a>
+              <Link to="/contact" className={footerLinkClassName}>Contact</Link>
               <a
                 href="https://www.facebook.com/TraditionalLacquer"
                 target="_blank"

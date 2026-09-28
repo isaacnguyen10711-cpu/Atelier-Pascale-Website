@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react'
 function EnquiryLink() {
   return (
     <a
-      href="mailto:isaac.nguyen10711@gmail.com"
+      href="/contact"
       className="group inline-flex shrink-0 items-center gap-3 text-base font-semibold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-ink"
     >
       Enquire about a piece

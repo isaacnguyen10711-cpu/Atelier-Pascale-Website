@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import ScrollToTop from './components/ScrollToTop'
 import AboutPage from './pages/AboutPage'
 import ArtPage from './pages/ArtPage'
+import ContactPage from './pages/ContactPage'
 import GiftsPage from './pages/GiftsPage'
 import HomePage from './pages/HomePage'
 import HomeDecorPage from './pages/HomeDecorPage'
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/products/new-arrival" element={<NewArrivalPage />} />
         <Route path="/products/home-decor" element={<HomeDecorPage />} />
         <Route path="/products/gifts" element={<GiftsPage />} />
