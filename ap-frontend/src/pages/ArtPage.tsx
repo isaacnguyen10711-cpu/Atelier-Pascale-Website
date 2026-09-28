@@ -2,8 +2,8 @@ import artHeroImage from '../assets/images/Background/ArtBackground.jpg'
 import artFirstImage from '../assets/images/Art/Pic 3.jpg'
 import artSecondImage from '../assets/images/Art/Pic 9.jpg'
 import artThirdImage from '../assets/images/Art/Pic 2.jpg'
-import artFourthImage from '../assets/images/Art/Pic 4.jpg'
-import artFifthImage from '../assets/images/Art/Pic 5.jpg'
+import artFourthImage from '../assets/images/Art/Pic 8.jpg'
+import artFifthImage from '../assets/images/Art/Pic 6.jpg'
 import CategoryHero from '../components/CategoryHero'
 import EnquiryLink from '../components/EnquiryLink'
 import Reveal from '../components/Reveal'
@@ -42,7 +42,7 @@ function ArtPage() {
       />
 
       <section className="bg-ap-paper px-5 py-20 text-ap-ink sm:px-8 md:py-28 lg:px-12">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[76rem]">
           <Reveal>
             <div className="max-w-2xl">
               <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
@@ -60,7 +60,7 @@ function ArtPage() {
                 <img
                   src={artPieces[0].image}
                   alt={artPieces[0].alt}
-                  className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[32rem]"
+                  className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[40rem]"
                 />
               </div>
             </figure>
@@ -73,7 +73,7 @@ function ArtPage() {
                   <img
                     src={artPieces[1].image}
                     alt={artPieces[1].alt}
-                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[38rem]"
+                    className="aspect-[4/5] w-full object-cover object-top transition duration-500 hover:scale-105 md:h-[38rem]"
                   />
                 </div>
               </figure>
@@ -95,7 +95,7 @@ function ArtPage() {
       </section>
 
       <section className="bg-ap-paper px-5 pb-20 pt-8 text-ap-ink sm:px-8 md:pb-28 md:pt-16 lg:px-12">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[76rem]">
           <Reveal>
             <div className="max-w-2xl">
               <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
@@ -120,13 +120,13 @@ function ArtPage() {
               </figure>
             </Reveal>
 
-            <Reveal className="md:col-span-7 md:mt-16">
+            <Reveal className="md:col-span-7 md:items-start">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <img
                     src={artPieces[4].image}
                     alt={artPieces[4].alt}
-                    className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
+                    className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[34rem]"
                   />
                 </div>
               </figure>

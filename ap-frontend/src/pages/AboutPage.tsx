@@ -27,7 +27,7 @@ function AboutPage() {
         />
         <div className="absolute inset-0 bg-ap-ink/45" />
 
-        <div className="relative mx-auto w-full max-w-7xl px-5 pt-48 sm:px-8 lg:px-12">
+        <div className="relative mx-auto w-full max-w-[76rem] px-5 pt-48 sm:px-8 lg:px-12">
           <div className="ml-auto max-w-2xl text-right">
             <p className="mb-4 text-sm uppercase tracking-widest text-ap-paper/90">
               Atelier Pascale
@@ -40,7 +40,7 @@ function AboutPage() {
       </section>
 
       <section className="px-5 py-20 sm:px-8 md:py-24 lg:px-12 lg:py-32">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[76rem]">
           <Reveal>
             <div className="grid gap-10 border-b border-ap-ink/30 pb-16 md:grid-cols-[5fr_7fr] md:gap-16 lg:pb-20">
               <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">

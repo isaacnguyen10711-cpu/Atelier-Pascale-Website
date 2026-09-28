@@ -45,7 +45,7 @@ function HomePage() {
         />
         <div className="absolute inset-0 bg-ap-ink/55" />
 
-        <div className="relative mx-auto w-full max-w-7xl px-5 pt-50 sm:px-8 md:pb-32 lg:px-12 lg:pb-36">
+        <div className="relative mx-auto w-full max-w-[76rem] px-5 pt-50 sm:px-8 md:pb-32 lg:px-12 lg:pb-36">
           <div className="ml-auto max-w-2xl text-right">
             <h1 className="font-title text-7xl text-ap-paper sm:text-8xl lg:text-9xl">
               <span className="block pr-16 md:pr-24 lg:pr-32">Atelier</span>
@@ -74,7 +74,7 @@ function HomePage() {
 
       <section className="bg-ap-paper px-5 py-10 text-ap-ink sm:px-8 md:py-16 lg:px-12">
         <Reveal>
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-[76rem]">
             <p className="max-w-4xl font-title text-6xl font-normal leading-none text-balance md:text-7xl">
               Pieces chosen for how they live with you, not simply how they look on a shelf.
             </p>
@@ -84,7 +84,7 @@ function HomePage() {
 
       <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
         <Reveal>
-          <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-12 md:items-center md:gap-14">
+          <div className="mx-auto grid max-w-[76rem] gap-8 md:grid-cols-12 md:items-center md:gap-14">
             <div className="md:col-span-7">
               <div className="overflow-hidden bg-ap-muted">
                 <img
@@ -109,7 +109,7 @@ function HomePage() {
       </section>
 
       <section id="collections" className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[76rem]">
           <Reveal>
             <h2 className="max-w-2xl font-title text-6xl font-normal leading-none md:text-7xl">Explore the collections</h2>
           </Reveal>
@@ -145,7 +145,7 @@ function HomePage() {
 
       <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
         <Reveal>
-          <div className="mx-auto mb-10 max-w-7xl">
+          <div className="mx-auto mb-10 max-w-[76rem]">
             <div className="max-w-lg">
               <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">Art</h2>
               <p className="mt-5 text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
@@ -157,7 +157,7 @@ function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-[76rem]">
             <div className="grid gap-5 md:grid-cols-2">
               <div className="overflow-hidden bg-ap-muted">
                 <img
@@ -180,7 +180,7 @@ function HomePage() {
 
       <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
         <Reveal>
-          <div className="mx-auto grid max-w-7xl overflow-hidden bg-ap-muted md:grid-cols-2">
+          <div className="mx-auto grid max-w-[76rem] overflow-hidden bg-ap-muted md:grid-cols-2">
             <img src={aboutImage} alt="The people behind Atelier Pascale" className="h-full min-h-[28rem] w-full object-cover order-1" />
             <div className="flex items-center px-7 py-14 sm:px-10 md:px-14 md:order-2 lg:px-20">
               <div>
@@ -188,7 +188,7 @@ function HomePage() {
                 <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                   Atelier Pascale brings together art, home pieces and thoughtful gifts with a focus on lasting beauty and personal service.
                 </p>
-                <Link to="/about" className="group mt-8 inline-flex items-center gap-3 text-sm font-semibold">
+                <Link to="/about" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
                   Meet Atelier Pascale
                   <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
                 </Link>

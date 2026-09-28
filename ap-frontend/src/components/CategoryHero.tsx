@@ -23,7 +23,7 @@ function CategoryHero({
       />
       <div className="absolute inset-0 bg-ap-ink/55" />
 
-      <div className="relative mx-auto w-full max-w-7xl px-5 pt-20 sm:px-8 lg:px-12">
+      <div className="relative mx-auto w-full max-w-[76rem] px-5 pt-20 sm:px-8 lg:px-12">
         <div className="ml-auto max-w-3xl text-right">
           <Reveal>
             <h1 className="font-title text-7xl font-normal leading-none tracking-wide sm:text-8xl lg:text-9xl">

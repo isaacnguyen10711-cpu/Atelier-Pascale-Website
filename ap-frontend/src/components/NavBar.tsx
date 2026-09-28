@@ -16,7 +16,7 @@ function NavBar() {
 
   return (
     <nav className="absolute inset-x-0 top-0 z-20 border-b border-white/25 text-white">
-      <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
+      <div className="mx-auto flex h-[72px] max-w-[76rem] items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link
           to="/"
           className="text-4xl font-extrabold font-title tracking-wide focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
@@ -49,7 +49,7 @@ function NavBar() {
 
       {isMenuOpen && (
         <div className="border-t border-white/20 bg-ap-ink/96 px-5 py-7 backdrop-blur-md lg:hidden">
-          <div className="mx-auto flex max-w-7xl flex-col gap-5">
+          <div className="mx-auto flex max-w-[76rem] flex-col gap-5">
             {links.map(([label, href]) => (
               <Link
                 key={href}

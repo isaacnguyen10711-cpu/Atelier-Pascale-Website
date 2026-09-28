@@ -56,7 +56,7 @@ function GiftsPage() {
       />
 
       <section className="bg-ap-paper px-5 py-20 text-ap-ink sm:px-8 md:py-28 lg:px-12">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[76rem]">
           <Reveal>
             <div className="max-w-2xl">
               <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">

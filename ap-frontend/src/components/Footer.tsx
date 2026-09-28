@@ -5,7 +5,7 @@ const footerLinkClassName = 'underline decoration-transparent underline-offset-4
 function Footer() {
   return (
     <footer className="bg-ap-beige px-5 py-12 text-ap-ink sm:px-8 md:py-16 lg:px-12">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-[76rem]">
         <div className="grid gap-12 md:grid-cols-[7fr_5fr] md:items-end">
           <div>
             <Link to="/" className="font-display text-4xl italic tracking-wide md:text-5xl">
