@@ -1,19 +1,9 @@
 import { Link } from 'react-router-dom'
 import companyFirstImage from '../assets/images/About/Pic 2.jpg'
 import companySecondImage from '../assets/images/About/Pic 4.jpg'
+import companyThirdImage from '../assets/images/About/Pic 6.jpg'
 import heroImage from '../assets/images/Background/About Background.jpg'
 import Reveal from '../components/Reveal'
-
-const companyImages = [
-  {
-    src: companyFirstImage,
-    alt: 'The Atelier Pascale team together',
-  },
-  {
-    src: companySecondImage,
-    alt: 'The people behind Atelier Pascale',
-  },
-]
 
 function AboutPage() {
   return (
@@ -41,80 +31,107 @@ function AboutPage() {
 
       <section className="px-5 py-20 sm:px-8 md:py-24 lg:px-12 lg:py-32">
         <div className="mx-auto max-w-[76rem]">
-          <Reveal>
-            <div className="grid gap-10 border-b border-ap-ink/30 pb-16 md:grid-cols-[5fr_7fr] md:gap-16 lg:pb-20">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
-                Made to feel collected, not crowded.
+          <section className="grid gap-10 md:grid-cols-12 md:items-center md:gap-16">
+            <Reveal className="md:col-span-5">
+              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
+                A love for beautiful things
               </h2>
-              <div className="space-y-5 text-base leading-8 text-ap-ink/75 md:text-lg md:leading-9">
-                <p>
-                  Atelier Pascale brings together art, home pieces, and thoughtful gifts with a softer sense of luxury. The focus is not on having more, but on choosing pieces that feel personal and lasting.
-                </p>
-                <p>
-                  Every product is selected with attention to texture, proportion, and mood, so each piece can sit naturally inside a home while still feeling special.
-                </p>
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal>
-            <section className="py-16 lg:py-20">
-              <div className="mb-10 max-w-3xl">
-                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
-                  The people behind Atelier Pascale
-                </h2>
-                <p className="mt-5 max-w-2xl text-base leading-8 text-ap-ink/75 md:text-lg md:leading-9">
-                  Our company is shaped by a small team with a shared eye for thoughtful spaces, careful presentation, and personal service.
-                </p>
-              </div>
-
-              <div className="grid gap-5 md:grid-cols-2">
-                {companyImages.map((image) => (
-                  <div key={image.src} className="overflow-hidden bg-ap-beige">
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      loading="lazy"
-                      className="aspect-[4/5] w-full object-cover object-center transition duration-500 hover:scale-105"
-                    />
-                  </div>
-                ))}
-              </div>
-            </section>
-          </Reveal>
-
-          <Reveal>
-            <section className="border-y border-ap-ink/30 py-14 text-center md:py-16">
-              <p className="mx-auto max-w-4xl font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
-                A home should hold the things you love slowly.
+              <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
+                Atelier Pascale brings together art, home decor, gifts and jewelry chosen for their colour, texture and character.
               </p>
-            </section>
-          </Reveal>
+              <p className="mt-5 text-base leading-8 text-ap-ink/75 md:text-lg">
+                We believe the pieces you surround yourself with should feel personal. Something to enjoy every day, share with someone, or keep for years.
+              </p>
+              <Link
+                to="/products/new-arrival"
+                className="mt-8 inline-block border-b border-ap-ink pb-2 text-base font-semibold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-ink"
+              >
+                Discover our collection
+              </Link>
+            </Reveal>
+            <Reveal className="md:col-span-7">
+              <img
+                src={companyFirstImage}
+                alt="Artisans carefully finishing decorative pieces in the workshop"
+                loading="lazy"
+                className="aspect-[4/3] w-full object-cover"
+              />
+            </Reveal>
+          </section>
+
+          <section className="mt-20 grid gap-10 border-t border-ap-ink/20 pt-16 md:grid-cols-12 md:items-center md:gap-16 lg:mt-28 lg:pt-20">
+            <Reveal className="md:col-span-6">
+              <img
+                src={companySecondImage}
+                alt="A maker working on a cabinet by hand"
+                loading="lazy"
+                className="aspect-[4/5] w-full object-cover"
+              />
+            </Reveal>
+            <Reveal className="md:col-span-6">
+              <div className="max-w-2xl">
+                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
+                  Craft at the heart
+                </h2>
+                <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
+                  Our workshop is a place of patient work. Shaping, decorating and finishing each surface takes care, attention and a practiced hand.
+                </p>
+                <div className="mt-8 grid gap-7 sm:grid-cols-2">
+                  <div>
+                    <h3 className="text-base font-semibold">People behind the pieces</h3>
+                    <p className="mt-3 text-sm leading-7 text-ap-ink/70">
+                      The makers bring their skill and experience to the details you see and feel.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-base font-semibold">Character in every detail</h3>
+                    <p className="mt-3 text-sm leading-7 text-ap-ink/70">
+                      From a curved silhouette to a decorative finish, small decisions give a piece its personality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          </section>
+
+          <section className="mt-20 grid gap-10 border-t border-ap-ink/20 pt-16 md:grid-cols-12 md:items-center md:gap-16 lg:mt-28 lg:pt-20">
+            <Reveal className="md:col-span-5">
+              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
+                The people behind Atelier Pascale
+              </h2>
+              <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
+                Our story is also about the people who make it possible, from the workshop to the collection you see here.
+              </p>
+              <p className="mt-5 text-base leading-8 text-ap-ink/75 md:text-lg">
+                Shared work and moments together are part of everyday life at Atelier Pascale. That personal connection is at the heart of what we do.
+              </p>
+            </Reveal>
+            <Reveal className="md:col-span-7">
+              <img
+                src={companyThirdImage}
+                alt="The Atelier Pascale team sharing a meal together"
+                loading="lazy"
+                className="aspect-[14/15] w-full object-cover"
+              />
+            </Reveal>
+          </section>
 
           <Reveal>
-            <section className="grid gap-10 pt-16 md:grid-cols-[6fr_5fr] md:items-end md:gap-16 lg:pt-20">
+            <section className="mt-20 flex flex-col gap-8 border-t border-ap-ink/20 pt-10 md:flex-row md:items-center md:justify-between lg:mt-28">
               <div>
-                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
-                  Explore the collection
+                <h2 className="font-title text-5xl font-normal leading-none md:text-6xl">
+                  Let us help you choose
                 </h2>
-                <p className="mt-5 max-w-xl text-base leading-8 text-ap-ink/75 md:text-lg md:leading-9">
-                  Start with new arrivals or browse the art category to find pieces that shape the tone of a space.
+                <p className="mt-4 max-w-xl text-base leading-7 text-ap-ink/70">
+                  Have a piece in mind? Get in touch for details and availability.
                 </p>
               </div>
-              <div className="flex flex-col gap-4 md:items-end">
-                <Link
-                  to="/products/new-arrival"
-                  className="w-full border border-ap-ink px-6 py-4 text-center text-sm font-semibold transition duration-300 hover:-translate-y-px hover:bg-ap-beige focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-ink active:translate-y-px md:w-72"
-                >
-                  New Arrivals
-                </Link>
-                <Link
-                  to="/products/art"
-                  className="w-full border border-ap-ink px-6 py-4 text-center text-sm font-semibold transition duration-300 hover:-translate-y-px hover:bg-ap-beige focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-ink active:translate-y-px md:w-72"
-                >
-                  View Art
-                </Link>
-              </div>
+              <Link
+                to="/contact"
+                className="inline-block shrink-0 self-start border border-ap-ink px-8 py-4 text-base font-semibold transition-colors hover:bg-ap-beige focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-ink md:self-auto"
+              >
+                Contact us
+              </Link>
             </section>
           </Reveal>
         </div>
