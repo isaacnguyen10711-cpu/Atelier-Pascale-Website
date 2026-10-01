@@ -60,7 +60,7 @@ function AboutPage() {
           </section>
 
           <section className="mt-20 grid gap-10 border-t border-ap-ink/20 pt-16 md:grid-cols-12 md:items-center md:gap-16 lg:mt-28 lg:pt-20">
-            <Reveal className="md:col-span-6">
+            <Reveal className="md:col-span-5">
               <img
                 src={companySecondImage}
                 alt="A maker working on a cabinet by hand"
@@ -68,7 +68,7 @@ function AboutPage() {
                 className="aspect-[4/5] w-full object-cover"
               />
             </Reveal>
-            <Reveal className="md:col-span-6">
+            <Reveal className="md:col-span-7">
               <div className="max-w-2xl">
                 <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
                   Craft at the heart
@@ -95,7 +95,7 @@ function AboutPage() {
           </section>
 
           <section className="mt-20 grid gap-10 border-t border-ap-ink/20 pt-16 md:grid-cols-12 md:items-center md:gap-16 lg:mt-28 lg:pt-20">
-            <Reveal className="md:col-span-5">
+            <Reveal className="md:col-span-6">
               <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
                 The people behind Atelier Pascale
               </h2>
@@ -106,7 +106,7 @@ function AboutPage() {
                 Shared work and moments together are part of everyday life at Atelier Pascale. That personal connection is at the heart of what we do.
               </p>
             </Reveal>
-            <Reveal className="md:col-span-7">
+            <Reveal className="md:col-span-6">
               <img
                 src={companyThirdImage}
                 alt="The Atelier Pascale team sharing a meal together"
