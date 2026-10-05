@@ -63,7 +63,7 @@ function GiftsPage() {
         <div className="mx-auto max-w-[76rem]">
           <Reveal>
             <div className="max-w-2xl">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 Thoughtful gestures
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
@@ -85,7 +85,6 @@ function GiftsPage() {
                         src={piece.image}
                         alt={piece.alt}
                         className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
-                        sizes="(max-width: 768px) 100vw, 60vw"
                       />
                     </div>
                   </figure>
@@ -96,7 +95,7 @@ function GiftsPage() {
 
           <Reveal>
             <div className="mt-24 max-w-2xl">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 Keepsakes with character
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
@@ -114,7 +113,6 @@ function GiftsPage() {
                     src={additionalGiftPieces[0].image}
                     alt={additionalGiftPieces[0].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
-                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                 </div>
               </figure>
@@ -129,7 +127,6 @@ function GiftsPage() {
                         src={piece.image}
                         alt={piece.alt}
                         className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[18rem]"
-                        sizes="(max-width: 768px) 100vw, 60vw"
                       />
                     </div>
                   </figure>

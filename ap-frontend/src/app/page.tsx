@@ -44,7 +44,6 @@ function HomePage() {
           alt="Atelier Pascale home interior with decorative lacquerware"
           className="absolute inset-0 h-full w-full object-cover object-center"
           fill
-          sizes="100vw"
           preload
         />
         <div className="absolute inset-0 bg-ap-ink/55" />
@@ -80,7 +79,7 @@ function HomePage() {
       <section className="bg-ap-paper px-5 py-10 text-ap-ink sm:px-8 md:py-16 lg:px-12">
         <Reveal>
           <div className="mx-auto max-w-[76rem]">
-            <p className="max-w-4xl font-title text-6xl font-normal leading-none text-balance md:text-7xl">
+            <p className="max-w-4xl font-sans text-3xl font-normal leading-snug text-balance md:text-4xl">
               Pieces chosen for how they live with you, not simply how they look on a shelf.
             </p>
           </div>
@@ -96,12 +95,11 @@ function HomePage() {
                   src={featuredImage}
                   alt="A featured decorative piece from Atelier Pascale"
                   className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[5/4]"
-                  sizes="(max-width: 768px) 100vw, 60vw"
                 />
               </div>
             </div>
             <div className="md:col-span-5 md:pl-4">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 New arrivals
               </h2>
               <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
@@ -129,7 +127,7 @@ function HomePage() {
       >
         <div className="mx-auto max-w-[76rem]">
           <Reveal>
-            <h2 className="max-w-2xl font-title text-6xl font-normal leading-none md:text-7xl">
+            <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
               Explore the collections
             </h2>
           </Reveal>
@@ -146,7 +144,6 @@ function HomePage() {
                     alt={`${collection.name} collection`}
                     className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     fill
-                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                   <div className="absolute inset-0 bg-ap-ink/45" />
                   <div className="absolute bottom-0 p-6 text-ap-paper md:p-8">
@@ -175,7 +172,7 @@ function HomePage() {
         <Reveal>
           <div className="mx-auto mb-10 max-w-[76rem]">
             <div className="max-w-lg">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">Art</h2>
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">Art</h2>
               <p className="mt-5 text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 Expressive pieces selected to bring colour, character and a distinct point of view
                 into a room.
@@ -200,7 +197,6 @@ function HomePage() {
                   src={artFirstImage}
                   alt="Decorative artwork from Atelier Pascale"
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 60vw"
                 />
               </div>
               <div className="overflow-hidden bg-ap-muted">
@@ -208,7 +204,6 @@ function HomePage() {
                   src={artSecondImage}
                   alt="Artwork displayed by Atelier Pascale"
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 60vw"
                 />
               </div>
             </div>
@@ -223,11 +218,10 @@ function HomePage() {
               src={aboutImage}
               alt="The people behind Atelier Pascale"
               className="h-full min-h-[28rem] w-full object-cover order-1"
-              sizes="(max-width: 768px) 100vw, 60vw"
             />
             <div className="flex items-center px-7 py-14 sm:px-10 md:px-14 md:order-2 lg:px-20">
               <div>
-                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
+                <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                   Our Story
                 </h2>
                 <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">

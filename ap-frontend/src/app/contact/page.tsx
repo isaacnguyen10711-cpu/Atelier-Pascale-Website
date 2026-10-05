@@ -12,14 +12,14 @@ function ContactPage() {
       <section className="px-5 pb-20 pt-36 sm:px-8 md:pb-24 md:pt-32 lg:px-12">
         <div className="mx-auto grid min-h-[calc(100dvh-16rem)] max-w-[76rem] gap-16 md:grid-cols-12 md:items-center md:gap-12">
           <Reveal className="md:col-span-5">
-            <h1 className="font-title text-7xl font-normal leading-none sm:text-8xl lg:text-9xl">
+            <h1 className="font-sans text-4xl font-normal leading-tight sm:text-5xl lg:text-6xl">
               Contact Us
             </h1>
           </Reveal>
 
           <div className="md:col-span-7">
             <Reveal>
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 Start a conversation
               </h2>
               <p className="mt-5 max-w-lg text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">

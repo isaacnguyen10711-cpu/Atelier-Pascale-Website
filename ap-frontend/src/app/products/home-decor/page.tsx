@@ -57,7 +57,7 @@ function HomeDecorPage() {
         <div className="mx-auto max-w-[76rem]">
           <Reveal>
             <div className="max-w-2xl">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 Objects for considered rooms
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
@@ -75,7 +75,6 @@ function HomeDecorPage() {
                     src={homeDecorPieces[0].image}
                     alt={homeDecorPieces[0].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
-                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                 </div>
               </figure>
@@ -88,7 +87,6 @@ function HomeDecorPage() {
                     src={homeDecorPieces[1].image}
                     alt={homeDecorPieces[1].alt}
                     className="aspect-[4/5] w-full object-cover object-[35%] transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
-                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                 </div>
               </figure>
@@ -101,7 +99,7 @@ function HomeDecorPage() {
         <div className="mx-auto max-w-[76rem]">
           <Reveal>
             <div className="max-w-2xl">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 Colour, form and finish
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
@@ -119,7 +117,6 @@ function HomeDecorPage() {
                     src={additionalHomeDecorPieces[0].image}
                     alt={additionalHomeDecorPieces[0].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
-                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                 </div>
               </figure>
@@ -132,7 +129,6 @@ function HomeDecorPage() {
                     src={additionalHomeDecorPieces[1].image}
                     alt={additionalHomeDecorPieces[1].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[36rem]"
-                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                 </div>
               </figure>
@@ -145,7 +141,6 @@ function HomeDecorPage() {
                     src={additionalHomeDecorPieces[2].image}
                     alt={additionalHomeDecorPieces[2].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
-                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                 </div>
               </figure>

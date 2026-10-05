@@ -25,7 +25,7 @@ function JewelryPage() {
         <div className="mx-auto max-w-[76rem]">
           <Reveal>
             <div className="max-w-2xl">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 Colour in motion
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
@@ -43,7 +43,6 @@ function JewelryPage() {
                     src={jewelryFirstImage}
                     alt="Long necklaces made with bright silk-wrapped beads"
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[46rem]"
-                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                 </div>
               </figure>
@@ -57,7 +56,6 @@ function JewelryPage() {
                       src={jewelrySecondImage}
                       alt="Blue, black and pink resin bangles"
                       className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[18rem]"
-                      sizes="(max-width: 768px) 100vw, 60vw"
                     />
                   </div>
                 </figure>
@@ -70,7 +68,6 @@ function JewelryPage() {
                       src={jewelryThirdImage}
                       alt="Yellow and charcoal silk-wrapped bead necklaces"
                       className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[26rem]"
-                      sizes="(max-width: 768px) 100vw, 60vw"
                     />
                   </div>
                 </figure>
@@ -84,7 +81,7 @@ function JewelryPage() {
         <div className="mx-auto max-w-[76rem]">
           <Reveal>
             <div className="max-w-2xl">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl lg:text-8xl">
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 Sculptural details
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
@@ -102,7 +99,6 @@ function JewelryPage() {
                     src={jewelryFourthImage}
                     alt="Statement necklace with orange and horn-toned links"
                     className="aspect-[4/5] w-full object-contain transition duration-500 hover:scale-105 md:h-[40rem]"
-                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                 </div>
               </figure>
@@ -115,7 +111,6 @@ function JewelryPage() {
                     src={jewelryFifthImage}
                     alt="Black and ivory leaf-shaped drop earrings"
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[40rem]"
-                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                 </div>
               </figure>

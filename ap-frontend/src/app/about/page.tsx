@@ -19,7 +19,6 @@ function AboutPage() {
           fetchPriority="high"
           className="absolute inset-0 h-full w-full object-cover object-center"
           fill
-          sizes="100vw"
           preload
         />
         <div className="absolute inset-0 bg-ap-ink/45" />
@@ -29,7 +28,7 @@ function AboutPage() {
             <p className="mb-4 text-sm uppercase tracking-widest text-ap-paper/90">
               Atelier Pascale
             </p>
-            <h1 className="font-title text-7xl font-normal tracking-wide sm:text-8xl lg:text-9xl">
+            <h1 className="font-sans text-4xl font-normal leading-tight sm:text-5xl lg:text-6xl">
               About Us
             </h1>
           </div>
@@ -40,7 +39,7 @@ function AboutPage() {
         <div className="mx-auto max-w-[76rem]">
           <section className="grid gap-10 md:grid-cols-12 md:items-center md:gap-16">
             <Reveal className="md:col-span-5">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 A love for beautiful things
               </h2>
               <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
@@ -64,7 +63,6 @@ function AboutPage() {
                 alt="Artisans carefully finishing decorative pieces in the workshop"
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"
-                sizes="(max-width: 768px) 100vw, 60vw"
               />
             </Reveal>
           </section>
@@ -76,12 +74,11 @@ function AboutPage() {
                 alt="A maker working on a cabinet by hand"
                 loading="lazy"
                 className="aspect-[4/5] w-full object-cover"
-                sizes="(max-width: 768px) 100vw, 60vw"
               />
             </Reveal>
             <Reveal className="md:col-span-7">
               <div className="max-w-2xl">
-                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
+                <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                   Craft at the heart
                 </h2>
                 <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
@@ -109,7 +106,7 @@ function AboutPage() {
 
           <section className="mt-20 grid gap-10 border-t border-ap-ink/20 pt-16 md:grid-cols-12 md:items-center md:gap-16 lg:mt-28 lg:pt-20">
             <Reveal className="md:col-span-6">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
+              <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 The people behind Atelier Pascale
               </h2>
               <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
@@ -127,7 +124,6 @@ function AboutPage() {
                 alt="The Atelier Pascale team sharing a meal together"
                 loading="lazy"
                 className="aspect-[14/15] w-full object-cover"
-                sizes="(max-width: 768px) 100vw, 60vw"
               />
             </Reveal>
           </section>
@@ -135,7 +131,7 @@ function AboutPage() {
           <Reveal>
             <section className="mt-20 flex flex-col gap-8 border-t border-ap-ink/20 pt-10 md:flex-row md:items-center md:justify-between lg:mt-28">
               <div>
-                <h2 className="font-title text-5xl font-normal leading-none md:text-6xl">
+                <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                   Let us help you choose
                 </h2>
                 <p className="mt-4 max-w-xl text-base leading-7 text-ap-ink/70">

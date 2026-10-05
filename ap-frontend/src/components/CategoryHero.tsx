@@ -19,7 +19,6 @@ function CategoryHero({
     <section className="relative flex min-h-[100dvh] items-center overflow-hidden bg-ap-ink text-ap-paper">
       <Image
         fill
-        sizes="100vw"
         preload
         src={image}
         alt={`${title} collection at Atelier Pascale`}
@@ -31,7 +30,7 @@ function CategoryHero({
       <div className="relative mx-auto w-full max-w-[76rem] px-5 pt-20 sm:px-8 lg:px-12">
         <div className="ml-auto max-w-3xl text-right">
           <Reveal>
-            <h1 className="font-title text-7xl font-normal leading-none tracking-wide sm:text-8xl lg:text-9xl">
+            <h1 className="font-sans text-4xl font-normal leading-tight sm:text-5xl lg:text-6xl">
               {title}
             </h1>
           </Reveal>
