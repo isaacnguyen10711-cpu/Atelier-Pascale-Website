@@ -4,6 +4,8 @@ Next.js App Router website built with TypeScript and Tailwind CSS v4.
 
 ## Development
 
+Run these commands from the main repository folder, `Atelier Pascale Website`:
+
 ```sh
 npm install
 npm run dev
@@ -31,7 +33,7 @@ npm run preview
 
 ## Hosting
 
-For Vercel, set the project root to `ap-frontend`, select the Next.js framework preset, and clear any old Vite or `dist` output overrides. Use `npm run build` and the framework's default output handling.
+For Vercel, use the repository root (leave Root Directory empty or set it to `.`), select the Next.js framework preset, and clear any old `ap-frontend`, Vite or `dist` output overrides. Use `npm run build` and the framework's default output handling.
 
 For AWS S3 with CloudFront or another static host, upload the contents of `out/`. Routes export as directories containing `index.html`; the host must resolve these for URLs such as `/about/`. Configure the exported `404.html` for missing pages. Do not use the old SPA rewrite that sends every route to the homepage.
 
