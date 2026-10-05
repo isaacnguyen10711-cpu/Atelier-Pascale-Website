@@ -1,4 +1,6 @@
-import type { Metadata } from 'next'
+'use client'
+
+import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import homeDecorHeroImage from '../../../assets/images/Background/HomeDecorBackground.jpg'
 import homeDecorFirstImage from '../../../assets/images/Home Decor/Pic 12.jpg'
@@ -14,12 +16,18 @@ const homeDecorPieces = [
   {
     image: homeDecorFirstImage,
     name: 'Objects with presence',
-    alt: 'Decorative arrangement selected by Atelier Pascale',
+    alt: {
+      en: 'Decorative arrangement selected by Atelier Pascale',
+      vi: 'Bố cục đồ trang trí được chọn lọc bởi Atelier Pascale',
+    },
   },
   {
     image: homeDecorSecondImage,
     name: 'Quiet detail',
-    alt: 'Decorative home object with floral detail',
+    alt: {
+      en: 'Decorative home object with floral detail',
+      vi: 'Đồ trang trí nhà với chi tiết hoa',
+    },
   },
 ]
 
@@ -27,28 +35,48 @@ const additionalHomeDecorPieces = [
   {
     image: homeDecorThirdImage,
     name: 'Table setting',
-    alt: 'Tea cups and flowers arranged on a decorative tray',
+    alt: {
+      en: 'Tea cups and flowers arranged on a decorative tray',
+      vi: 'Tách trà và hoa được bày trên khay trang trí',
+    },
   },
   {
     image: homeDecorFourthImage,
     name: 'Floral vase',
-    alt: 'Red lacquer vase decorated with pink blossoms',
+    alt: {
+      en: 'Red lacquer vase decorated with pink blossoms',
+      vi: 'Bình sơn mài đỏ trang trí hoa hồng',
+    },
   },
   {
     image: homeDecorFifthImage,
     name: 'Painted objects',
-    alt: 'Painted lacquer tray and box with red flower motifs',
+    alt: {
+      en: 'Painted lacquer tray and box with red flower motifs',
+      vi: 'Khay và hộp sơn mài vẽ họa tiết hoa đỏ',
+    },
   },
 ]
 
-export const metadata: Metadata = { title: 'Home Decor' }
-
 function HomeDecorPage() {
+  const pathname = usePathname()
+  const language = pathname?.split('/')[1] === 'vi' ? 'vi' : 'en'
+  const isVietnamese = language === 'vi'
+
   return (
-    <main>
+    <main lang={language}>
       <CategoryHero
-        title="Home Decor"
-        description="Warm objects and finishes chosen to bring stillness, texture, and character into everyday spaces."
+        imageAlt={
+          isVietnamese
+            ? 'Bộ sưu tập trang trí nhà tại Atelier Pascale'
+            : 'Home Decor collection at Atelier Pascale'
+        }
+        title={isVietnamese ? 'Trang trí nhà' : 'Home Decor'}
+        description={
+          isVietnamese
+            ? 'Những món đồ và chất liệu ấm áp mang sự bình yên, chiều sâu và nét riêng vào không gian sống.'
+            : 'Warm objects and finishes chosen to bring stillness, texture, and character into everyday spaces.'
+        }
         image={homeDecorHeroImage}
         imagePosition="object-[center_70%]"
       />
@@ -58,11 +86,14 @@ function HomeDecorPage() {
           <Reveal>
             <div className="max-w-2xl">
               <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
-                Objects for considered rooms
+                {isVietnamese
+                  ? 'Đồ trang trí cho không gian tinh tế'
+                  : 'Objects for considered rooms'}
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                Layered forms, finishes and useful objects chosen to bring warmth and a lived-in
-                point of view to everyday spaces.
+                {isVietnamese
+                  ? 'Hình khối, chất liệu và những món đồ hữu dụng mang lại sự ấm áp, gần gũi cho không gian sống mỗi ngày.'
+                  : 'Layered forms, finishes and useful objects chosen to bring warmth and a lived-in point of view to everyday spaces.'}
               </p>
             </div>
           </Reveal>
@@ -73,7 +104,7 @@ function HomeDecorPage() {
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
                     src={homeDecorPieces[0].image}
-                    alt={homeDecorPieces[0].alt}
+                    alt={homeDecorPieces[0].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
                   />
                 </div>
@@ -85,7 +116,7 @@ function HomeDecorPage() {
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
                     src={homeDecorPieces[1].image}
-                    alt={homeDecorPieces[1].alt}
+                    alt={homeDecorPieces[1].alt[language]}
                     className="aspect-[4/5] w-full object-cover object-[35%] transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
                   />
                 </div>
@@ -100,11 +131,12 @@ function HomeDecorPage() {
           <Reveal>
             <div className="max-w-2xl">
               <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
-                Colour, form and finish
+                {isVietnamese ? 'Màu sắc, hình khối và chất liệu' : 'Colour, form and finish'}
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                Vases, trays and decorative objects chosen to add a confident focal point without
-                overwhelming a room.
+                {isVietnamese
+                  ? 'Bình hoa, khay và đồ trang trí tạo điểm nhấn nổi bật mà vẫn giữ sự hài hòa cho căn phòng.'
+                  : 'Vases, trays and decorative objects chosen to add a confident focal point without overwhelming a room.'}
               </p>
             </div>
           </Reveal>
@@ -115,7 +147,7 @@ function HomeDecorPage() {
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
                     src={additionalHomeDecorPieces[0].image}
-                    alt={additionalHomeDecorPieces[0].alt}
+                    alt={additionalHomeDecorPieces[0].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
                   />
                 </div>
@@ -127,7 +159,7 @@ function HomeDecorPage() {
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
                     src={additionalHomeDecorPieces[1].image}
-                    alt={additionalHomeDecorPieces[1].alt}
+                    alt={additionalHomeDecorPieces[1].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[36rem]"
                   />
                 </div>
@@ -139,7 +171,7 @@ function HomeDecorPage() {
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
                     src={additionalHomeDecorPieces[2].image}
-                    alt={additionalHomeDecorPieces[2].alt}
+                    alt={additionalHomeDecorPieces[2].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
                   />
                 </div>
@@ -149,10 +181,11 @@ function HomeDecorPage() {
 
           <div className="mt-14 flex flex-col gap-6 border-t border-ap-ink/25 pt-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="max-w-2xl text-base leading-7 text-ap-ink/70">
-              Discover objects selected to bring texture, balance and lasting character into the
-              home.
+              {isVietnamese
+                ? 'Khám phá những món đồ mang chiều sâu, sự cân bằng và nét đẹp bền lâu vào ngôi nhà.'
+                : 'Discover objects selected to bring texture, balance and lasting character into the home.'}
             </p>
-            <EnquiryLink />
+            <EnquiryLink language={language} />
           </div>
         </div>
       </section>

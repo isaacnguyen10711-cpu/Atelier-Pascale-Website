@@ -1,38 +1,47 @@
-import type { Metadata } from 'next'
+'use client'
+
+import { usePathname } from 'next/navigation'
 import { ArrowUpRight } from 'lucide-react'
 import Reveal from '../../components/Reveal'
 
 const emailAddress = 'Ngohaap@gmail.com'
 
-export const metadata: Metadata = { title: 'Contact' }
-
 function ContactPage() {
+  const pathname = usePathname()
+  const language = pathname?.split('/')[1] === 'vi' ? 'vi' : 'en'
+  const isVietnamese = language === 'vi'
+
   return (
-    <main className="bg-ap-paper text-ap-ink">
+    <main lang={language} className="bg-ap-paper text-ap-ink">
       <section className="px-5 pb-20 pt-36 sm:px-8 md:pb-24 md:pt-32 lg:px-12">
         <div className="mx-auto grid min-h-[calc(100dvh-16rem)] max-w-[76rem] gap-16 md:grid-cols-12 md:items-center md:gap-12">
           <Reveal className="md:col-span-5">
             <h1 className="font-sans text-4xl font-normal leading-tight sm:text-5xl lg:text-6xl">
-              Contact Us
+              {isVietnamese ? 'Liên hệ' : 'Contact Us'}
             </h1>
           </Reveal>
 
           <div className="md:col-span-7">
             <Reveal>
               <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
-                Start a conversation
+                {isVietnamese ? 'Bắt đầu cuộc trò chuyện' : 'Start a conversation'}
               </h2>
               <p className="mt-5 max-w-lg text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                Tell us what caught your eye and we will help with the details.
+                {isVietnamese
+                  ? 'Hãy cho chúng tôi biết món đồ bạn quan tâm, chúng tôi sẽ giúp bạn tìm hiểu thêm.'
+                  : 'Tell us what caught your eye and we will help with the details.'}
               </p>
             </Reveal>
 
             <Reveal>
               <div className="mt-10 border-t border-ap-ink/25 py-7">
-                <h3 className="text-lg font-semibold">Product enquiries</h3>
+                <h3 className="text-lg font-semibold">
+                  {isVietnamese ? 'Tư vấn sản phẩm' : 'Product enquiries'}
+                </h3>
                 <p className="mt-3 max-w-xl text-base leading-7 text-ap-ink/70">
-                  For availability, materials or help choosing a piece, call us or send a message on
-                  Facebook.
+                  {isVietnamese
+                    ? 'Để kiểm tra tình trạng còn hàng, tìm hiểu chất liệu hoặc được tư vấn lựa chọn, hãy gọi điện hoặc nhắn tin cho chúng tôi trên Facebook.'
+                    : 'For availability, materials or help choosing a piece, call us or send a message on Facebook.'}
                 </p>
                 <div className="mt-5 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-7">
                   <a
@@ -47,7 +56,7 @@ function ContactPage() {
                     rel="noreferrer"
                     className="group inline-flex items-center gap-3 text-base font-semibold underline decoration-ap-ink/35 underline-offset-4 transition hover:decoration-ap-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-ink"
                   >
-                    Message us on Facebook
+                    {isVietnamese ? 'Nhắn tin qua Facebook' : 'Message us on Facebook'}
                     <ArrowUpRight
                       aria-hidden="true"
                       className="h-4 w-4 transition group-hover:-translate-y-1 group-hover:translate-x-1"
@@ -60,9 +69,13 @@ function ContactPage() {
 
             <Reveal>
               <div className="border-t border-ap-ink/25 py-7">
-                <h3 className="text-lg font-semibold">Email enquiries</h3>
+                <h3 className="text-lg font-semibold">
+                  {isVietnamese ? 'Liên hệ qua email' : 'Email enquiries'}
+                </h3>
                 <p className="mt-3 max-w-xl text-base leading-7 text-ap-ink/70">
-                  For general questions or detailed enquiries, contact us by email.
+                  {isVietnamese
+                    ? 'Nếu có câu hỏi hoặc cần thông tin chi tiết, hãy liên hệ với chúng tôi qua email.'
+                    : 'For general questions or detailed enquiries, contact us by email.'}
                 </p>
                 <a
                   href={`mailto:${emailAddress}`}

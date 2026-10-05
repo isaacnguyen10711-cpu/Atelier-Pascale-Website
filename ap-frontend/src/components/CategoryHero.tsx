@@ -6,6 +6,7 @@ type CategoryHeroProps = {
   title: string
   description: string
   image: StaticImageData
+  imageAlt?: string
   imagePosition?: string
 }
 
@@ -13,6 +14,7 @@ function CategoryHero({
   title,
   description,
   image,
+  imageAlt,
   imagePosition = 'object-center',
 }: CategoryHeroProps) {
   return (
@@ -21,7 +23,7 @@ function CategoryHero({
         fill
         preload
         src={image}
-        alt={`${title} collection at Atelier Pascale`}
+        alt={imageAlt ?? `${title} collection at Atelier Pascale`}
         fetchPriority="high"
         className={`absolute inset-0 h-full w-full object-cover ${imagePosition}`}
       />
