@@ -53,7 +53,8 @@ function ArtPage() {
                 Art for considered spaces
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                Landscapes, botanical works and lacquer pieces selected to bring depth, colour and a clear focal point to a room.
+                Landscapes, botanical works and lacquer pieces selected to bring depth, colour and a
+                clear focal point to a room.
               </p>
             </div>
           </Reveal>
@@ -66,7 +67,7 @@ function ArtPage() {
                   alt={artPieces[0].alt}
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[40rem]"
                   sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                />
               </div>
             </figure>
           </Reveal>
@@ -80,7 +81,7 @@ function ArtPage() {
                     alt={artPieces[1].alt}
                     className="aspect-[4/5] w-full object-cover object-top transition duration-500 hover:scale-105 md:h-[38rem]"
                     sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                  />
                 </div>
               </figure>
             </Reveal>
@@ -93,7 +94,7 @@ function ArtPage() {
                     alt={artPieces[2].alt}
                     className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
                     sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                  />
                 </div>
               </figure>
             </Reveal>
@@ -109,7 +110,8 @@ function ArtPage() {
                 Traditional lacquer works
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                Traditional lacquer techniques give botanical forms a rich surface, fine detail and a character that changes with the light.
+                Traditional lacquer techniques give botanical forms a rich surface, fine detail and
+                a character that changes with the light.
               </p>
             </div>
           </Reveal>
@@ -123,7 +125,7 @@ function ArtPage() {
                     alt={artPieces[3].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[34rem]"
                     sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                  />
                 </div>
               </figure>
             </Reveal>
@@ -136,7 +138,7 @@ function ArtPage() {
                     alt={artPieces[4].alt}
                     className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[34rem]"
                     sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                  />
                 </div>
               </figure>
             </Reveal>

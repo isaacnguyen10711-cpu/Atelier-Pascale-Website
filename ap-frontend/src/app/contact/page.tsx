@@ -31,7 +31,8 @@ function ContactPage() {
               <div className="mt-10 border-t border-ap-ink/25 py-7">
                 <h3 className="text-lg font-semibold">Product enquiries</h3>
                 <p className="mt-3 max-w-xl text-base leading-7 text-ap-ink/70">
-                  For availability, materials or help choosing a piece, call us or send a message on Facebook.
+                  For availability, materials or help choosing a piece, call us or send a message on
+                  Facebook.
                 </p>
                 <div className="mt-5 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-7">
                   <a

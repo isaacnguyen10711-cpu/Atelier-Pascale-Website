@@ -63,7 +63,8 @@ function HomePage() {
                 href="/products/new-arrival"
                 className="inline-flex items-center gap-3 bg-ap-paper px-6 py-4 text-sm font-semibold text-ap-ink transition duration-300 hover:-translate-y-px hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-paper active:translate-y-px"
               >
-                View new arrivals <ArrowRight aria-hidden="true" className="h-4 w-4" strokeWidth={2} />
+                View new arrivals{' '}
+                <ArrowRight aria-hidden="true" className="h-4 w-4" strokeWidth={2} />
               </Link>
               <Link
                 href="/about"
@@ -96,27 +97,41 @@ function HomePage() {
                   alt="A featured decorative piece from Atelier Pascale"
                   className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[5/4]"
                   sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                />
               </div>
             </div>
             <div className="md:col-span-5 md:pl-4">
-              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">New arrivals</h2>
+              <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
+                New arrivals
+              </h2>
               <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 Recent finds, selected for texture, proportion and the feeling they bring to a room.
               </p>
-              <Link href="/products/new-arrival" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
+              <Link
+                href="/products/new-arrival"
+                className="group mt-8 inline-flex items-center gap-3 text-base font-semibold"
+              >
                 Explore New Arrivals
-                <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
+                <ArrowRight
+                  aria-hidden="true"
+                  className="h-4 w-4 transition group-hover:translate-x-1"
+                  strokeWidth={2}
+                />
               </Link>
             </div>
           </div>
         </Reveal>
       </section>
 
-      <section id="collections" className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
+      <section
+        id="collections"
+        className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12"
+      >
         <div className="mx-auto max-w-[76rem]">
           <Reveal>
-            <h2 className="max-w-2xl font-title text-6xl font-normal leading-none md:text-7xl">Explore the collections</h2>
+            <h2 className="max-w-2xl font-title text-6xl font-normal leading-none md:text-7xl">
+              Explore the collections
+            </h2>
           </Reveal>
 
           <div className="mt-10 grid gap-5 md:grid-cols-12 md:auto-rows-[19rem]">
@@ -131,17 +146,22 @@ function HomePage() {
                     alt={`${collection.name} collection`}
                     className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     fill
-          sizes="100vw"
-          preload
-        />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+                  />
                   <div className="absolute inset-0 bg-ap-ink/45" />
                   <div className="absolute bottom-0 p-6 text-ap-paper md:p-8">
                     <div className="flex items-end justify-between gap-5">
                       <div>
                         <h3 className="text-3xl font-medium tracking-tight">{collection.name}</h3>
-                        <p className="mt-2 max-w-sm text-sm leading-6 text-ap-paper/78">{collection.description}</p>
+                        <p className="mt-2 max-w-sm text-sm leading-6 text-ap-paper/78">
+                          {collection.description}
+                        </p>
                       </div>
-                      <ArrowRight aria-hidden="true" className="mb-1 h-5 w-5 shrink-0 transition group-hover:translate-x-1" strokeWidth={2} />
+                      <ArrowRight
+                        aria-hidden="true"
+                        className="mb-1 h-5 w-5 shrink-0 transition group-hover:translate-x-1"
+                        strokeWidth={2}
+                      />
                     </div>
                   </div>
                 </Link>
@@ -157,11 +177,19 @@ function HomePage() {
             <div className="max-w-lg">
               <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">Art</h2>
               <p className="mt-5 text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                Expressive pieces selected to bring colour, character and a distinct point of view into a room.
+                Expressive pieces selected to bring colour, character and a distinct point of view
+                into a room.
               </p>
-              <Link href="/products/art" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
+              <Link
+                href="/products/art"
+                className="group mt-8 inline-flex items-center gap-3 text-base font-semibold"
+              >
                 Explore art
-                <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
+                <ArrowRight
+                  aria-hidden="true"
+                  className="h-4 w-4 transition group-hover:translate-x-1"
+                  strokeWidth={2}
+                />
               </Link>
             </div>
           </div>
@@ -173,7 +201,7 @@ function HomePage() {
                   alt="Decorative artwork from Atelier Pascale"
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                />
               </div>
               <div className="overflow-hidden bg-ap-muted">
                 <Image
@@ -181,7 +209,7 @@ function HomePage() {
                   alt="Artwork displayed by Atelier Pascale"
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                />
               </div>
             </div>
           </div>
@@ -191,17 +219,31 @@ function HomePage() {
       <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
         <Reveal>
           <div className="mx-auto grid max-w-[76rem] overflow-hidden bg-ap-muted md:grid-cols-2">
-            <Image src={aboutImage} alt="The people behind Atelier Pascale" className="h-full min-h-[28rem] w-full object-cover order-1"   sizes="(max-width: 768px) 100vw, 60vw"
-        />
+            <Image
+              src={aboutImage}
+              alt="The people behind Atelier Pascale"
+              className="h-full min-h-[28rem] w-full object-cover order-1"
+              sizes="(max-width: 768px) 100vw, 60vw"
+            />
             <div className="flex items-center px-7 py-14 sm:px-10 md:px-14 md:order-2 lg:px-20">
               <div>
-                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">Our Story</h2>
+                <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">
+                  Our Story
+                </h2>
                 <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                  Atelier Pascale brings together art, home pieces and thoughtful gifts with a focus on lasting beauty and personal service.
+                  Atelier Pascale brings together art, home pieces and thoughtful gifts with a focus
+                  on lasting beauty and personal service.
                 </p>
-                <Link href="/about" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
+                <Link
+                  href="/about"
+                  className="group mt-8 inline-flex items-center gap-3 text-base font-semibold"
+                >
                   Meet Atelier Pascale
-                  <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
+                  <ArrowRight
+                    aria-hidden="true"
+                    className="h-4 w-4 transition group-hover:translate-x-1"
+                    strokeWidth={2}
+                  />
                 </Link>
               </div>
             </div>

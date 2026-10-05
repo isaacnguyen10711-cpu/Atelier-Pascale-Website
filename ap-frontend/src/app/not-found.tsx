@@ -6,7 +6,9 @@ export default function NotFound() {
       <div>
         <h1 className="font-title text-7xl">Page not found</h1>
         <p className="mt-5">The page you are looking for could not be found.</p>
-        <Link href="/" className="mt-8 inline-block underline underline-offset-4">Return home</Link>
+        <Link href="/" className="mt-8 inline-block underline underline-offset-4">
+          Return home
+        </Link>
       </div>
     </main>
   )

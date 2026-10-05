@@ -44,10 +44,12 @@ function AboutPage() {
                 A love for beautiful things
               </h2>
               <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
-                Atelier Pascale brings together art, home decor, gifts and jewelry chosen for their colour, texture and character.
+                Atelier Pascale brings together art, home decor, gifts and jewelry chosen for their
+                colour, texture and character.
               </p>
               <p className="mt-5 text-base leading-8 text-ap-ink/75 md:text-lg">
-                We believe the pieces you surround yourself with should feel personal. Something to enjoy every day, share with someone, or keep for years.
+                We believe the pieces you surround yourself with should feel personal. Something to
+                enjoy every day, share with someone, or keep for years.
               </p>
               <Link
                 href="/products/new-arrival"
@@ -63,7 +65,7 @@ function AboutPage() {
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"
                 sizes="(max-width: 768px) 100vw, 60vw"
-        />
+              />
             </Reveal>
           </section>
 
@@ -75,7 +77,7 @@ function AboutPage() {
                 loading="lazy"
                 className="aspect-[4/5] w-full object-cover"
                 sizes="(max-width: 768px) 100vw, 60vw"
-        />
+              />
             </Reveal>
             <Reveal className="md:col-span-7">
               <div className="max-w-2xl">
@@ -83,7 +85,8 @@ function AboutPage() {
                   Craft at the heart
                 </h2>
                 <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
-                  Our workshop is a place of patient work. Shaping, decorating and finishing each surface takes care, attention and a practiced hand.
+                  Our workshop is a place of patient work. Shaping, decorating and finishing each
+                  surface takes care, attention and a practiced hand.
                 </p>
                 <div className="mt-8 grid gap-7 sm:grid-cols-2">
                   <div>
@@ -95,7 +98,8 @@ function AboutPage() {
                   <div>
                     <h3 className="text-base font-semibold">Character in every detail</h3>
                     <p className="mt-3 text-sm leading-7 text-ap-ink/70">
-                      From a curved silhouette to a decorative finish, small decisions give a piece its personality.
+                      From a curved silhouette to a decorative finish, small decisions give a piece
+                      its personality.
                     </p>
                   </div>
                 </div>
@@ -109,10 +113,12 @@ function AboutPage() {
                 The people behind Atelier Pascale
               </h2>
               <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
-                Our story is also about the people who make it possible, from the workshop to the collection you see here.
+                Our story is also about the people who make it possible, from the workshop to the
+                collection you see here.
               </p>
               <p className="mt-5 text-base leading-8 text-ap-ink/75 md:text-lg">
-                Shared work and moments together are part of everyday life at Atelier Pascale. That personal connection is at the heart of what we do.
+                Shared work and moments together are part of everyday life at Atelier Pascale. That
+                personal connection is at the heart of what we do.
               </p>
             </Reveal>
             <Reveal className="md:col-span-6">
@@ -122,7 +128,7 @@ function AboutPage() {
                 loading="lazy"
                 className="aspect-[14/15] w-full object-cover"
                 sizes="(max-width: 768px) 100vw, 60vw"
-        />
+              />
             </Reveal>
           </section>
 

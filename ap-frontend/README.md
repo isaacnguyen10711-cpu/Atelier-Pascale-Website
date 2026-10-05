@@ -1,32 +1,38 @@
-# React + TypeScript + Vite
+# Atelier Pascale
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Next.js App Router website built with TypeScript and Tailwind CSS v4.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```sh
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open http://localhost:3000. Pages live in `src/app`:
+
+- `page.tsx`: home
+- `about/page.tsx`: about
+- `contact/page.tsx`: contact
+- `products/*/page.tsx`: collection pages
+
+`layout.tsx` provides the navbar, footer, global CSS and metadata. Interactive components such as the navbar and reveal animations use `'use client'`. Images stay in `src/assets/images`; Tangerine fonts are self-hosted through Fontsource. Tailwind tokens are in `src/index.css`, with PostCSS configured in `postcss.config.mjs`.
+
+## Checks and production preview
+
+```sh
+npm run lint
+npm run typecheck
+npm run build
+npm run preview
+```
+
+`npm run build` exports the static site to `out/`. It also runs `fix-static-export.mjs` to work around a Next.js Windows bug that otherwise gives navigation prefetch files incorrect names. On other platforms this step does nothing. `npm run preview` and `npm start` serve that export locally. Rebuild after changes before previewing.
+
+## Hosting
+
+For Vercel, set the project root to `ap-frontend`, select the Next.js framework preset, and clear any old Vite or `dist` output overrides. Use `npm run build` and the framework's default output handling.
+
+For AWS S3 with CloudFront or another static host, upload the contents of `out/`. Routes export as directories containing `index.html`; the host must resolve these for URLs such as `/about/`. Configure the exported `404.html` for missing pages. Do not use the old SPA rewrite that sends every route to the homepage.
+
+The app uses `output: 'export'` and `images.unoptimized` so it needs no Node.js server in production. If server APIs or database-backed runtime features are added later, remove static export and deploy with a Next.js server runtime.

@@ -67,7 +67,8 @@ function GiftsPage() {
                 Thoughtful gestures
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                Personal pieces for celebrations, hosts, milestones and the small moments that deserve to be remembered.
+                Personal pieces for celebrations, hosts, milestones and the small moments that
+                deserve to be remembered.
               </p>
             </div>
           </Reveal>
@@ -85,7 +86,7 @@ function GiftsPage() {
                         alt={piece.alt}
                         className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
                         sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                      />
                     </div>
                   </figure>
                 </Reveal>
@@ -99,7 +100,8 @@ function GiftsPage() {
                 Keepsakes with character
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
-                Expressive lacquerware and decorative pieces made to bring colour, craft and personality to a thoughtful gift.
+                Expressive lacquerware and decorative pieces made to bring colour, craft and
+                personality to a thoughtful gift.
               </p>
             </div>
           </Reveal>
@@ -113,7 +115,7 @@ function GiftsPage() {
                     alt={additionalGiftPieces[0].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
                     sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                  />
                 </div>
               </figure>
             </Reveal>
@@ -128,7 +130,7 @@ function GiftsPage() {
                         alt={piece.alt}
                         className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[18rem]"
                         sizes="(max-width: 768px) 100vw, 60vw"
-        />
+                      />
                     </div>
                   </figure>
                 </Reveal>
@@ -138,7 +140,8 @@ function GiftsPage() {
 
           <div className="mt-14 flex flex-col gap-6 border-t border-ap-ink/25 pt-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="max-w-2xl text-base leading-7 text-ap-ink/70">
-              Find something personal for a celebration, a meaningful thank you or an everyday gesture.
+              Find something personal for a celebration, a meaningful thank you or an everyday
+              gesture.
             </p>
             <EnquiryLink />
           </div>

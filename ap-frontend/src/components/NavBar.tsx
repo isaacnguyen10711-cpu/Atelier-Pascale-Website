@@ -18,7 +18,7 @@ const links = [
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
-  const usesLightNavigation = pathname === '/contact'
+  const usesLightNavigation = pathname?.replace(/\/$/, '') === '/contact'
 
   return (
     <nav className={`absolute inset-x-0 top-0 z-20 border-b ${usesLightNavigation ? 'border-ap-ink/20 text-ap-ink' : 'border-white/25 text-white'}`}>
