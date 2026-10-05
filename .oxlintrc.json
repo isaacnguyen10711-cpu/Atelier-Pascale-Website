@@ -7,7 +7,7 @@
   },
   "overrides": [
     {
-      "files": ["src/app/**/*.tsx"],
+      "files": ["app/**/*.tsx"],
       "rules": { "react/only-export-components": "off" }
     }
   ]

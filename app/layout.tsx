@@ -4,7 +4,7 @@ import logo from '../assets/images/logo AP.png'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import ScrollToTop from '../components/ScrollToTop'
-import '../index.css'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: {

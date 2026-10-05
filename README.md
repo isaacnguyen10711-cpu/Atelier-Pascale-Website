@@ -11,14 +11,14 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000. Pages live in `src/app`:
+Open http://localhost:3000. Pages live in `app`:
 
 - `page.tsx`: home
 - `about/page.tsx`: about
 - `contact/page.tsx`: contact
 - `products/*/page.tsx`: collection pages
 
-`layout.tsx` provides the navbar, footer, global CSS and metadata. Interactive components such as the navbar and reveal animations use `'use client'`. Images stay in `src/assets/images`; Tangerine fonts are self-hosted through Fontsource. Tailwind tokens are in `src/index.css`, with PostCSS configured in `postcss.config.mjs`.
+`app/layout.tsx` provides the navbar, footer, global CSS and metadata. Shared components live in `components/`. Interactive components such as the navbar and reveal animations use `'use client'`. Images stay in `assets/images`; Tangerine fonts are self-hosted through Fontsource. Tailwind tokens are in `app/globals.css`, with PostCSS configured in `postcss.config.mjs`.
 
 ## Checks and production preview
 

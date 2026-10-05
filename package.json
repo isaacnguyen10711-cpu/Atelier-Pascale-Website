@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && node fix-static-export.mjs",
-    "lint": "oxlint src",
+    "lint": "oxlint app components",
     "typecheck": "next typegen && tsc --noEmit",
     "preview": "serve out",
     "start": "serve out"
