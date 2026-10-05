@@ -8,8 +8,8 @@ import '../index.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Atelier Pascale | Art, objects and gifts',
-    template: '%s | Atelier Pascale',
+    default: 'Atelier Pascale',
+    template: 'Atelier Pascale',
   },
   description: 'Discover art, home decor, gifts and jewelry selected with care by Atelier Pascale.',
   icons: { icon: { url: logo.src, type: 'image/png' } },
