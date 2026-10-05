@@ -1,5 +1,6 @@
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import aboutImage from '../assets/images/About/Pic 2.jpg'
 import artFirstImage from '../assets/images/Art/Pic 1.jpg'
 import artSecondImage from '../assets/images/Art/Pic 7.jpg'
@@ -38,10 +39,13 @@ function HomePage() {
   return (
     <main>
       <section className="relative flex min-h-[100dvh] items-start overflow-hidden bg-ap-ink text-ap-paper">
-        <img
+        <Image
           src={heroImage}
           alt="Atelier Pascale home interior with decorative lacquerware"
           className="absolute inset-0 h-full w-full object-cover object-center"
+          fill
+          sizes="100vw"
+          preload
         />
         <div className="absolute inset-0 bg-ap-ink/55" />
 
@@ -56,13 +60,13 @@ function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-end gap-5">
               <Link
-                to="/products/new-arrival"
+                href="/products/new-arrival"
                 className="inline-flex items-center gap-3 bg-ap-paper px-6 py-4 text-sm font-semibold text-ap-ink transition duration-300 hover:-translate-y-px hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-paper active:translate-y-px"
               >
                 View new arrivals <ArrowRight aria-hidden="true" className="h-4 w-4" strokeWidth={2} />
               </Link>
               <Link
-                to="/about"
+                href="/about"
                 className="text-sm font-semibold text-ap-paper underline decoration-ap-paper/45 underline-offset-8 transition hover:decoration-ap-paper focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-paper"
               >
                 Our story
@@ -87,11 +91,12 @@ function HomePage() {
           <div className="mx-auto grid max-w-[76rem] gap-8 md:grid-cols-12 md:items-center md:gap-14">
             <div className="md:col-span-7">
               <div className="overflow-hidden bg-ap-muted">
-                <img
+                <Image
                   src={featuredImage}
                   alt="A featured decorative piece from Atelier Pascale"
                   className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[5/4]"
-                />
+                  sizes="(max-width: 768px) 100vw, 60vw"
+        />
               </div>
             </div>
             <div className="md:col-span-5 md:pl-4">
@@ -99,7 +104,7 @@ function HomePage() {
               <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 Recent finds, selected for texture, proportion and the feeling they bring to a room.
               </p>
-              <Link to="/products/new-arrival" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
+              <Link href="/products/new-arrival" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
                 Explore New Arrivals
                 <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
               </Link>
@@ -118,14 +123,17 @@ function HomePage() {
             {collections.map((collection) => (
               <Reveal key={collection.name} className={collection.className}>
                 <Link
-                  to={collection.href}
+                  href={collection.href}
                   className="group relative block h-full min-h-[25rem] overflow-hidden bg-ap-muted focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-accent md:min-h-0"
                 >
-                  <img
+                  <Image
                     src={collection.image}
                     alt={`${collection.name} collection`}
                     className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
+                    fill
+          sizes="100vw"
+          preload
+        />
                   <div className="absolute inset-0 bg-ap-ink/45" />
                   <div className="absolute bottom-0 p-6 text-ap-paper md:p-8">
                     <div className="flex items-end justify-between gap-5">
@@ -151,7 +159,7 @@ function HomePage() {
               <p className="mt-5 text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 Expressive pieces selected to bring colour, character and a distinct point of view into a room.
               </p>
-              <Link to="/products/art" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
+              <Link href="/products/art" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
                 Explore art
                 <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
               </Link>
@@ -160,18 +168,20 @@ function HomePage() {
           <div className="mx-auto max-w-[76rem]">
             <div className="grid gap-5 md:grid-cols-2">
               <div className="overflow-hidden bg-ap-muted">
-                <img
+                <Image
                   src={artFirstImage}
                   alt="Decorative artwork from Atelier Pascale"
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
-                />
+                  sizes="(max-width: 768px) 100vw, 60vw"
+        />
               </div>
               <div className="overflow-hidden bg-ap-muted">
-                <img
+                <Image
                   src={artSecondImage}
                   alt="Artwork displayed by Atelier Pascale"
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
-                />
+                  sizes="(max-width: 768px) 100vw, 60vw"
+        />
               </div>
             </div>
           </div>
@@ -181,14 +191,15 @@ function HomePage() {
       <section className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12">
         <Reveal>
           <div className="mx-auto grid max-w-[76rem] overflow-hidden bg-ap-muted md:grid-cols-2">
-            <img src={aboutImage} alt="The people behind Atelier Pascale" className="h-full min-h-[28rem] w-full object-cover order-1" />
+            <Image src={aboutImage} alt="The people behind Atelier Pascale" className="h-full min-h-[28rem] w-full object-cover order-1"   sizes="(max-width: 768px) 100vw, 60vw"
+        />
             <div className="flex items-center px-7 py-14 sm:px-10 md:px-14 md:order-2 lg:px-20">
               <div>
                 <h2 className="font-title text-6xl font-normal leading-none md:text-7xl">Our Story</h2>
                 <p className="mt-5 max-w-md text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                   Atelier Pascale brings together art, home pieces and thoughtful gifts with a focus on lasting beauty and personal service.
                 </p>
-                <Link to="/about" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
+                <Link href="/about" className="group mt-8 inline-flex items-center gap-3 text-base font-semibold">
                   Meet Atelier Pascale
                   <ArrowRight aria-hidden="true" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2} />
                 </Link>

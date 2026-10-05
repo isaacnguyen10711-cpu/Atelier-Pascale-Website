@@ -1,12 +1,14 @@
-import artHeroImage from '../assets/images/Background/ArtBackground.jpg'
-import artFirstImage from '../assets/images/Art/Pic 3.jpg'
-import artSecondImage from '../assets/images/Art/Pic 9.jpg'
-import artThirdImage from '../assets/images/Art/Pic 2.jpg'
-import artFourthImage from '../assets/images/Art/Pic 8.jpg'
-import artFifthImage from '../assets/images/Art/Pic 6.jpg'
-import CategoryHero from '../components/CategoryHero'
-import EnquiryLink from '../components/EnquiryLink'
-import Reveal from '../components/Reveal'
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import artHeroImage from '../../../assets/images/Background/ArtBackground.jpg'
+import artFirstImage from '../../../assets/images/Art/Pic 3.jpg'
+import artSecondImage from '../../../assets/images/Art/Pic 9.jpg'
+import artThirdImage from '../../../assets/images/Art/Pic 2.jpg'
+import artFourthImage from '../../../assets/images/Art/Pic 8.jpg'
+import artFifthImage from '../../../assets/images/Art/Pic 6.jpg'
+import CategoryHero from '../../../components/CategoryHero'
+import EnquiryLink from '../../../components/EnquiryLink'
+import Reveal from '../../../components/Reveal'
 
 const artPieces = [
   {
@@ -30,6 +32,8 @@ const artPieces = [
     alt: 'Framed lacquer painting with green lotus leaves on a red background',
   },
 ]
+
+export const metadata: Metadata = { title: 'Art' }
 
 function ArtPage() {
   return (
@@ -57,11 +61,12 @@ function ArtPage() {
           <Reveal className="mt-12">
             <figure>
               <div className="overflow-hidden bg-ap-beige">
-                <img
+                <Image
                   src={artPieces[0].image}
                   alt={artPieces[0].alt}
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[40rem]"
-                />
+                  sizes="(max-width: 768px) 100vw, 60vw"
+        />
               </div>
             </figure>
           </Reveal>
@@ -70,11 +75,12 @@ function ArtPage() {
             <Reveal className="md:col-span-5">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={artPieces[1].image}
                     alt={artPieces[1].alt}
                     className="aspect-[4/5] w-full object-cover object-top transition duration-500 hover:scale-105 md:h-[38rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
@@ -82,11 +88,12 @@ function ArtPage() {
             <Reveal className="md:col-span-7 md:mt-16">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={artPieces[2].image}
                     alt={artPieces[2].alt}
                     className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
@@ -111,11 +118,12 @@ function ArtPage() {
             <Reveal className="md:col-span-5">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={artPieces[3].image}
                     alt={artPieces[3].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[34rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
@@ -123,11 +131,12 @@ function ArtPage() {
             <Reveal className="md:col-span-7 md:items-start">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={artPieces[4].image}
                     alt={artPieces[4].alt}
                     className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[34rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>

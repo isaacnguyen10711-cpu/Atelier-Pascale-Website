@@ -1,9 +1,11 @@
+import Image from 'next/image'
+import type { StaticImageData } from 'next/image'
 import Reveal from './Reveal'
 
 type CategoryHeroProps = {
   title: string
   description: string
-  image: string
+  image: StaticImageData
   imagePosition?: string
 }
 
@@ -15,7 +17,10 @@ function CategoryHero({
 }: CategoryHeroProps) {
   return (
     <section className="relative flex min-h-[100dvh] items-center overflow-hidden bg-ap-ink text-ap-paper">
-      <img
+      <Image
+        fill
+        sizes="100vw"
+        preload
         src={image}
         alt={`${title} collection at Atelier Pascale`}
         fetchPriority="high"

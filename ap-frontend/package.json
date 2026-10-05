@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "next dev",
+    "build": "next build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "typecheck": "next typegen && tsc --noEmit",
+    "preview": "serve out",
+    "start": "serve out"
   },
   "dependencies": {
     "@fontsource/tangerine": "^5.3.0",

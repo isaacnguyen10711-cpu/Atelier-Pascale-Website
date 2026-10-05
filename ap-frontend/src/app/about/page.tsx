@@ -1,19 +1,26 @@
-import { Link } from 'react-router-dom'
-import companyFirstImage from '../assets/images/About/Pic 2.jpg'
-import companySecondImage from '../assets/images/About/Pic 4.jpg'
-import companyThirdImage from '../assets/images/About/Pic 6.jpg'
-import heroImage from '../assets/images/Background/About Background.jpg'
-import Reveal from '../components/Reveal'
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import companyFirstImage from '../../assets/images/About/Pic 2.jpg'
+import companySecondImage from '../../assets/images/About/Pic 4.jpg'
+import companyThirdImage from '../../assets/images/About/Pic 6.jpg'
+import heroImage from '../../assets/images/Background/About Background.jpg'
+import Reveal from '../../components/Reveal'
+
+export const metadata: Metadata = { title: 'About' }
 
 function AboutPage() {
   return (
     <main className="bg-ap-paper text-ap-ink">
       <section className="relative flex min-h-[100dvh] items-start overflow-hidden bg-ap-ink text-ap-paper">
-        <img
+        <Image
           src={heroImage}
           alt="The Atelier Pascale studio"
           fetchPriority="high"
           className="absolute inset-0 h-full w-full object-cover object-center"
+          fill
+          sizes="100vw"
+          preload
         />
         <div className="absolute inset-0 bg-ap-ink/45" />
 
@@ -43,30 +50,32 @@ function AboutPage() {
                 We believe the pieces you surround yourself with should feel personal. Something to enjoy every day, share with someone, or keep for years.
               </p>
               <Link
-                to="/products/new-arrival"
+                href="/products/new-arrival"
                 className="mt-8 inline-block border-b border-ap-ink pb-2 text-base font-semibold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-ink"
               >
                 Discover our collection
               </Link>
             </Reveal>
             <Reveal className="md:col-span-7">
-              <img
+              <Image
                 src={companyFirstImage}
                 alt="Artisans carefully finishing decorative pieces in the workshop"
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"
-              />
+                sizes="(max-width: 768px) 100vw, 60vw"
+        />
             </Reveal>
           </section>
 
           <section className="mt-20 grid gap-10 border-t border-ap-ink/20 pt-16 md:grid-cols-12 md:items-center md:gap-16 lg:mt-28 lg:pt-20">
             <Reveal className="md:col-span-5">
-              <img
+              <Image
                 src={companySecondImage}
                 alt="A maker working on a cabinet by hand"
                 loading="lazy"
                 className="aspect-[4/5] w-full object-cover"
-              />
+                sizes="(max-width: 768px) 100vw, 60vw"
+        />
             </Reveal>
             <Reveal className="md:col-span-7">
               <div className="max-w-2xl">
@@ -107,12 +116,13 @@ function AboutPage() {
               </p>
             </Reveal>
             <Reveal className="md:col-span-6">
-              <img
+              <Image
                 src={companyThirdImage}
                 alt="The Atelier Pascale team sharing a meal together"
                 loading="lazy"
                 className="aspect-[14/15] w-full object-cover"
-              />
+                sizes="(max-width: 768px) 100vw, 60vw"
+        />
             </Reveal>
           </section>
 
@@ -127,7 +137,7 @@ function AboutPage() {
                 </p>
               </div>
               <Link
-                to="/contact"
+                href="/contact"
                 className="inline-block shrink-0 self-start border border-ap-ink px-8 py-4 text-base font-semibold transition-colors hover:bg-ap-beige focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-ink md:self-auto"
               >
                 Contact us

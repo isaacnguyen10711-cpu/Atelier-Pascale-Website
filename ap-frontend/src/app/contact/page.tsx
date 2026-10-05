@@ -1,7 +1,10 @@
+import type { Metadata } from 'next'
 import { ArrowUpRight } from 'lucide-react'
-import Reveal from '../components/Reveal'
+import Reveal from '../../components/Reveal'
 
 const emailAddress = 'Ngohaap@gmail.com'
+
+export const metadata: Metadata = { title: 'Contact' }
 
 function ContactPage() {
   return (

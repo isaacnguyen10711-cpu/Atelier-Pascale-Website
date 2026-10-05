@@ -1,13 +1,15 @@
-import giftHeroImage from '../assets/images/Background/GiftBackground.jpg'
-import giftFirstImage from '../assets/images/Gift/Pic 1.jpg'
-import giftSecondImage from '../assets/images/Gift/Pic 6.jpg'
-import giftThirdImage from '../assets/images/Gift/Pic 4.jpg'
-import giftFourthImage from '../assets/images/Gift/Pic 15.jpg'
-import giftFifthImage from '../assets/images/Gift/Pic 11.jpg'
-import giftSixthImage from '../assets/images/Gift/Pic 16.jpg'
-import CategoryHero from '../components/CategoryHero'
-import EnquiryLink from '../components/EnquiryLink'
-import Reveal from '../components/Reveal'
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import giftHeroImage from '../../../assets/images/Background/GiftBackground.jpg'
+import giftFirstImage from '../../../assets/images/Gift/Pic 1.jpg'
+import giftSecondImage from '../../../assets/images/Gift/Pic 6.jpg'
+import giftThirdImage from '../../../assets/images/Gift/Pic 4.jpg'
+import giftFourthImage from '../../../assets/images/Gift/Pic 15.jpg'
+import giftFifthImage from '../../../assets/images/Gift/Pic 11.jpg'
+import giftSixthImage from '../../../assets/images/Gift/Pic 16.jpg'
+import CategoryHero from '../../../components/CategoryHero'
+import EnquiryLink from '../../../components/EnquiryLink'
+import Reveal from '../../../components/Reveal'
 
 const giftPieces = [
   {
@@ -45,6 +47,8 @@ const additionalGiftPieces = [
   },
 ]
 
+export const metadata: Metadata = { title: 'Gifts' }
+
 function GiftsPage() {
   return (
     <main>
@@ -76,11 +80,12 @@ function GiftsPage() {
                 <Reveal key={piece.name} className={staggerClassName}>
                   <figure>
                     <div className="overflow-hidden bg-ap-beige">
-                      <img
+                      <Image
                         src={piece.image}
                         alt={piece.alt}
                         className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
-                      />
+                        sizes="(max-width: 768px) 100vw, 60vw"
+        />
                     </div>
                   </figure>
                 </Reveal>
@@ -103,11 +108,12 @@ function GiftsPage() {
             <Reveal className="md:col-span-7">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={additionalGiftPieces[0].image}
                     alt={additionalGiftPieces[0].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
@@ -117,11 +123,12 @@ function GiftsPage() {
                 <Reveal key={piece.name}>
                   <figure>
                     <div className="overflow-hidden bg-ap-beige">
-                      <img
+                      <Image
                         src={piece.image}
                         alt={piece.alt}
                         className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[18rem]"
-                      />
+                        sizes="(max-width: 768px) 100vw, 60vw"
+        />
                     </div>
                   </figure>
                 </Reveal>

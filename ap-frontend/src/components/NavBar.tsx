@@ -1,6 +1,9 @@
+'use client'
+
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const links = [
   ['New Arrival', '/products/new-arrival'],
@@ -14,14 +17,14 @@ const links = [
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { pathname } = useLocation()
+  const pathname = usePathname()
   const usesLightNavigation = pathname === '/contact'
 
   return (
     <nav className={`absolute inset-x-0 top-0 z-20 border-b ${usesLightNavigation ? 'border-ap-ink/20 text-ap-ink' : 'border-white/25 text-white'}`}>
       <div className="mx-auto flex h-[72px] max-w-[76rem] items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link
-          to="/"
+          href="/"
           className={`text-4xl font-extrabold font-title tracking-wide focus-visible:outline-2 focus-visible:outline-offset-4 ${usesLightNavigation ? 'focus-visible:outline-ap-ink' : 'focus-visible:outline-white'}`}
         >
           Atelier Pascale
@@ -31,7 +34,7 @@ function NavBar() {
           {links.map(([label, href]) => (
             <Link
               key={href}
-              to={href}
+              href={href}
               className={`text-base font-medium transition focus-visible:outline-2 focus-visible:outline-offset-4 ${usesLightNavigation ? 'text-ap-ink hover:text-ap-ink focus-visible:outline-ap-ink' : 'text-white/88 hover:text-white focus-visible:outline-white'}`}
             >
               {label}
@@ -56,7 +59,7 @@ function NavBar() {
             {links.map(([label, href]) => (
               <Link
                 key={href}
-                to={href}
+                href={href}
                 onClick={() => setIsMenuOpen(false)}
                 className="text-xl font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >

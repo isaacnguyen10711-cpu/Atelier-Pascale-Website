@@ -1,12 +1,14 @@
-import homeDecorHeroImage from '../assets/images/Background/HomeDecorBackground.jpg'
-import homeDecorFirstImage from '../assets/images/Home Decor/Pic 12.jpg'
-import homeDecorSecondImage from '../assets/images/Home Decor/Pic 11.jpg'
-import homeDecorThirdImage from '../assets/images/Home Decor/Pic 1.jpg'
-import homeDecorFourthImage from '../assets/images/Home Decor/Pic 7.jpg'
-import homeDecorFifthImage from '../assets/images/Home Decor/Pic 8.jpg'
-import CategoryHero from '../components/CategoryHero'
-import EnquiryLink from '../components/EnquiryLink'
-import Reveal from '../components/Reveal'
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import homeDecorHeroImage from '../../../assets/images/Background/HomeDecorBackground.jpg'
+import homeDecorFirstImage from '../../../assets/images/Home Decor/Pic 12.jpg'
+import homeDecorSecondImage from '../../../assets/images/Home Decor/Pic 11.jpg'
+import homeDecorThirdImage from '../../../assets/images/Home Decor/Pic 1.jpg'
+import homeDecorFourthImage from '../../../assets/images/Home Decor/Pic 7.jpg'
+import homeDecorFifthImage from '../../../assets/images/Home Decor/Pic 8.jpg'
+import CategoryHero from '../../../components/CategoryHero'
+import EnquiryLink from '../../../components/EnquiryLink'
+import Reveal from '../../../components/Reveal'
 
 const homeDecorPieces = [
   {
@@ -39,6 +41,8 @@ const additionalHomeDecorPieces = [
   },
 ]
 
+export const metadata: Metadata = { title: 'Home Decor' }
+
 function HomeDecorPage() {
   return (
     <main>
@@ -66,11 +70,12 @@ function HomeDecorPage() {
             <Reveal className="md:col-span-7">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={homeDecorPieces[0].image}
                     alt={homeDecorPieces[0].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
@@ -78,11 +83,12 @@ function HomeDecorPage() {
             <Reveal className="md:col-span-5">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={homeDecorPieces[1].image}
                     alt={homeDecorPieces[1].alt}
                     className="aspect-[4/5] w-full object-cover object-[35%] transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
@@ -108,11 +114,12 @@ function HomeDecorPage() {
             <Reveal className="md:col-span-4 md:mt-16">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={additionalHomeDecorPieces[0].image}
                     alt={additionalHomeDecorPieces[0].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
@@ -120,11 +127,12 @@ function HomeDecorPage() {
             <Reveal className="md:col-span-4">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={additionalHomeDecorPieces[1].image}
                     alt={additionalHomeDecorPieces[1].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[36rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
@@ -132,11 +140,12 @@ function HomeDecorPage() {
             <Reveal className="md:col-span-4 md:mt-16">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={additionalHomeDecorPieces[2].image}
                     alt={additionalHomeDecorPieces[2].alt}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>

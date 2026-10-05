@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 
 const footerLinkClassName = 'underline decoration-transparent underline-offset-4 transition-colors hover:decoration-current'
 
@@ -8,7 +8,7 @@ function Footer() {
       <div className="mx-auto max-w-[76rem]">
         <div className="grid gap-12 md:grid-cols-[7fr_5fr] md:items-end">
           <div>
-            <Link to="/" className="font-display text-4xl italic tracking-wide md:text-5xl">
+            <Link href="/" className="font-display text-4xl italic tracking-wide md:text-5xl">
               Atelier Pascale
             </Link>
             <p className="mt-4 max-w-md text-sm leading-6 text-ap-ink/65">
@@ -18,11 +18,11 @@ function Footer() {
 
           <div className="grid grid-cols-2 gap-8 text-sm md:justify-self-end md:text-right">
             <div className="flex flex-col gap-3">
-              <Link to="/products/new-arrival" className={footerLinkClassName}>Collections</Link>
-              <Link to="/about" className={footerLinkClassName}>About</Link>
+              <Link href="/products/new-arrival" className={footerLinkClassName}>Collections</Link>
+              <Link href="/about" className={footerLinkClassName}>About</Link>
             </div>
             <div className="flex flex-col gap-3">
-              <Link to="/contact" className={footerLinkClassName}>Contact</Link>
+              <Link href="/contact" className={footerLinkClassName}>Contact</Link>
               <a
                 href="https://www.facebook.com/TraditionalLacquer"
                 target="_blank"

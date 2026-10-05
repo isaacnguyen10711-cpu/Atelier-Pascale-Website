@@ -1,5 +1,8 @@
-import newArrivalHeroImage from '../assets/images/Background/NewArrivalBackground.jpg'
-import CategoryHero from '../components/CategoryHero'
+import type { Metadata } from 'next'
+import newArrivalHeroImage from '../../../assets/images/Background/NewArrivalBackground.jpg'
+import CategoryHero from '../../../components/CategoryHero'
+
+export const metadata: Metadata = { title: 'New Arrival' }
 
 function NewArrivalPage() {
   return (

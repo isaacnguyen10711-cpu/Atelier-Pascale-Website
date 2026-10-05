@@ -1,12 +1,16 @@
-import jewelryHeroImage from '../assets/images/Background/JeweleryBackground.jpg'
-import jewelryFirstImage from '../assets/images/Jewelry/Pic 3.jpg'
-import jewelrySecondImage from '../assets/images/Jewelry/Pic 1.jpg'
-import jewelryThirdImage from '../assets/images/Jewelry/Pic 4.jpg'
-import jewelryFourthImage from '../assets/images/Jewelry/Pic 8.jpg'
-import jewelryFifthImage from '../assets/images/Jewelry/Pic 5.jpg'
-import CategoryHero from '../components/CategoryHero'
-import EnquiryLink from '../components/EnquiryLink'
-import Reveal from '../components/Reveal'
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import jewelryHeroImage from '../../../assets/images/Background/JeweleryBackground.jpg'
+import jewelryFirstImage from '../../../assets/images/Jewelry/Pic 3.jpg'
+import jewelrySecondImage from '../../../assets/images/Jewelry/Pic 1.jpg'
+import jewelryThirdImage from '../../../assets/images/Jewelry/Pic 4.jpg'
+import jewelryFourthImage from '../../../assets/images/Jewelry/Pic 8.jpg'
+import jewelryFifthImage from '../../../assets/images/Jewelry/Pic 5.jpg'
+import CategoryHero from '../../../components/CategoryHero'
+import EnquiryLink from '../../../components/EnquiryLink'
+import Reveal from '../../../components/Reveal'
+
+export const metadata: Metadata = { title: 'Jewelry' }
 
 function JewelryPage() {
   return (
@@ -34,11 +38,12 @@ function JewelryPage() {
             <Reveal className="md:col-span-7">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={jewelryFirstImage}
                     alt="Long necklaces made with bright silk-wrapped beads"
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[46rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
@@ -47,11 +52,12 @@ function JewelryPage() {
               <Reveal>
                 <figure>
                   <div className="overflow-hidden bg-ap-beige">
-                    <img
+                    <Image
                       src={jewelrySecondImage}
                       alt="Blue, black and pink resin bangles"
                       className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[18rem]"
-                    />
+                      sizes="(max-width: 768px) 100vw, 60vw"
+        />
                   </div>
                 </figure>
               </Reveal>
@@ -59,11 +65,12 @@ function JewelryPage() {
               <Reveal>
                 <figure>
                   <div className="overflow-hidden bg-ap-beige">
-                    <img
+                    <Image
                       src={jewelryThirdImage}
                       alt="Yellow and charcoal silk-wrapped bead necklaces"
                       className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[26rem]"
-                    />
+                      sizes="(max-width: 768px) 100vw, 60vw"
+        />
                   </div>
                 </figure>
               </Reveal>
@@ -89,11 +96,12 @@ function JewelryPage() {
             <Reveal className="md:col-span-7">
               <figure className="h-full">
                 <div className="h-full overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={jewelryFourthImage}
                     alt="Statement necklace with orange and horn-toned links"
                     className="aspect-[4/5] w-full object-contain transition duration-500 hover:scale-105 md:h-[40rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
@@ -101,11 +109,12 @@ function JewelryPage() {
             <Reveal className="md:col-span-5">
               <figure className="h-full">
                 <div className="h-full overflow-hidden bg-ap-beige">
-                  <img
+                  <Image
                     src={jewelryFifthImage}
                     alt="Black and ivory leaf-shaped drop earrings"
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[40rem]"
-                  />
+                    sizes="(max-width: 768px) 100vw, 60vw"
+        />
                 </div>
               </figure>
             </Reveal>
