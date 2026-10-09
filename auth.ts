@@ -1,7 +1,7 @@
 import NextAuth from "next-auth"
 import Google from "next-auth/providers/google" 
 
-const adminEmail = (process.env.ADMIN ?? '')
+const adminEmails = (process.env.ADMIN ?? '')
 .split(',')
 .map(email => email.trim().toLowerCase())
 .filter(email => email !== '');
@@ -15,7 +15,7 @@ export const {handlers, signIn, signOut, auth} = NextAuth({
     ],
     callbacks: {
         async signIn({ user }) {
-            return adminEmail.includes(user.email?.toLowerCase() ?? '')
+            return adminEmails.includes(user.email?.toLowerCase() ?? '')
         },
     },
 })
