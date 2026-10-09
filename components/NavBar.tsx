@@ -58,6 +58,9 @@ function NavBar() {
   // Contact has a light background, so use dark navbar text in either language.
   const usesLightNavigation = englishPath === '/contact' || englishPath === '/contact/'
 
+  // The admin page has its own navbar (AdminNavBar), so hide this one there.
+  if (currentPath.startsWith('/admin')) return null
+
   return (
     <nav
       lang={language}
