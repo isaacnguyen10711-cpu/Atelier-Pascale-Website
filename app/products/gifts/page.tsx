@@ -45,7 +45,7 @@ const additionalGiftPieces = [
     image: giftFourthImage,
     name: 'Playful details',
     alt: {
-      en: 'Colorful lacquerware gifts with dragonfly motifs',
+      en: 'Colourful lacquerware gifts with dragonfly motifs',
       vi: 'Quà tặng sơn mài nhiều màu với họa tiết chuồn chuồn',
     },
   },
@@ -84,7 +84,7 @@ function GiftsPage() {
         description={
           isVietnamese
             ? 'Những món quà tinh tế dành cho khoảnh khắc riêng, dịp kỷ niệm và những kỷ vật ý nghĩa.'
-            : 'Thoughtful pieces selected for personal moments, quiet celebrations, and meaningful keepsakes.'
+            : 'Gifts for personal moments and small celebrations, and keepsakes worth holding on to.'
         }
         image={giftHeroImage}
         imagePosition="object-[center_70%]"
@@ -100,7 +100,7 @@ function GiftsPage() {
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 {isVietnamese
                   ? 'Những món quà mang dấu ấn riêng dành cho dịp lễ, chủ nhà, dấu mốc đáng nhớ và cả những khoảnh khắc nhỏ trong cuộc sống.'
-                  : 'Personal pieces for celebrations, hosts, milestones and the small moments that deserve to be remembered.'}
+                  : 'Personal gifts for celebrations, hosts and milestones, and for small moments worth remembering.'}
               </p>
             </div>
           </Reveal>
@@ -133,7 +133,7 @@ function GiftsPage() {
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 {isVietnamese
                   ? 'Đồ sơn mài và đồ trang trí giàu cảm xúc, mang màu sắc, nét thủ công và cá tính vào mỗi món quà.'
-                  : 'Expressive lacquerware and decorative pieces made to bring colour, craft and personality to a thoughtful gift.'}
+                  : 'Expressive lacquerware and decorative pieces that give a gift colour, craftsmanship and some personality.'}
               </p>
             </div>
           </Reveal>
@@ -172,7 +172,7 @@ function GiftsPage() {
             <p className="max-w-2xl text-base leading-7 text-ap-ink/70">
               {isVietnamese
                 ? 'Tìm một món quà mang dấu ấn riêng cho dịp kỷ niệm, lời cảm ơn chân thành hoặc sự quan tâm mỗi ngày.'
-                : 'Find something personal for a celebration, a meaningful thank you or an everyday gesture.'}
+                : 'Find something personal for a celebration, a thank you that means something, or just because.'}
             </p>
             <EnquiryLink language={language} />
           </div>

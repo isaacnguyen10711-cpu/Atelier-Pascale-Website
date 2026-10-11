@@ -29,7 +29,7 @@ function JewelryPage() {
         description={
           isVietnamese
             ? 'Những điểm nhấn tinh tế và chi tiết giàu cá tính để đồng hành cùng bạn mỗi ngày và lưu giữ cảm xúc.'
-            : 'Delicate accents and expressive details chosen for everyday wear and lasting sentiment.'
+            : 'Delicate pieces with expressive details, for wearing every day and keeping for years.'
         }
         image={jewelryHeroImage}
       />
@@ -44,7 +44,7 @@ function JewelryPage() {
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 {isVietnamese
                   ? 'Hạt bọc lụa và những hình khối được đánh bóng mang sắc màu sống động, chất liệu mềm mại và nét riêng vào phong cách hằng ngày.'
-                  : 'Silk-wrapped beads and polished forms bring vivid colour, soft texture and an expressive finish to everyday dressing.'}
+                  : 'Silk-wrapped beads and polished shapes add bright colour, soft texture and a bit of flair to everyday outfits.'}
               </p>
             </div>
           </Reveal>
@@ -113,7 +113,7 @@ function JewelryPage() {
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 {isVietnamese
                   ? 'Mắt xích nổi bật, đường nét uốn cong và sắc độ tự nhiên tạo nhịp điệu cùng cá tính riêng cho mỗi món trang sức.'
-                  : 'Bold links, curved silhouettes and natural tonal variation give each piece a distinctive sense of rhythm and character.'}
+                  : 'Bold links, curved shapes and natural variations in tone give each piece its own rhythm and character.'}
               </p>
             </div>
           </Reveal>
@@ -156,7 +156,7 @@ function JewelryPage() {
             <p className="max-w-2xl text-base leading-7 text-ap-ink/70">
               {isVietnamese
                 ? 'Liên hệ với chúng tôi để tìm hiểu mẫu hiện có, chất liệu và lựa chọn phong cách mang dấu ấn của riêng bạn.'
-                : 'Ask us about available pieces, materials and finding a style that feels distinctly yours.'}
+                : 'Ask us about available pieces, materials and finding a style that feels like you.'}
             </p>
             <EnquiryLink language={language} />
           </div>
