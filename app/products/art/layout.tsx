@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   title: 'Art',
-  description: 'Expressive pieces selected to shape the mood of a room and invite slower looking.',
+  description: 'Expressive pieces that set the mood of a room and reward a longer look.',
   alternates: { languages: { en: '/products/art/', vi: '/vi/products/art/' } },
 }
 

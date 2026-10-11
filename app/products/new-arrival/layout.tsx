@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   title: 'New Arrival',
-  description: 'A quiet collection of new pieces chosen for warmth, detail, and the feeling they bring into a room.',
+  description: 'New pieces, picked for their warmth and detail and for how they make a room feel.',
   alternates: { languages: { en: '/products/new-arrival/', vi: '/vi/products/new-arrival/' } },
 }
 

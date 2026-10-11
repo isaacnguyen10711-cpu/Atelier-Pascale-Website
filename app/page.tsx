@@ -17,30 +17,30 @@ import Reveal from '../components/Reveal'
 const homepageTranslations = {
   en: {
     heroDescription:
-      'Art, objects and gifts selected to bring lasting character into everyday spaces.',
+      'Art, objects and gifts chosen to give everyday spaces character that lasts.',
     viewNewArrivals: 'View new arrivals',
     ourStory: 'Our story',
-    introduction: 'Pieces chosen for how they live with you, not simply how they look on a shelf.',
+    introduction: 'We choose pieces for how they live with you day to day, as much as for how they look on a shelf.',
     newArrivals: 'New arrivals',
     newArrivalsDescription:
-      'Recent finds, selected for texture, proportion and the feeling they bring to a room.',
-    exploreNewArrivals: 'Explore New Arrivals',
+      'Recent finds, picked for their texture and proportions and for how they make a room feel.',
+    exploreNewArrivals: 'Explore new arrivals',
     exploreCollections: 'Explore the collections',
     collections: [
       {
         name: 'Home Decor',
-        description: 'Objects that bring warmth and character to everyday rooms.',
+        description: 'Objects that make everyday rooms feel warmer and more personal.',
       },
-      { name: 'Gifts', description: 'Thoughtful pieces for meaningful occasions.' },
-      { name: 'Jewelry', description: 'Personal details selected for everyday wear.' },
+      { name: 'Gifts', description: 'Pieces to give on the occasions that matter.' },
+      { name: 'Jewelry', description: 'Small personal pieces to wear every day.' },
     ],
     art: 'Art',
     artDescription:
-      'Expressive pieces selected to bring colour, character and a distinct point of view into a room.',
+      'Expressive works that add colour to a room and give it a point of view of its own.',
     exploreArt: 'Explore art',
-    storyTitle: 'Our Story',
+    storyTitle: 'Our story',
     storyDescription:
-      'Atelier Pascale brings together art, home pieces and thoughtful gifts with a focus on lasting beauty and personal service.',
+      "At Atelier Pascale you'll find art, home pieces and gifts chosen to stay beautiful for years, along with personal service.",
     meetAtelier: 'Meet Atelier Pascale',
     images: {
       hero: 'Atelier Pascale home interior with decorative lacquerware',

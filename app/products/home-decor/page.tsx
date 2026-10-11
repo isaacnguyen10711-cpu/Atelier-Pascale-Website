@@ -75,7 +75,7 @@ function HomeDecorPage() {
         description={
           isVietnamese
             ? 'Những món đồ và chất liệu ấm áp mang sự bình yên, chiều sâu và nét riêng vào không gian sống.'
-            : 'Warm objects and finishes chosen to bring stillness, texture, and character into everyday spaces.'
+            : 'Warm objects and finishes that make everyday rooms calmer, with more texture and character.'
         }
         image={homeDecorHeroImage}
         imagePosition="object-[center_70%]"
@@ -88,12 +88,12 @@ function HomeDecorPage() {
               <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
                 {isVietnamese
                   ? 'Đồ trang trí cho không gian tinh tế'
-                  : 'Objects for considered rooms'}
+                  : 'Objects for thoughtfully arranged rooms'}
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 {isVietnamese
                   ? 'Hình khối, chất liệu và những món đồ hữu dụng mang lại sự ấm áp, gần gũi cho không gian sống mỗi ngày.'
-                  : 'Layered forms, finishes and useful objects chosen to bring warmth and a lived-in point of view to everyday spaces.'}
+                  : 'Layered shapes, finishes and useful objects that make everyday rooms feel warm and lived in.'}
               </p>
             </div>
           </Reveal>
@@ -136,7 +136,7 @@ function HomeDecorPage() {
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 {isVietnamese
                   ? 'Bình hoa, khay và đồ trang trí tạo điểm nhấn nổi bật mà vẫn giữ sự hài hòa cho căn phòng.'
-                  : 'Vases, trays and decorative objects chosen to add a confident focal point without overwhelming a room.'}
+                  : 'Vases, trays and decorative objects that give a room a focal point without taking it over.'}
               </p>
             </div>
           </Reveal>
@@ -183,7 +183,7 @@ function HomeDecorPage() {
             <p className="max-w-2xl text-base leading-7 text-ap-ink/70">
               {isVietnamese
                 ? 'Khám phá những món đồ mang chiều sâu, sự cân bằng và nét đẹp bền lâu vào ngôi nhà.'
-                : 'Discover objects selected to bring texture, balance and lasting character into the home.'}
+                : 'Objects that add texture and balance to a home, with character that lasts.'}
             </p>
             <EnquiryLink language={language} />
           </div>

@@ -21,7 +21,7 @@ function NewArrivalPage() {
         description={
           isVietnamese
             ? 'Bộ sưu tập mẫu mới được chọn lọc qua sự ấm áp, chi tiết tinh tế và cảm xúc mà chúng mang đến cho không gian.'
-            : 'A quiet collection of new pieces chosen for warmth, detail, and the feeling they bring into a room.'
+            : 'New pieces, picked for their warmth and detail and for how they make a room feel.'
         }
         image={newArrivalHeroImage}
         imagePosition="object-[center_55%]"
