@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   title: 'Jewelry',
-  description: 'Delicate accents and expressive details chosen for everyday wear and lasting sentiment.',
+  description: 'Delicate pieces with expressive details, for wearing every day and keeping for years.',
   alternates: { languages: { en: '/products/jewelry/', vi: '/vi/products/jewelry/' } },
 }
 

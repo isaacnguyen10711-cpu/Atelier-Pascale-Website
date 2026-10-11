@@ -34,7 +34,7 @@ function AboutPage() {
               Atelier Pascale
             </p>
             <h1 className="font-sans text-4xl font-normal leading-tight sm:text-5xl lg:text-6xl">
-              {isVietnamese ? 'Về chúng tôi' : 'About Us'}
+              {isVietnamese ? 'Về chúng tôi' : 'About us'}
             </h1>
           </div>
         </div>
@@ -52,18 +52,18 @@ function AboutPage() {
               <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
                 {isVietnamese
                   ? 'Atelier Pascale mang đến nghệ thuật, đồ trang trí, quà tặng và trang sức được chọn lọc qua màu sắc, chất liệu và nét riêng.'
-                  : 'Atelier Pascale brings together art, home decor, gifts and jewelry chosen for their colour, texture and character.'}
+                  : 'Atelier Pascale has art, home decor, gifts and jewelry, each picked for its colour, texture and character.'}
               </p>
               <p className="mt-5 text-base leading-8 text-ap-ink/75 md:text-lg">
                 {isVietnamese
                   ? 'Chúng tôi tin rằng những món đồ quanh bạn nên mang dấu ấn riêng: để tận hưởng mỗi ngày, chia sẻ với người thân hoặc lưu giữ qua nhiều năm.'
-                  : 'We believe the pieces you surround yourself with should feel personal. Something to enjoy every day, share with someone, or keep for years.'}
+                  : 'We think the things around you should feel personal: something you enjoy every day, share with someone or keep for years.'}
               </p>
               <Link
                 href={`${prefix}/products/new-arrival`}
                 className="mt-8 inline-block border-b border-ap-ink pb-2 text-base font-semibold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-ink"
               >
-                {isVietnamese ? 'Khám phá bộ sưu tập' : 'Discover our collection'}
+                {isVietnamese ? 'Khám phá bộ sưu tập' : 'See the collection'}
               </Link>
             </Reveal>
             <Reveal className="md:col-span-7">
@@ -96,12 +96,12 @@ function AboutPage() {
             <Reveal className="md:col-span-7">
               <div className="max-w-2xl">
                 <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
-                  {isVietnamese ? 'Tinh hoa từ bàn tay người thợ' : 'Craft at the heart'}
+                  {isVietnamese ? 'Tinh hoa từ bàn tay người thợ' : 'Made by hand'}
                 </h2>
                 <p className="mt-6 text-base leading-8 text-ap-ink/75 md:text-lg">
                   {isVietnamese
                     ? 'Xưởng của chúng tôi là nơi những người thợ kiên nhẫn tạo tác. Mỗi công đoạn tạo hình, trang trí và hoàn thiện đều đòi hỏi sự chăm chút, tỉ mỉ và đôi bàn tay lành nghề.'
-                    : 'Our workshop is a place of patient work. Shaping, decorating and finishing each surface takes care, attention and a practiced hand.'}
+                    : 'Work in our workshop is slow and patient. Every surface is shaped, decorated and finished by hand, and each step takes care and practice.'}
                 </p>
                 <div className="mt-8 grid gap-7 sm:grid-cols-2">
                   <div>
@@ -111,7 +111,7 @@ function AboutPage() {
                     <p className="mt-3 text-sm leading-7 text-ap-ink/70">
                       {isVietnamese
                         ? 'Người thợ gửi gắm kỹ năng và kinh nghiệm vào từng chi tiết mà bạn nhìn thấy và cảm nhận.'
-                        : 'The makers bring their skill and experience to the details you see and feel.'}
+                        : "The details you see and touch come from our makers' skill and experience."}
                     </p>
                   </div>
                   <div>
@@ -121,7 +121,7 @@ function AboutPage() {
                     <p className="mt-3 text-sm leading-7 text-ap-ink/70">
                       {isVietnamese
                         ? 'Từ đường cong đến lớp trang trí hoàn thiện, những lựa chọn nhỏ tạo nên cá tính của mỗi món đồ.'
-                        : 'From a curved silhouette to a decorative finish, small decisions give a piece its personality.'}
+                        : 'A curved outline or a decorative finish: small decisions like these give a piece its personality.'}
                     </p>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ function AboutPage() {
               <p className="mt-5 text-base leading-8 text-ap-ink/75 md:text-lg">
                 {isVietnamese
                   ? 'Cùng làm việc và sẻ chia những khoảnh khắc là một phần cuộc sống mỗi ngày tại Atelier Pascale. Sự gắn kết ấy là điều chúng tôi luôn trân trọng.'
-                  : 'Shared work and moments together are part of everyday life at Atelier Pascale. That personal connection is at the heart of what we do.'}
+                  : 'Working and spending time together is part of everyday life at Atelier Pascale, and that closeness matters a lot to us.'}
               </p>
             </Reveal>
             <Reveal className="md:col-span-6">

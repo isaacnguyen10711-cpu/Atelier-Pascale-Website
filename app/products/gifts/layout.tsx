@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   title: 'Gifts',
-  description: 'Thoughtful pieces selected for personal moments, quiet celebrations, and meaningful keepsakes.',
+  description: 'Gifts for personal moments and small celebrations, and keepsakes worth holding on to.',
   alternates: { languages: { en: '/products/gifts/', vi: '/vi/products/gifts/' } },
 }
 

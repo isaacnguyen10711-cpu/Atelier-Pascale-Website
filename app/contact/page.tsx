@@ -17,7 +17,7 @@ function ContactPage() {
         <div className="mx-auto grid min-h-[calc(100dvh-16rem)] max-w-[76rem] gap-16 md:grid-cols-12 md:items-center md:gap-12">
           <Reveal className="md:col-span-5">
             <h1 className="font-sans text-4xl font-normal leading-tight sm:text-5xl lg:text-6xl">
-              {isVietnamese ? 'Liên hệ' : 'Contact Us'}
+              {isVietnamese ? 'Liên hệ' : 'Contact us'}
             </h1>
           </Reveal>
 
@@ -29,7 +29,7 @@ function ContactPage() {
               <p className="mt-5 max-w-lg text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 {isVietnamese
                   ? 'Hãy cho chúng tôi biết món đồ bạn quan tâm, chúng tôi sẽ giúp bạn tìm hiểu thêm.'
-                  : 'Tell us what caught your eye and we will help with the details.'}
+                  : "Tell us what caught your eye and we'll help with the details."}
               </p>
             </Reveal>
 

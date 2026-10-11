@@ -67,7 +67,7 @@ function ArtPage() {
         description={
           isVietnamese
             ? 'Những tác phẩm giàu cảm xúc, tạo nên bầu không khí riêng và mời bạn chậm lại để thưởng thức.'
-            : 'Expressive pieces selected to shape the mood of a room and invite slower looking.'
+            : 'Expressive pieces that set the mood of a room and reward a longer look.'
         }
         image={artHeroImage}
         imagePosition="object-[center_30%]"
@@ -78,12 +78,12 @@ function ArtPage() {
           <Reveal>
             <div className="max-w-2xl">
               <h2 className="font-sans text-3xl font-normal leading-snug md:text-4xl">
-                {isVietnamese ? 'Nghệ thuật cho không gian sống' : 'Art for considered spaces'}
+                {isVietnamese ? 'Nghệ thuật cho không gian sống' : 'Art for thoughtfully arranged rooms'}
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 {isVietnamese
                   ? 'Tranh phong cảnh, tranh hoa lá và tác phẩm sơn mài được chọn lọc để mang chiều sâu, màu sắc và điểm nhấn vào không gian.'
-                  : 'Landscapes, botanical works and lacquer pieces selected to bring depth, colour and a clear focal point to a room.'}
+                  : 'Landscapes, botanical works and lacquer pieces that add depth and colour and give a room a clear focal point.'}
               </p>
             </div>
           </Reveal>
@@ -138,7 +138,7 @@ function ArtPage() {
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 {isVietnamese
                   ? 'Kỹ thuật sơn mài truyền thống mang đến bề mặt phong phú, chi tiết tinh tế và nét đẹp biến đổi theo ánh sáng cho những hình ảnh hoa lá.'
-                  : 'Traditional lacquer techniques give botanical forms a rich surface, fine detail and a character that changes with the light.'}
+                  : 'Traditional lacquer techniques give these flowers and leaves a deep surface and fine detail, and they look different as the light changes.'}
               </p>
             </div>
           </Reveal>

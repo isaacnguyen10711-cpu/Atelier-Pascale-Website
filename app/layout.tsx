@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     default: 'Atelier Pascale',
     template: 'Atelier Pascale',
   },
-  description: 'Discover art, home decor, gifts and jewelry selected with care by Atelier Pascale.',
+  description: 'Art, home decor, gifts and jewelry, chosen with care by Atelier Pascale.',
   icons: { icon: { url: logo.src, type: 'image/png' } },
   openGraph: {
     title: 'Atelier Pascale',
-    description: 'Art, objects and gifts selected to bring lasting character into everyday spaces.',
+    description: 'Art, objects and gifts chosen to give everyday spaces character that lasts.',
   },
 }
 

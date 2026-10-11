@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   title: 'Home Decor',
-  description: 'Warm objects and finishes chosen to bring stillness, texture, and character into everyday spaces.',
+  description: 'Warm objects and finishes that make everyday rooms calmer, with more texture and character.',
   alternates: { languages: { en: '/products/home-decor/', vi: '/vi/products/home-decor/' } },
 }
 
