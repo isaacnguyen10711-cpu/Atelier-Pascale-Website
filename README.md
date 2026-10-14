@@ -80,6 +80,8 @@ npm run typecheck
 npm run build
 ```
 
+After `npm run build`, run `npm start` to preview the production build at http://localhost:3000.
+
 ## Future Improvements
 
 - Upload and remove product photos from the admin page without changing code
