@@ -1,3 +1,3 @@
 # Git workflow
 
-Work directly on `master`. Commit and push to `master`; don't create feature branches or pull requests unless asked.
+Make changes locally only. Don't commit or push; Isaac reviews and commits changes himself. Work on `master`, and don't create feature branches or pull requests unless asked.
