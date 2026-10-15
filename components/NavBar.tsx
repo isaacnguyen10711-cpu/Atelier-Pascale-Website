@@ -55,8 +55,8 @@ function NavBar() {
   // Example: '/about/' becomes '/vi/about/', so switching keeps the same page.
   const vietnamesePath = `/vi${englishPath}`
 
-  // Contact has a light background, so use dark navbar text in either language.
-  const usesLightNavigation = englishPath === '/contact' || englishPath === '/contact/'
+  // Contact and admin have a light background, so use dark navbar text on them.
+  const usesLightNavigation = englishPath === '/contact' || englishPath === '/contact/' || englishPath.startsWith('/admin')
 
   return (
     <nav
