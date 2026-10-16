@@ -5,14 +5,16 @@ import { usePathname } from 'next/navigation'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import aboutImage from '../assets/images/About/Pic 2.jpg'
-import artFirstImage from '../assets/images/Art/Pic 1.jpg'
-import artSecondImage from '../assets/images/Art/Pic 7.jpg'
 import heroImage from '../assets/images/Background/HomeBackground.jpg'
-import giftImage from '../assets/images/Gift/Pic 2.jpg'
-import homeDecorImage from '../assets/images/Home Decor/Pic 1.jpg'
-import featuredImage from '../assets/images/Home Decor/Pic 11.jpg'
-import jewelryImage from '../assets/images/Jewelry/Pic 3.jpg'
 import Reveal from '../components/Reveal'
+import { photoUrl } from './photoUrl'
+
+const artFirstImage = photoUrl('art/Pic 1.jpg')
+const artSecondImage = photoUrl('art/Pic 7.jpg')
+const giftImage = photoUrl('gifts/Pic 2.jpg')
+const homeDecorImage = photoUrl('home-decor/Pic 1.jpg')
+const featuredImage = photoUrl('home-decor/Pic 11.jpg')
+const jewelryImage = photoUrl('jewelry/Pic 3.jpg')
 
 const homepageTranslations = {
   en: {
@@ -169,6 +171,8 @@ function HomePage() {
             <div className="md:col-span-7">
               <div className="overflow-hidden bg-ap-muted">
                 <Image
+                  width={1200}
+                  height={1500}
                   src={featuredImage}
                   alt={text.images.featured}
                   className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[5/4]"
@@ -268,6 +272,8 @@ function HomePage() {
             <div className="grid gap-5 md:grid-cols-2">
               <div className="overflow-hidden bg-ap-muted">
                 <Image
+                  width={1200}
+                  height={900}
                   src={artFirstImage}
                   alt={text.images.artFirst}
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
@@ -275,6 +281,8 @@ function HomePage() {
               </div>
               <div className="overflow-hidden bg-ap-muted">
                 <Image
+                  width={1200}
+                  height={900}
                   src={artSecondImage}
                   alt={text.images.artSecond}
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
