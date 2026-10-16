@@ -3,14 +3,16 @@
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import artHeroImage from '../../../assets/images/Background/ArtBackground.jpg'
-import artFirstImage from '../../../assets/images/Art/Pic 3.jpg'
-import artSecondImage from '../../../assets/images/Art/Pic 9.jpg'
-import artThirdImage from '../../../assets/images/Art/Pic 2.jpg'
-import artFourthImage from '../../../assets/images/Art/Pic 8.jpg'
-import artFifthImage from '../../../assets/images/Art/Pic 6.jpg'
 import CategoryHero from '../../../components/CategoryHero'
 import EnquiryLink from '../../../components/EnquiryLink'
 import Reveal from '../../../components/Reveal'
+import { photoUrl } from '../../photoUrl'
+
+const artFirstImage = photoUrl('art/Pic 3.jpg')
+const artSecondImage = photoUrl('art/Pic 9.jpg')
+const artThirdImage = photoUrl('art/Pic 2.jpg')
+const artFourthImage = photoUrl('art/Pic 8.jpg')
+const artFifthImage = photoUrl('art/Pic 6.jpg')
 
 const artPieces = [
   {
@@ -92,6 +94,8 @@ function ArtPage() {
             <figure>
               <div className="overflow-hidden bg-ap-beige">
                 <Image
+                  width={1200}
+                  height={1500}
                   src={artPieces[0].image}
                   alt={artPieces[0].alt[language]}
                   className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[40rem]"
@@ -105,6 +109,8 @@ function ArtPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={artPieces[1].image}
                     alt={artPieces[1].alt[language]}
                     className="aspect-[4/5] w-full object-cover object-top transition duration-500 hover:scale-105 md:h-[38rem]"
@@ -117,6 +123,8 @@ function ArtPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={artPieces[2].image}
                     alt={artPieces[2].alt[language]}
                     className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
@@ -148,6 +156,8 @@ function ArtPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={artPieces[3].image}
                     alt={artPieces[3].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[34rem]"
@@ -160,6 +170,8 @@ function ArtPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={artPieces[4].image}
                     alt={artPieces[4].alt[language]}
                     className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[34rem]"

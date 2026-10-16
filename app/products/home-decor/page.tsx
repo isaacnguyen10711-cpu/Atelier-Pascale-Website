@@ -3,14 +3,16 @@
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import homeDecorHeroImage from '../../../assets/images/Background/HomeDecorBackground.jpg'
-import homeDecorFirstImage from '../../../assets/images/Home Decor/Pic 12.jpg'
-import homeDecorSecondImage from '../../../assets/images/Home Decor/Pic 11.jpg'
-import homeDecorThirdImage from '../../../assets/images/Home Decor/Pic 1.jpg'
-import homeDecorFourthImage from '../../../assets/images/Home Decor/Pic 7.jpg'
-import homeDecorFifthImage from '../../../assets/images/Home Decor/Pic 8.jpg'
 import CategoryHero from '../../../components/CategoryHero'
 import EnquiryLink from '../../../components/EnquiryLink'
 import Reveal from '../../../components/Reveal'
+import { photoUrl } from '../../photoUrl'
+
+const homeDecorFirstImage = photoUrl('home-decor/Pic 12.jpg')
+const homeDecorSecondImage = photoUrl('home-decor/Pic 11.jpg')
+const homeDecorThirdImage = photoUrl('home-decor/Pic 1.jpg')
+const homeDecorFourthImage = photoUrl('home-decor/Pic 7.jpg')
+const homeDecorFifthImage = photoUrl('home-decor/Pic 8.jpg')
 
 const homeDecorPieces = [
   {
@@ -103,6 +105,8 @@ function HomeDecorPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={homeDecorPieces[0].image}
                     alt={homeDecorPieces[0].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
@@ -115,6 +119,8 @@ function HomeDecorPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={homeDecorPieces[1].image}
                     alt={homeDecorPieces[1].alt[language]}
                     className="aspect-[4/5] w-full object-cover object-[35%] transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
@@ -146,6 +152,8 @@ function HomeDecorPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={additionalHomeDecorPieces[0].image}
                     alt={additionalHomeDecorPieces[0].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
@@ -158,6 +166,8 @@ function HomeDecorPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={additionalHomeDecorPieces[1].image}
                     alt={additionalHomeDecorPieces[1].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[36rem]"
@@ -170,6 +180,8 @@ function HomeDecorPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={additionalHomeDecorPieces[2].image}
                     alt={additionalHomeDecorPieces[2].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"

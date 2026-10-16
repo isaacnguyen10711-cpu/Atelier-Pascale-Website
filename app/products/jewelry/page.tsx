@@ -3,14 +3,16 @@
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import jewelryHeroImage from '../../../assets/images/Background/JeweleryBackground.jpg'
-import jewelryFirstImage from '../../../assets/images/Jewelry/Pic 3.jpg'
-import jewelrySecondImage from '../../../assets/images/Jewelry/Pic 1.jpg'
-import jewelryThirdImage from '../../../assets/images/Jewelry/Pic 4.jpg'
-import jewelryFourthImage from '../../../assets/images/Jewelry/Pic 8.jpg'
-import jewelryFifthImage from '../../../assets/images/Jewelry/Pic 5.jpg'
 import CategoryHero from '../../../components/CategoryHero'
 import EnquiryLink from '../../../components/EnquiryLink'
 import Reveal from '../../../components/Reveal'
+import { photoUrl } from '../../photoUrl'
+
+const jewelryFirstImage = photoUrl('jewelry/Pic 3.jpg')
+const jewelrySecondImage = photoUrl('jewelry/Pic 1.jpg')
+const jewelryThirdImage = photoUrl('jewelry/Pic 4.jpg')
+const jewelryFourthImage = photoUrl('jewelry/Pic 8.jpg')
+const jewelryFifthImage = photoUrl('jewelry/Pic 5.jpg')
 
 function JewelryPage() {
   const pathname = usePathname()
@@ -54,6 +56,8 @@ function JewelryPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={jewelryFirstImage}
                     alt={
                       isVietnamese
@@ -71,6 +75,8 @@ function JewelryPage() {
                 <figure>
                   <div className="overflow-hidden bg-ap-beige">
                     <Image
+                      width={1200}
+                      height={1500}
                       src={jewelrySecondImage}
                       alt={
                         isVietnamese
@@ -87,6 +93,8 @@ function JewelryPage() {
                 <figure>
                   <div className="overflow-hidden bg-ap-beige">
                     <Image
+                      width={1200}
+                      height={1500}
                       src={jewelryThirdImage}
                       alt={
                         isVietnamese
@@ -123,6 +131,8 @@ function JewelryPage() {
               <figure className="h-full">
                 <div className="h-full overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={jewelryFourthImage}
                     alt={
                       isVietnamese
@@ -139,6 +149,8 @@ function JewelryPage() {
               <figure className="h-full">
                 <div className="h-full overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={jewelryFifthImage}
                     alt={
                       isVietnamese

@@ -3,15 +3,17 @@
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import giftHeroImage from '../../../assets/images/Background/GiftBackground.jpg'
-import giftFirstImage from '../../../assets/images/Gift/Pic 1.jpg'
-import giftSecondImage from '../../../assets/images/Gift/Pic 6.jpg'
-import giftThirdImage from '../../../assets/images/Gift/Pic 4.jpg'
-import giftFourthImage from '../../../assets/images/Gift/Pic 15.jpg'
-import giftFifthImage from '../../../assets/images/Gift/Pic 11.jpg'
-import giftSixthImage from '../../../assets/images/Gift/Pic 16.jpg'
 import CategoryHero from '../../../components/CategoryHero'
 import EnquiryLink from '../../../components/EnquiryLink'
 import Reveal from '../../../components/Reveal'
+import { photoUrl } from '../../photoUrl'
+
+const giftFirstImage = photoUrl('gifts/Pic 1.jpg')
+const giftSecondImage = photoUrl('gifts/Pic 6.jpg')
+const giftThirdImage = photoUrl('gifts/Pic 4.jpg')
+const giftFourthImage = photoUrl('gifts/Pic 15.jpg')
+const giftFifthImage = photoUrl('gifts/Pic 11.jpg')
+const giftSixthImage = photoUrl('gifts/Pic 16.jpeg')
 
 const giftPieces = [
   {
@@ -114,6 +116,8 @@ function GiftsPage() {
                   <figure>
                     <div className="overflow-hidden bg-ap-beige">
                       <Image
+                        width={1200}
+                        height={1500}
                         src={piece.image}
                         alt={piece.alt[language]}
                         className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
@@ -143,6 +147,8 @@ function GiftsPage() {
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
                   <Image
+                    width={1200}
+                    height={1500}
                     src={additionalGiftPieces[0].image}
                     alt={additionalGiftPieces[0].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
@@ -157,6 +163,8 @@ function GiftsPage() {
                   <figure>
                     <div className="overflow-hidden bg-ap-beige">
                       <Image
+                        width={1200}
+                        height={1500}
                         src={piece.image}
                         alt={piece.alt[language]}
                         className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[18rem]"
