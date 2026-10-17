@@ -1,12 +1,13 @@
 import Link from 'next/link'
 
-// The product categories. Each id is also the folder name in S3.
+// The product categories, in the same order as the main navbar.
+// Each id is also the folder name in S3.
 const categories = [
-  { id: 'art', label: 'Art' },
-  { id: 'gifts', label: 'Gifts' },
-  { id: 'home-decor', label: 'Home Decor' },
-  { id: 'jewelry', label: 'Jewelry' },
   { id: 'new-arrival', label: 'New Arrival' },
+  { id: 'home-decor', label: 'Home Decor' },
+  { id: 'gifts', label: 'Gifts' },
+  { id: 'jewelry', label: 'Jewelry' },
+  { id: 'art', label: 'Art' },
 ]
 
 type AdminNavBarProps = {
