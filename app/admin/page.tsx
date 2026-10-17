@@ -1,17 +1,8 @@
+import Link from 'next/link'
 import { auth, signOut } from '@/auth'
 import SignInButton from '@/components/SignInButton'
-import AdminNavBar from '@/components/admin/AdminNavBar'
-import PhotoUploader from '@/components/admin/PhotoUploader'
 
-type AdminPageProps = {
-  searchParams: Promise<{ category?: string }>
-}
-
-async function AdminPage(props: AdminPageProps) {
-  // Read the selected category from the URL, like /admin?category=gifts
-  const urlNotes = await props.searchParams
-  const productCategory = urlNotes.category ?? 'new-arrival' // New Arrival is selected by default
-
+async function AdminPage() {
   const session = await auth()
 
   // Not logged in: show the sign-in page
@@ -44,29 +35,29 @@ async function AdminPage(props: AdminPageProps) {
     )
   }
 
-  // Logged in: show who they are, a sign-out button and the photo uploader
+  // Logged in: explain how to edit photos, and show who they are with a sign-out button
   return (
     <main className="bg-ap-paper px-5 pb-20 pt-36 text-ap-ink">
       <div className="mx-auto max-w-[76rem]">
-        <p>Logged in as {session.user?.email}</p>
-        <form
-          action={async () => {
-            'use server'
-            await signOut()
-          }}
-        >
-          <button className="mt-4 border border-ap-ink px-5 py-3">Sign out</button>
-        </form>
+        <h1 className="font-sans text-3xl font-normal leading-snug md:text-4xl">You're signed in</h1>
+        <p className="mt-5 max-w-lg leading-7 text-ap-ink/70">
+          To replace a photo, open any product page and hover over the photo you want to change.
+        </p>
+        <Link href="/products/new-arrival" className="mt-6 inline-block font-semibold underline underline-offset-4">
+          Go to the product pages
+        </Link>
 
-        <section className="mt-12">
-          <h1 className="font-sans text-3xl font-normal leading-snug md:text-4xl">Upload photos</h1>
-          <div className="mt-6">
-            <AdminNavBar currentCategory={productCategory} />
-          </div>
-          <div className="mt-8">
-            <PhotoUploader category={productCategory} />
-          </div>
-        </section>
+        <div className="mt-12 border-t border-ap-ink/25 pt-8">
+          <p>Logged in as {session.user?.email}</p>
+          <form
+            action={async () => {
+              'use server'
+              await signOut()
+            }}
+          >
+            <button className="mt-4 border border-ap-ink px-5 py-3">Sign out</button>
+          </form>
+        </div>
       </div>
     </main>
   )
