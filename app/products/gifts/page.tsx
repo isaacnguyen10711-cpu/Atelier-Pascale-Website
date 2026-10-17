@@ -8,16 +8,9 @@ import EnquiryLink from '../../../components/EnquiryLink'
 import Reveal from '../../../components/Reveal'
 import { photoUrl } from '../../photoUrl'
 
-const giftFirstImage = photoUrl('gifts/Pic 1.jpg')
-const giftSecondImage = photoUrl('gifts/Pic 6.jpg')
-const giftThirdImage = photoUrl('gifts/Pic 4.jpg')
-const giftFourthImage = photoUrl('gifts/Pic 15.jpg')
-const giftFifthImage = photoUrl('gifts/Pic 11.jpg')
-const giftSixthImage = photoUrl('gifts/Pic 16.jpeg')
-
 const giftPieces = [
   {
-    image: giftFirstImage,
+    image: photoUrl('gifts/Pic 1.jpg'),
     name: 'For the home',
     alt: {
       en: 'Decorative gift box with a botanical pattern',
@@ -25,7 +18,7 @@ const giftPieces = [
     },
   },
   {
-    image: giftSecondImage,
+    image: photoUrl('gifts/Pic 6.jpg'),
     name: 'Small gestures',
     alt: {
       en: 'Hand-finished decorative gift box',
@@ -33,18 +26,15 @@ const giftPieces = [
     },
   },
   {
-    image: giftThirdImage,
+    image: photoUrl('gifts/Pic 4.jpg'),
     name: 'Special occasions',
     alt: {
       en: 'A curated gift presentation from Atelier Pascale',
       vi: 'Bộ quà tặng được chọn lọc tại Atelier Pascale',
     },
   },
-]
-
-const additionalGiftPieces = [
   {
-    image: giftFourthImage,
+    image: photoUrl('gifts/Pic 15.jpg'),
     name: 'Playful details',
     alt: {
       en: 'Colourful lacquerware gifts with dragonfly motifs',
@@ -52,7 +42,7 @@ const additionalGiftPieces = [
     },
   },
   {
-    image: giftFifthImage,
+    image: photoUrl('gifts/Pic 11.jpg'),
     name: 'Keepsake boxes',
     alt: {
       en: 'Pink, red and turquoise floral keepsake boxes',
@@ -60,7 +50,7 @@ const additionalGiftPieces = [
     },
   },
   {
-    image: giftSixthImage,
+    image: photoUrl('gifts/Pic 16.jpeg'),
     name: 'Lacquerware collection',
     alt: {
       en: 'Red lacquerware gifts decorated with gold floral details',
@@ -108,7 +98,7 @@ function GiftsPage() {
           </Reveal>
 
           <div className="mt-12 grid gap-8 md:grid-cols-3 md:items-start">
-            {giftPieces.map((piece, index) => {
+            {giftPieces.slice(0, 3).map((piece, index) => {
               const staggerClassName = index === 0 ? 'md:mt-14' : index === 2 ? 'md:mt-24' : ''
 
               return (
@@ -149,8 +139,8 @@ function GiftsPage() {
                   <Image
                     width={1200}
                     height={1500}
-                    src={additionalGiftPieces[0].image}
-                    alt={additionalGiftPieces[0].alt[language]}
+                    src={giftPieces[3].image}
+                    alt={giftPieces[3].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
                   />
                 </div>
@@ -158,7 +148,7 @@ function GiftsPage() {
             </Reveal>
 
             <div className="grid gap-8 md:col-span-5">
-              {additionalGiftPieces.slice(1).map((piece) => (
+              {giftPieces.slice(4).map((piece) => (
                 <Reveal key={piece.name}>
                   <figure>
                     <div className="overflow-hidden bg-ap-beige">

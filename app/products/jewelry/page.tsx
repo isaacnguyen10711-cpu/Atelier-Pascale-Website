@@ -8,11 +8,43 @@ import EnquiryLink from '../../../components/EnquiryLink'
 import Reveal from '../../../components/Reveal'
 import { photoUrl } from '../../photoUrl'
 
-const jewelryFirstImage = photoUrl('jewelry/Pic 3.jpg')
-const jewelrySecondImage = photoUrl('jewelry/Pic 1.jpg')
-const jewelryThirdImage = photoUrl('jewelry/Pic 4.jpg')
-const jewelryFourthImage = photoUrl('jewelry/Pic 8.jpg')
-const jewelryFifthImage = photoUrl('jewelry/Pic 5.jpg')
+const jewelryPieces = [
+  {
+    image: photoUrl('jewelry/Pic 3.jpg'),
+    alt: {
+      en: 'Long necklaces made with bright silk-wrapped beads',
+      vi: 'Vòng cổ dài với hạt bọc lụa rực rỡ',
+    },
+  },
+  {
+    image: photoUrl('jewelry/Pic 1.jpg'),
+    alt: {
+      en: 'Blue, black and pink resin bangles',
+      vi: 'Vòng tay nhựa resin màu xanh, đen và hồng',
+    },
+  },
+  {
+    image: photoUrl('jewelry/Pic 4.jpg'),
+    alt: {
+      en: 'Yellow and charcoal silk-wrapped bead necklaces',
+      vi: 'Vòng cổ hạt bọc lụa màu vàng và xám than',
+    },
+  },
+  {
+    image: photoUrl('jewelry/Pic 8.jpg'),
+    alt: {
+      en: 'Statement necklace with orange and horn-toned links',
+      vi: 'Vòng cổ nổi bật với mắt xích màu cam và màu sừng',
+    },
+  },
+  {
+    image: photoUrl('jewelry/Pic 5.jpg'),
+    alt: {
+      en: 'Black and ivory leaf-shaped drop earrings',
+      vi: 'Hoa tai dáng lá màu đen và ngà',
+    },
+  },
+]
 
 function JewelryPage() {
   const pathname = usePathname()
@@ -58,12 +90,8 @@ function JewelryPage() {
                   <Image
                     width={1200}
                     height={1500}
-                    src={jewelryFirstImage}
-                    alt={
-                      isVietnamese
-                        ? 'Vòng cổ dài với hạt bọc lụa rực rỡ'
-                        : 'Long necklaces made with bright silk-wrapped beads'
-                    }
+                    src={jewelryPieces[0].image}
+                    alt={jewelryPieces[0].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[46rem]"
                   />
                 </div>
@@ -77,12 +105,8 @@ function JewelryPage() {
                     <Image
                       width={1200}
                       height={1500}
-                      src={jewelrySecondImage}
-                      alt={
-                        isVietnamese
-                          ? 'Vòng tay nhựa resin màu xanh, đen và hồng'
-                          : 'Blue, black and pink resin bangles'
-                      }
+                      src={jewelryPieces[1].image}
+                      alt={jewelryPieces[1].alt[language]}
                       className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[18rem]"
                     />
                   </div>
@@ -95,12 +119,8 @@ function JewelryPage() {
                     <Image
                       width={1200}
                       height={1500}
-                      src={jewelryThirdImage}
-                      alt={
-                        isVietnamese
-                          ? 'Vòng cổ hạt bọc lụa màu vàng và xám than'
-                          : 'Yellow and charcoal silk-wrapped bead necklaces'
-                      }
+                      src={jewelryPieces[2].image}
+                      alt={jewelryPieces[2].alt[language]}
                       className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[26rem]"
                     />
                   </div>
@@ -133,12 +153,8 @@ function JewelryPage() {
                   <Image
                     width={1200}
                     height={1500}
-                    src={jewelryFourthImage}
-                    alt={
-                      isVietnamese
-                        ? 'Vòng cổ nổi bật với mắt xích màu cam và màu sừng'
-                        : 'Statement necklace with orange and horn-toned links'
-                    }
+                    src={jewelryPieces[3].image}
+                    alt={jewelryPieces[3].alt[language]}
                     className="aspect-[4/5] w-full object-contain transition duration-500 hover:scale-105 md:h-[40rem]"
                   />
                 </div>
@@ -151,12 +167,8 @@ function JewelryPage() {
                   <Image
                     width={1200}
                     height={1500}
-                    src={jewelryFifthImage}
-                    alt={
-                      isVietnamese
-                        ? 'Hoa tai dáng lá màu đen và ngà'
-                        : 'Black and ivory leaf-shaped drop earrings'
-                    }
+                    src={jewelryPieces[4].image}
+                    alt={jewelryPieces[4].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[40rem]"
                   />
                 </div>

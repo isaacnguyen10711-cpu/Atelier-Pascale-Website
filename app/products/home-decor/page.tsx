@@ -8,15 +8,9 @@ import EnquiryLink from '../../../components/EnquiryLink'
 import Reveal from '../../../components/Reveal'
 import { photoUrl } from '../../photoUrl'
 
-const homeDecorFirstImage = photoUrl('home-decor/Pic 12.jpg')
-const homeDecorSecondImage = photoUrl('home-decor/Pic 11.jpg')
-const homeDecorThirdImage = photoUrl('home-decor/Pic 1.jpg')
-const homeDecorFourthImage = photoUrl('home-decor/Pic 7.jpg')
-const homeDecorFifthImage = photoUrl('home-decor/Pic 8.jpg')
-
 const homeDecorPieces = [
   {
-    image: homeDecorFirstImage,
+    image: photoUrl('home-decor/Pic 12.jpg'),
     name: 'Objects with presence',
     alt: {
       en: 'Decorative arrangement selected by Atelier Pascale',
@@ -24,18 +18,15 @@ const homeDecorPieces = [
     },
   },
   {
-    image: homeDecorSecondImage,
+    image: photoUrl('home-decor/Pic 11.jpg'),
     name: 'Quiet detail',
     alt: {
       en: 'Decorative home object with floral detail',
       vi: 'Đồ trang trí nhà với chi tiết hoa',
     },
   },
-]
-
-const additionalHomeDecorPieces = [
   {
-    image: homeDecorThirdImage,
+    image: photoUrl('home-decor/Pic 1.jpg'),
     name: 'Table setting',
     alt: {
       en: 'Tea cups and flowers arranged on a decorative tray',
@@ -43,7 +34,7 @@ const additionalHomeDecorPieces = [
     },
   },
   {
-    image: homeDecorFourthImage,
+    image: photoUrl('home-decor/Pic 7.jpg'),
     name: 'Floral vase',
     alt: {
       en: 'Red lacquer vase decorated with pink blossoms',
@@ -51,7 +42,7 @@ const additionalHomeDecorPieces = [
     },
   },
   {
-    image: homeDecorFifthImage,
+    image: photoUrl('home-decor/Pic 8.jpg'),
     name: 'Painted objects',
     alt: {
       en: 'Painted lacquer tray and box with red flower motifs',
@@ -154,8 +145,8 @@ function HomeDecorPage() {
                   <Image
                     width={1200}
                     height={1500}
-                    src={additionalHomeDecorPieces[0].image}
-                    alt={additionalHomeDecorPieces[0].alt[language]}
+                    src={homeDecorPieces[2].image}
+                    alt={homeDecorPieces[2].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
                   />
                 </div>
@@ -168,8 +159,8 @@ function HomeDecorPage() {
                   <Image
                     width={1200}
                     height={1500}
-                    src={additionalHomeDecorPieces[1].image}
-                    alt={additionalHomeDecorPieces[1].alt[language]}
+                    src={homeDecorPieces[3].image}
+                    alt={homeDecorPieces[3].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[36rem]"
                   />
                 </div>
@@ -182,8 +173,8 @@ function HomeDecorPage() {
                   <Image
                     width={1200}
                     height={1500}
-                    src={additionalHomeDecorPieces[2].image}
-                    alt={additionalHomeDecorPieces[2].alt[language]}
+                    src={homeDecorPieces[4].image}
+                    alt={homeDecorPieces[4].alt[language]}
                     className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
                   />
                 </div>
