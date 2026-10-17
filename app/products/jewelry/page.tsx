@@ -12,36 +12,36 @@ const jewelryPieces = [
   {
     image: photoUrl('jewelry/Pic 3.jpg'),
     alt: {
-      en: 'Long necklaces made with bright silk-wrapped beads',
-      vi: 'Vòng cổ dài với hạt bọc lụa rực rỡ',
+      en: 'Jewelry 1',
+      vi: 'Trang sức 1',
     },
   },
   {
     image: photoUrl('jewelry/Pic 1.jpg'),
     alt: {
-      en: 'Blue, black and pink resin bangles',
-      vi: 'Vòng tay nhựa resin màu xanh, đen và hồng',
+      en: 'Jewelry 2',
+      vi: 'Trang sức 2',
     },
   },
   {
     image: photoUrl('jewelry/Pic 4.jpg'),
     alt: {
-      en: 'Yellow and charcoal silk-wrapped bead necklaces',
-      vi: 'Vòng cổ hạt bọc lụa màu vàng và xám than',
+      en: 'Jewelry 3',
+      vi: 'Trang sức 3',
     },
   },
   {
     image: photoUrl('jewelry/Pic 8.jpg'),
     alt: {
-      en: 'Statement necklace with orange and horn-toned links',
-      vi: 'Vòng cổ nổi bật với mắt xích màu cam và màu sừng',
+      en: 'Jewelry 4',
+      vi: 'Trang sức 4',
     },
   },
   {
     image: photoUrl('jewelry/Pic 5.jpg'),
     alt: {
-      en: 'Black and ivory leaf-shaped drop earrings',
-      vi: 'Hoa tai dáng lá màu đen và ngà',
+      en: 'Jewelry 5',
+      vi: 'Trang sức 5',
     },
   },
 ]

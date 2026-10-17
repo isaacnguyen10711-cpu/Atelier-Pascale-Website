@@ -13,48 +13,48 @@ const giftPieces = [
     image: photoUrl('gifts/Pic 1.jpg'),
     name: 'For the home',
     alt: {
-      en: 'Decorative gift box with a botanical pattern',
-      vi: 'Hộp quà trang trí họa tiết hoa lá',
+      en: 'Gifts 1',
+      vi: 'Quà tặng 1',
     },
   },
   {
     image: photoUrl('gifts/Pic 6.jpg'),
     name: 'Small gestures',
     alt: {
-      en: 'Hand-finished decorative gift box',
-      vi: 'Hộp quà trang trí được hoàn thiện bằng tay',
+      en: 'Gifts 2',
+      vi: 'Quà tặng 2',
     },
   },
   {
     image: photoUrl('gifts/Pic 4.jpg'),
     name: 'Special occasions',
     alt: {
-      en: 'A curated gift presentation from Atelier Pascale',
-      vi: 'Bộ quà tặng được chọn lọc tại Atelier Pascale',
+      en: 'Gifts 3',
+      vi: 'Quà tặng 3',
     },
   },
   {
     image: photoUrl('gifts/Pic 15.jpg'),
     name: 'Playful details',
     alt: {
-      en: 'Colourful lacquerware gifts with dragonfly motifs',
-      vi: 'Quà tặng sơn mài nhiều màu với họa tiết chuồn chuồn',
+      en: 'Gifts 4',
+      vi: 'Quà tặng 4',
     },
   },
   {
     image: photoUrl('gifts/Pic 11.jpg'),
     name: 'Keepsake boxes',
     alt: {
-      en: 'Pink, red and turquoise floral keepsake boxes',
-      vi: 'Hộp lưu niệm họa tiết hoa màu hồng, đỏ và xanh ngọc',
+      en: 'Gifts 5',
+      vi: 'Quà tặng 5',
     },
   },
   {
     image: photoUrl('gifts/Pic 16.jpeg'),
     name: 'Lacquerware collection',
     alt: {
-      en: 'Red lacquerware gifts decorated with gold floral details',
-      vi: 'Quà tặng sơn mài đỏ trang trí hoa màu vàng',
+      en: 'Gifts 6',
+      vi: 'Quà tặng 6',
     },
   },
 ]

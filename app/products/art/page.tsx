@@ -12,36 +12,36 @@ const artPieces = [
   {
     image: photoUrl('art/Pic 3.jpg'),
     alt: {
-      en: 'Large lotus painting displayed above a living room sofa',
-      vi: 'Tranh hoa sen lớn được treo phía trên ghế sofa',
+      en: 'Art 1',
+      vi: 'Nghệ thuật 1',
     },
   },
   {
     image: photoUrl('art/Pic 9.jpg'),
     alt: {
-      en: 'Blue abstract landscape displayed above a carved cabinet',
-      vi: 'Tranh phong cảnh trừu tượng màu xanh treo phía trên tủ chạm khắc',
+      en: 'Art 2',
+      vi: 'Nghệ thuật 2',
     },
   },
   {
     image: photoUrl('art/Pic 2.jpg'),
     alt: {
-      en: 'Framed painting of the red bridge at Hoan Kiem Lake',
-      vi: 'Tranh có khung vẽ cầu Thê Húc ở hồ Hoàn Kiếm',
+      en: 'Art 3',
+      vi: 'Nghệ thuật 3',
     },
   },
   {
     image: photoUrl('art/Pic 8.jpg'),
     alt: {
-      en: 'Framed lacquer artwork with silver lotus flowers',
-      vi: 'Tác phẩm sơn mài có khung với hoa sen bạc',
+      en: 'Art 4',
+      vi: 'Nghệ thuật 4',
     },
   },
   {
     image: photoUrl('art/Pic 6.jpg'),
     alt: {
-      en: 'Framed lacquer painting with green lotus leaves on a red background',
-      vi: 'Tranh sơn mài có khung với lá sen xanh trên nền đỏ',
+      en: 'Art 5',
+      vi: 'Nghệ thuật 5',
     },
   },
 ]

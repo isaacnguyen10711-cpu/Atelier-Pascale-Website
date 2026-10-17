@@ -13,40 +13,40 @@ const homeDecorPieces = [
     image: photoUrl('home-decor/Pic 12.jpg'),
     name: 'Objects with presence',
     alt: {
-      en: 'Decorative arrangement selected by Atelier Pascale',
-      vi: 'Bố cục đồ trang trí được chọn lọc bởi Atelier Pascale',
+      en: 'Home Decor 1',
+      vi: 'Trang trí nhà 1',
     },
   },
   {
     image: photoUrl('home-decor/Pic 11.jpg'),
     name: 'Quiet detail',
     alt: {
-      en: 'Decorative home object with floral detail',
-      vi: 'Đồ trang trí nhà với chi tiết hoa',
+      en: 'Home Decor 2',
+      vi: 'Trang trí nhà 2',
     },
   },
   {
     image: photoUrl('home-decor/Pic 1.jpg'),
     name: 'Table setting',
     alt: {
-      en: 'Tea cups and flowers arranged on a decorative tray',
-      vi: 'Tách trà và hoa được bày trên khay trang trí',
+      en: 'Home Decor 3',
+      vi: 'Trang trí nhà 3',
     },
   },
   {
     image: photoUrl('home-decor/Pic 7.jpg'),
     name: 'Floral vase',
     alt: {
-      en: 'Red lacquer vase decorated with pink blossoms',
-      vi: 'Bình sơn mài đỏ trang trí hoa hồng',
+      en: 'Home Decor 4',
+      vi: 'Trang trí nhà 4',
     },
   },
   {
     image: photoUrl('home-decor/Pic 8.jpg'),
     name: 'Painted objects',
     alt: {
-      en: 'Painted lacquer tray and box with red flower motifs',
-      vi: 'Khay và hộp sơn mài vẽ họa tiết hoa đỏ',
+      en: 'Home Decor 5',
+      vi: 'Trang trí nhà 5',
     },
   },
 ]
