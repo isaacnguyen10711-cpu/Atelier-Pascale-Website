@@ -27,8 +27,8 @@ const homepageTranslations = {
     newArrivalsDescription:
       'Recent finds, picked for their texture and proportions and for how they make a room feel.',
     exploreNewArrivals: 'Explore new arrivals',
-    exploreCollections: 'Explore the collections',
-    collections: [
+    exploreCategories: 'Explore the collections',
+    categories: [
       {
         name: 'Home Decor',
         description: 'Objects that make everyday rooms feel warmer and more personal.',
@@ -47,7 +47,7 @@ const homepageTranslations = {
     images: {
       hero: 'Atelier Pascale home interior with decorative lacquerware',
       featured: 'A featured decorative piece from Atelier Pascale',
-      collections: ['Home Decor collection', 'Gifts collection', 'Jewelry collection'],
+      categories: ['Home Decor collection', 'Gifts collection', 'Jewelry collection'],
       artFirst: 'Decorative artwork from Atelier Pascale',
       artSecond: 'Artwork displayed by Atelier Pascale',
       about: 'The people behind Atelier Pascale',
@@ -64,8 +64,8 @@ const homepageTranslations = {
     newArrivalsDescription:
       'Những mẫu mới được chọn lọc qua chất liệu, đường nét và cảm xúc mà chúng mang đến cho không gian.',
     exploreNewArrivals: 'Khám phá mẫu mới',
-    exploreCollections: 'Khám phá bộ sưu tập',
-    collections: [
+    exploreCategories: 'Khám phá bộ sưu tập',
+    categories: [
       {
         name: 'Trang trí nhà',
         description: 'Những món đồ mang lại sự ấm áp và nét riêng cho không gian sống.',
@@ -84,7 +84,7 @@ const homepageTranslations = {
     images: {
       hero: 'Không gian Atelier Pascale với các món đồ trang trí sơn mài',
       featured: 'Món đồ trang trí nổi bật của Atelier Pascale',
-      collections: ['Bộ sưu tập đồ trang trí nhà', 'Bộ sưu tập quà tặng', 'Bộ sưu tập trang sức'],
+      categories: ['Bộ sưu tập đồ trang trí nhà', 'Bộ sưu tập quà tặng', 'Bộ sưu tập trang sức'],
       artFirst: 'Tác phẩm nghệ thuật trang trí của Atelier Pascale',
       artSecond: 'Tác phẩm nghệ thuật được trưng bày tại Atelier Pascale',
       about: 'Những người đứng sau Atelier Pascale',
@@ -92,7 +92,7 @@ const homepageTranslations = {
   },
 }
 
-const collections = [
+const categories = [
   {
     image: homeDecorImage,
     href: '/products/home-decor',
@@ -201,24 +201,24 @@ function HomePage() {
       </section>
 
       <section
-        id="collections"
+        id="categories"
         className="bg-ap-paper px-5 pb-24 text-ap-ink sm:px-8 md:pb-32 lg:px-12"
       >
         <div className="mx-auto max-w-[76rem]">
           <Reveal>
-            <h2 className={`max-w-2xl ${titleClassName}`}>{text.exploreCollections}</h2>
+            <h2 className={`max-w-2xl ${titleClassName}`}>{text.exploreCategories}</h2>
           </Reveal>
 
           <div className="mt-10 grid gap-5 md:grid-cols-12 md:auto-rows-[19rem]">
-            {collections.map((collection, index) => (
-              <Reveal key={collection.href} className={collection.className}>
+            {categories.map((category, index) => (
+              <Reveal key={category.href} className={category.className}>
                 <Link
-                  href={`${prefix}${collection.href}`}
+                  href={`${prefix}${category.href}`}
                   className="group relative block h-full min-h-[25rem] overflow-hidden bg-ap-muted focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-accent md:min-h-0"
                 >
                   <Image
-                    src={collection.image}
-                    alt={text.images.collections[index]}
+                    src={category.image}
+                    alt={text.images.categories[index]}
                     className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     fill
                   />
@@ -227,10 +227,10 @@ function HomePage() {
                     <div className="flex items-end justify-between gap-5">
                       <div>
                         <h3 className="text-3xl font-medium tracking-tight">
-                          {text.collections[index].name}
+                          {text.categories[index].name}
                         </h3>
                         <p className="mt-2 max-w-sm text-sm leading-6 text-ap-paper/78">
-                          {text.collections[index].description}
+                          {text.categories[index].description}
                         </p>
                       </div>
                       <ArrowRight

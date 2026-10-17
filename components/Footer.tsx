@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 const translations = {
   en: {
     location: 'Based in Hanoi, Vietnam.',
-    collections: 'Collections',
+    categories: 'Collections',
     about: 'About',
     contact: 'Contact',
     rights: 'All rights reserved.',
@@ -13,7 +13,7 @@ const translations = {
   },
   vi: {
     location: 'Tại Hà Nội, Việt Nam.',
-    collections: 'Bộ sưu tập',
+    categories: 'Bộ sưu tập',
     about: 'Giới thiệu',
     contact: 'Liên hệ',
     rights: 'Bảo lưu mọi quyền.',
@@ -50,7 +50,7 @@ function Footer() {
           <div className="grid grid-cols-2 gap-8 text-sm md:justify-self-end md:text-right">
             <div className="flex flex-col gap-3">
               <Link href={`${prefix}/products/new-arrival`} className={footerLinkClassName}>
-                {text.collections}
+                {text.categories}
               </Link>
               <Link href={`${prefix}/about`} className={footerLinkClassName}>
                 {text.about}
