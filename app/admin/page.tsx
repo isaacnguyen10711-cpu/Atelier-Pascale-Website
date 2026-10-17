@@ -1,7 +1,17 @@
 import { auth, signOut } from '@/auth'
 import SignInButton from '@/components/SignInButton'
+import AdminNavBar from '@/components/admin/AdminNavBar'
+import PhotoUploader from '@/components/admin/PhotoUploader'
 
-async function AdminPage() {
+type AdminPageProps = {
+  searchParams: Promise<{ category?: string }>
+}
+
+async function AdminPage(props: AdminPageProps) {
+  // Read the selected category from the URL, like /admin?category=gifts
+  const urlNotes = await props.searchParams
+  const productCategory = urlNotes.category ?? 'new-arrival' // New Arrival is selected by default
+
   const session = await auth()
 
   // Not logged in: show the sign-in page
@@ -34,18 +44,30 @@ async function AdminPage() {
     )
   }
 
-  // Logged in: show who they are and a sign-out button
+  // Logged in: show who they are, a sign-out button and the photo uploader
   return (
     <main className="bg-ap-paper px-5 pb-20 pt-36 text-ap-ink">
-      <p>Logged in as {session.user?.email}</p>
-      <form
-        action={async () => {
-          'use server'
-          await signOut()
-        }}
-      >
-        <button className="mt-4 border border-ap-ink px-5 py-3">Sign out</button>
-      </form>
+      <div className="mx-auto max-w-[76rem]">
+        <p>Logged in as {session.user?.email}</p>
+        <form
+          action={async () => {
+            'use server'
+            await signOut()
+          }}
+        >
+          <button className="mt-4 border border-ap-ink px-5 py-3">Sign out</button>
+        </form>
+
+        <section className="mt-12">
+          <h1 className="font-sans text-3xl font-normal leading-snug md:text-4xl">Upload photos</h1>
+          <div className="mt-6">
+            <AdminNavBar currentCategory={productCategory} />
+          </div>
+          <div className="mt-8">
+            <PhotoUploader category={productCategory} />
+          </div>
+        </section>
+      </div>
     </main>
   )
 }
