@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { auth, signOut } from '@/auth'
+import { auth } from '@/auth'
 import SignInButton from '@/components/SignInButton'
+import SignOutButton from '@/components/SignOutButton'
 
 async function AdminPage() {
   const session = await auth()
@@ -49,14 +50,7 @@ async function AdminPage() {
 
         <div className="mt-12 border-t border-ap-ink/25 pt-8">
           <p>Logged in as {session.user?.email}</p>
-          <form
-            action={async () => {
-              'use server'
-              await signOut()
-            }}
-          >
-            <button className="mt-4 border border-ap-ink px-5 py-3">Sign out</button>
-          </form>
+          <SignOutButton />
         </div>
       </div>
     </main>
