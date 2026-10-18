@@ -1,44 +1,43 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 import jewelryHeroImage from '../../../assets/images/Background/JeweleryBackground.jpg'
 import CategoryHero from '../../../components/CategoryHero'
 import EnquiryLink from '../../../components/EnquiryLink'
+import EditablePhoto from '../../../components/EditablePhoto'
 import Reveal from '../../../components/Reveal'
-import { photoUrl } from '../../photoUrl'
 
 const jewelryPieces = [
   {
-    image: photoUrl('jewelry/Pic 3.jpg'),
+    path: 'jewelry/Pic 3.jpg',
     alt: {
       en: 'Jewelry 1',
       vi: 'Trang sức 1',
     },
   },
   {
-    image: photoUrl('jewelry/Pic 1.jpg'),
+    path: 'jewelry/Pic 1.jpg',
     alt: {
       en: 'Jewelry 2',
       vi: 'Trang sức 2',
     },
   },
   {
-    image: photoUrl('jewelry/Pic 4.jpg'),
+    path: 'jewelry/Pic 4.jpg',
     alt: {
       en: 'Jewelry 3',
       vi: 'Trang sức 3',
     },
   },
   {
-    image: photoUrl('jewelry/Pic 8.jpg'),
+    path: 'jewelry/Pic 8.jpg',
     alt: {
       en: 'Jewelry 4',
       vi: 'Trang sức 4',
     },
   },
   {
-    image: photoUrl('jewelry/Pic 5.jpg'),
+    path: 'jewelry/Pic 5.jpg',
     alt: {
       en: 'Jewelry 5',
       vi: 'Trang sức 5',
@@ -87,12 +86,10 @@ function JewelryPage() {
             <Reveal className="md:col-span-7">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={jewelryPieces[0].image}
+                  <EditablePhoto
+                    path={jewelryPieces[0].path}
                     alt={jewelryPieces[0].alt[language]}
-                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[46rem]"
+                    className="aspect-[4/5] object-cover md:h-[46rem]"
                   />
                 </div>
               </figure>
@@ -102,12 +99,10 @@ function JewelryPage() {
               <Reveal>
                 <figure>
                   <div className="overflow-hidden bg-ap-beige">
-                    <Image
-                      width={1200}
-                      height={1500}
-                      src={jewelryPieces[1].image}
+                    <EditablePhoto
+                      path={jewelryPieces[1].path}
                       alt={jewelryPieces[1].alt[language]}
-                      className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[18rem]"
+                      className="aspect-[4/3] object-cover md:h-[18rem]"
                     />
                   </div>
                 </figure>
@@ -116,12 +111,10 @@ function JewelryPage() {
               <Reveal>
                 <figure>
                   <div className="overflow-hidden bg-ap-beige">
-                    <Image
-                      width={1200}
-                      height={1500}
-                      src={jewelryPieces[2].image}
+                    <EditablePhoto
+                      path={jewelryPieces[2].path}
                       alt={jewelryPieces[2].alt[language]}
-                      className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[26rem]"
+                      className="aspect-[4/5] object-cover md:h-[26rem]"
                     />
                   </div>
                 </figure>
@@ -150,12 +143,10 @@ function JewelryPage() {
             <Reveal className="md:col-span-7">
               <figure className="h-full">
                 <div className="h-full overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={jewelryPieces[3].image}
+                  <EditablePhoto
+                    path={jewelryPieces[3].path}
                     alt={jewelryPieces[3].alt[language]}
-                    className="aspect-[4/5] w-full object-contain transition duration-500 hover:scale-105 md:h-[40rem]"
+                    className="aspect-[4/5] object-contain md:h-[40rem]"
                   />
                 </div>
               </figure>
@@ -164,12 +155,10 @@ function JewelryPage() {
             <Reveal className="md:col-span-5">
               <figure className="h-full">
                 <div className="h-full overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={jewelryPieces[4].image}
+                  <EditablePhoto
+                    path={jewelryPieces[4].path}
                     alt={jewelryPieces[4].alt[language]}
-                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[40rem]"
+                    className="aspect-[4/5] object-cover md:h-[40rem]"
                   />
                 </div>
               </figure>

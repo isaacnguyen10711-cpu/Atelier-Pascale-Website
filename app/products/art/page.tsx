@@ -1,44 +1,43 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 import artHeroImage from '../../../assets/images/Background/ArtBackground.jpg'
 import CategoryHero from '../../../components/CategoryHero'
 import EnquiryLink from '../../../components/EnquiryLink'
+import EditablePhoto from '../../../components/EditablePhoto'
 import Reveal from '../../../components/Reveal'
-import { photoUrl } from '../../photoUrl'
 
 const artPieces = [
   {
-    image: photoUrl('art/Pic 3.jpg'),
+    path: 'art/Pic 3.jpg',
     alt: {
       en: 'Art 1',
       vi: 'Nghệ thuật 1',
     },
   },
   {
-    image: photoUrl('art/Pic 9.jpg'),
+    path: 'art/Pic 9.jpg',
     alt: {
       en: 'Art 2',
       vi: 'Nghệ thuật 2',
     },
   },
   {
-    image: photoUrl('art/Pic 2.jpg'),
+    path: 'art/Pic 2.jpg',
     alt: {
       en: 'Art 3',
       vi: 'Nghệ thuật 3',
     },
   },
   {
-    image: photoUrl('art/Pic 8.jpg'),
+    path: 'art/Pic 8.jpg',
     alt: {
       en: 'Art 4',
       vi: 'Nghệ thuật 4',
     },
   },
   {
-    image: photoUrl('art/Pic 6.jpg'),
+    path: 'art/Pic 6.jpg',
     alt: {
       en: 'Art 5',
       vi: 'Nghệ thuật 5',
@@ -87,12 +86,10 @@ function ArtPage() {
           <Reveal className="mt-12">
             <figure>
               <div className="overflow-hidden bg-ap-beige">
-                <Image
-                  width={1200}
-                  height={1500}
-                  src={artPieces[0].image}
+                <EditablePhoto
+                  path={artPieces[0].path}
                   alt={artPieces[0].alt[language]}
-                  className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[40rem]"
+                  className="aspect-[4/3] object-cover md:aspect-auto md:h-[40rem]"
                 />
               </div>
             </figure>
@@ -102,12 +99,10 @@ function ArtPage() {
             <Reveal className="md:col-span-5">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={artPieces[1].image}
+                  <EditablePhoto
+                    path={artPieces[1].path}
                     alt={artPieces[1].alt[language]}
-                    className="aspect-[4/5] w-full object-cover object-top transition duration-500 hover:scale-105 md:h-[38rem]"
+                    className="aspect-[4/5] object-cover object-top md:h-[38rem]"
                   />
                 </div>
               </figure>
@@ -116,12 +111,10 @@ function ArtPage() {
             <Reveal className="md:col-span-7 md:mt-16">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={artPieces[2].image}
+                  <EditablePhoto
+                    path={artPieces[2].path}
                     alt={artPieces[2].alt[language]}
-                    className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
+                    className="aspect-[4/3] object-cover md:h-[30rem]"
                   />
                 </div>
               </figure>
@@ -149,12 +142,10 @@ function ArtPage() {
             <Reveal className="md:col-span-5">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={artPieces[3].image}
+                  <EditablePhoto
+                    path={artPieces[3].path}
                     alt={artPieces[3].alt[language]}
-                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[34rem]"
+                    className="aspect-[4/5] object-cover md:h-[34rem]"
                   />
                 </div>
               </figure>
@@ -163,12 +154,10 @@ function ArtPage() {
             <Reveal className="md:col-span-7 md:items-start">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={artPieces[4].image}
+                  <EditablePhoto
+                    path={artPieces[4].path}
                     alt={artPieces[4].alt[language]}
-                    className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[34rem]"
+                    className="aspect-[4/3] object-cover md:h-[34rem]"
                   />
                 </div>
               </figure>

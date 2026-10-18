@@ -1,16 +1,15 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 import giftHeroImage from '../../../assets/images/Background/GiftBackground.jpg'
 import CategoryHero from '../../../components/CategoryHero'
 import EnquiryLink from '../../../components/EnquiryLink'
+import EditablePhoto from '../../../components/EditablePhoto'
 import Reveal from '../../../components/Reveal'
-import { photoUrl } from '../../photoUrl'
 
 const giftPieces = [
   {
-    image: photoUrl('gifts/Pic 1.jpg'),
+    path: 'gifts/Pic 1.jpg',
     name: 'For the home',
     alt: {
       en: 'Gifts 1',
@@ -18,7 +17,7 @@ const giftPieces = [
     },
   },
   {
-    image: photoUrl('gifts/Pic 6.jpg'),
+    path: 'gifts/Pic 6.jpg',
     name: 'Small gestures',
     alt: {
       en: 'Gifts 2',
@@ -26,7 +25,7 @@ const giftPieces = [
     },
   },
   {
-    image: photoUrl('gifts/Pic 4.jpg'),
+    path: 'gifts/Pic 4.jpg',
     name: 'Special occasions',
     alt: {
       en: 'Gifts 3',
@@ -34,7 +33,7 @@ const giftPieces = [
     },
   },
   {
-    image: photoUrl('gifts/Pic 15.jpg'),
+    path: 'gifts/Pic 15.jpg',
     name: 'Playful details',
     alt: {
       en: 'Gifts 4',
@@ -42,7 +41,7 @@ const giftPieces = [
     },
   },
   {
-    image: photoUrl('gifts/Pic 11.jpg'),
+    path: 'gifts/Pic 11.jpg',
     name: 'Keepsake boxes',
     alt: {
       en: 'Gifts 5',
@@ -50,7 +49,7 @@ const giftPieces = [
     },
   },
   {
-    image: photoUrl('gifts/Pic 16.jpeg'),
+    path: 'gifts/Pic 16.jpeg',
     name: 'Lacquerware collection',
     alt: {
       en: 'Gifts 6',
@@ -105,12 +104,10 @@ function GiftsPage() {
                 <Reveal key={piece.name} className={staggerClassName}>
                   <figure>
                     <div className="overflow-hidden bg-ap-beige">
-                      <Image
-                        width={1200}
-                        height={1500}
-                        src={piece.image}
+                      <EditablePhoto
+                        path={piece.path}
                         alt={piece.alt[language]}
-                        className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
+                        className="aspect-[4/5] object-cover md:h-[30rem]"
                       />
                     </div>
                   </figure>
@@ -136,12 +133,10 @@ function GiftsPage() {
             <Reveal className="md:col-span-7">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={giftPieces[3].image}
+                  <EditablePhoto
+                    path={giftPieces[3].path}
                     alt={giftPieces[3].alt[language]}
-                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
+                    className="aspect-[4/5] object-cover md:aspect-auto md:h-[38rem]"
                   />
                 </div>
               </figure>
@@ -152,12 +147,10 @@ function GiftsPage() {
                 <Reveal key={piece.name}>
                   <figure>
                     <div className="overflow-hidden bg-ap-beige">
-                      <Image
-                        width={1200}
-                        height={1500}
-                        src={piece.image}
+                      <EditablePhoto
+                        path={piece.path}
                         alt={piece.alt[language]}
-                        className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105 md:h-[18rem]"
+                        className="aspect-[4/3] object-cover md:h-[18rem]"
                       />
                     </div>
                   </figure>

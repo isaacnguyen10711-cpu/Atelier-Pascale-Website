@@ -6,15 +6,8 @@ import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import aboutImage from '../assets/images/About/Pic 2.jpg'
 import heroImage from '../assets/images/Background/HomeBackground.jpg'
+import EditablePhoto from '../components/EditablePhoto'
 import Reveal from '../components/Reveal'
-import { photoUrl } from './photoUrl'
-
-const artFirstImage = photoUrl('art/Pic 1.jpg')
-const artSecondImage = photoUrl('art/Pic 7.jpg')
-const giftImage = photoUrl('gifts/Pic 2.jpg')
-const homeDecorImage = photoUrl('home-decor/Pic 1.jpg')
-const featuredImage = photoUrl('home-decor/Pic 11.jpg')
-const jewelryImage = photoUrl('jewelry/Pic 3.jpg')
 
 const homepageTranslations = {
   en: {
@@ -94,17 +87,17 @@ const homepageTranslations = {
 
 const categories = [
   {
-    image: homeDecorImage,
+    path: 'home-decor/Pic 1.jpg',
     href: '/products/home-decor',
     className: 'md:col-span-7 md:row-span-2',
   },
   {
-    image: giftImage,
+    path: 'gifts/Pic 2.jpg',
     href: '/products/gifts',
     className: 'md:col-span-5',
   },
   {
-    image: jewelryImage,
+    path: 'jewelry/Pic 3.jpg',
     href: '/products/jewelry',
     className: 'md:col-span-5',
   },
@@ -170,12 +163,10 @@ function HomePage() {
           <div className="mx-auto grid max-w-[76rem] gap-8 md:grid-cols-12 md:items-center md:gap-14">
             <div className="md:col-span-7">
               <div className="overflow-hidden bg-ap-muted">
-                <Image
-                  width={1200}
-                  height={1500}
-                  src={featuredImage}
+                <EditablePhoto
+                  path="home-decor/Pic 11.jpg"
                   alt={text.images.featured}
-                  className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-[5/4]"
+                  className="aspect-[4/5] object-cover md:aspect-[5/4]"
                 />
               </div>
             </div>
@@ -212,35 +203,37 @@ function HomePage() {
           <div className="mt-10 grid gap-5 md:grid-cols-12 md:auto-rows-[19rem]">
             {categories.map((category, index) => (
               <Reveal key={category.href} className={category.className}>
-                <Link
-                  href={`${prefix}${category.href}`}
-                  className="group relative block h-full min-h-[25rem] overflow-hidden bg-ap-muted focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ap-accent md:min-h-0"
-                >
-                  <Image
-                    src={category.image}
+                {/* The link sits on top of the photo, so the admin's Replace button isn't inside the link */}
+                <div className="group relative h-full overflow-hidden bg-ap-muted">
+                  <EditablePhoto
+                    path={category.path}
                     alt={text.images.categories[index]}
-                    className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                    fill
+                    className="h-[25rem] object-cover group-hover:scale-105 md:h-full"
                   />
-                  <div className="absolute inset-0 bg-ap-ink/45" />
-                  <div className="absolute bottom-0 p-6 text-ap-paper md:p-8">
-                    <div className="flex items-end justify-between gap-5">
-                      <div>
-                        <h3 className="text-3xl font-medium tracking-tight">
-                          {text.categories[index].name}
-                        </h3>
-                        <p className="mt-2 max-w-sm text-sm leading-6 text-ap-paper/78">
-                          {text.categories[index].description}
-                        </p>
+                  <Link
+                    href={`${prefix}${category.href}`}
+                    className="absolute inset-0 block focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-ap-accent"
+                  >
+                    <div className="absolute inset-0 bg-ap-ink/45" />
+                    <div className="absolute bottom-0 p-6 text-ap-paper md:p-8">
+                      <div className="flex items-end justify-between gap-5">
+                        <div>
+                          <h3 className="text-3xl font-medium tracking-tight">
+                            {text.categories[index].name}
+                          </h3>
+                          <p className="mt-2 max-w-sm text-sm leading-6 text-ap-paper/78">
+                            {text.categories[index].description}
+                          </p>
+                        </div>
+                        <ArrowRight
+                          aria-hidden="true"
+                          className="mb-1 h-5 w-5 shrink-0 transition group-hover:translate-x-1"
+                          strokeWidth={2}
+                        />
                       </div>
-                      <ArrowRight
-                        aria-hidden="true"
-                        className="mb-1 h-5 w-5 shrink-0 transition group-hover:translate-x-1"
-                        strokeWidth={2}
-                      />
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               </Reveal>
             ))}
           </div>
@@ -271,21 +264,17 @@ function HomePage() {
           <div className="mx-auto max-w-[76rem]">
             <div className="grid gap-5 md:grid-cols-2">
               <div className="overflow-hidden bg-ap-muted">
-                <Image
-                  width={1200}
-                  height={900}
-                  src={artFirstImage}
+                <EditablePhoto
+                  path="art/Pic 1.jpg"
                   alt={text.images.artFirst}
-                  className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
+                  className="aspect-[4/3] object-cover"
                 />
               </div>
               <div className="overflow-hidden bg-ap-muted">
-                <Image
-                  width={1200}
-                  height={900}
-                  src={artSecondImage}
+                <EditablePhoto
+                  path="art/Pic 7.jpg"
                   alt={text.images.artSecond}
-                  className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
+                  className="aspect-[4/3] object-cover"
                 />
               </div>
             </div>

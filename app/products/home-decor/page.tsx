@@ -1,16 +1,15 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 import homeDecorHeroImage from '../../../assets/images/Background/HomeDecorBackground.jpg'
 import CategoryHero from '../../../components/CategoryHero'
 import EnquiryLink from '../../../components/EnquiryLink'
+import EditablePhoto from '../../../components/EditablePhoto'
 import Reveal from '../../../components/Reveal'
-import { photoUrl } from '../../photoUrl'
 
 const homeDecorPieces = [
   {
-    image: photoUrl('home-decor/Pic 12.jpg'),
+    path: 'home-decor/Pic 12.jpg',
     name: 'Objects with presence',
     alt: {
       en: 'Home Decor 1',
@@ -18,7 +17,7 @@ const homeDecorPieces = [
     },
   },
   {
-    image: photoUrl('home-decor/Pic 11.jpg'),
+    path: 'home-decor/Pic 11.jpg',
     name: 'Quiet detail',
     alt: {
       en: 'Home Decor 2',
@@ -26,7 +25,7 @@ const homeDecorPieces = [
     },
   },
   {
-    image: photoUrl('home-decor/Pic 1.jpg'),
+    path: 'home-decor/Pic 1.jpg',
     name: 'Table setting',
     alt: {
       en: 'Home Decor 3',
@@ -34,7 +33,7 @@ const homeDecorPieces = [
     },
   },
   {
-    image: photoUrl('home-decor/Pic 7.jpg'),
+    path: 'home-decor/Pic 7.jpg',
     name: 'Floral vase',
     alt: {
       en: 'Home Decor 4',
@@ -42,7 +41,7 @@ const homeDecorPieces = [
     },
   },
   {
-    image: photoUrl('home-decor/Pic 8.jpg'),
+    path: 'home-decor/Pic 8.jpg',
     name: 'Painted objects',
     alt: {
       en: 'Home Decor 5',
@@ -95,12 +94,10 @@ function HomeDecorPage() {
             <Reveal className="md:col-span-7">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={homeDecorPieces[0].image}
+                  <EditablePhoto
+                    path={homeDecorPieces[0].path}
                     alt={homeDecorPieces[0].alt[language]}
-                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
+                    className="aspect-[4/5] object-cover md:aspect-auto md:h-[38rem]"
                   />
                 </div>
               </figure>
@@ -109,12 +106,10 @@ function HomeDecorPage() {
             <Reveal className="md:col-span-5">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={homeDecorPieces[1].image}
+                  <EditablePhoto
+                    path={homeDecorPieces[1].path}
                     alt={homeDecorPieces[1].alt[language]}
-                    className="aspect-[4/5] w-full object-cover object-[35%] transition duration-500 hover:scale-105 md:aspect-auto md:h-[38rem]"
+                    className="aspect-[4/5] object-cover object-[35%] md:aspect-auto md:h-[38rem]"
                   />
                 </div>
               </figure>
@@ -142,12 +137,10 @@ function HomeDecorPage() {
             <Reveal className="md:col-span-4 md:mt-16">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={homeDecorPieces[2].image}
+                  <EditablePhoto
+                    path={homeDecorPieces[2].path}
                     alt={homeDecorPieces[2].alt[language]}
-                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
+                    className="aspect-[4/5] object-cover md:h-[30rem]"
                   />
                 </div>
               </figure>
@@ -156,12 +149,10 @@ function HomeDecorPage() {
             <Reveal className="md:col-span-4">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={homeDecorPieces[3].image}
+                  <EditablePhoto
+                    path={homeDecorPieces[3].path}
                     alt={homeDecorPieces[3].alt[language]}
-                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[36rem]"
+                    className="aspect-[4/5] object-cover md:h-[36rem]"
                   />
                 </div>
               </figure>
@@ -170,12 +161,10 @@ function HomeDecorPage() {
             <Reveal className="md:col-span-4 md:mt-16">
               <figure>
                 <div className="overflow-hidden bg-ap-beige">
-                  <Image
-                    width={1200}
-                    height={1500}
-                    src={homeDecorPieces[4].image}
+                  <EditablePhoto
+                    path={homeDecorPieces[4].path}
                     alt={homeDecorPieces[4].alt[language]}
-                    className="aspect-[4/5] w-full object-cover transition duration-500 hover:scale-105 md:h-[30rem]"
+                    className="aspect-[4/5] object-cover md:h-[30rem]"
                   />
                 </div>
               </figure>
