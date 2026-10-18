@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import type { ReactNode } from 'react'
+import { SessionProvider } from 'next-auth/react'
 import logo from '../assets/images/logo AP.png'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
@@ -25,10 +26,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body>
-        <ScrollToTop />
-        <NavBar />
-        {children}
-        <Footer />
+        {/* Lets client components check who is logged in with useSession() */}
+        <SessionProvider>
+          <ScrollToTop />
+          <NavBar />
+          {children}
+          <Footer />
+        </SessionProvider>
       </body>
     </html>
   )
