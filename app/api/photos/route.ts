@@ -14,13 +14,13 @@ async function POST(request: Request) {
     return Response.json({ error: 'Please sign in.' }, { status: 401 })
   }
 
-  // 2. Read what the page sent: which photo to replace + the new photo
+  // 2. Read what the page sent: which photo to replace + the new image
   const formData = await request.formData()
   const path = String(formData.get('path'))
-  const photo = formData.get('photo')
+  const newImage = formData.get('newImage')
 
-  // 3. The new photo must be an image under 20 MB
-  if (!(photo instanceof File) || !photo.type.startsWith('image/') || photo.size > maxSize) {
+  // 3. The new image must be under 20 MB
+  if (!(newImage instanceof File) || !newImage.type.startsWith('image/') || newImage.size > maxSize) {
     return Response.json({ error: 'Please choose an image under 20 MB.' }, { status: 400 })
   }
 
@@ -29,8 +29,8 @@ async function POST(request: Request) {
     new PutObjectCommand({
       Bucket: bucket,
       Key: path,
-      Body: Buffer.from(await photo.arrayBuffer()),
-      ContentType: photo.type,
+      Body: Buffer.from(await newImage.arrayBuffer()),
+      ContentType: newImage.type,
       CacheControl: 'no-cache', // browsers must check for a newer version
     }),
   )
