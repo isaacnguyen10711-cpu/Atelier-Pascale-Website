@@ -3,9 +3,9 @@
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import companyFirstImage from '../../assets/images/About/Pic 2.jpg'
-import companySecondImage from '../../assets/images/About/Pic 4.jpg'
-import companyThirdImage from '../../assets/images/About/Pic 6.jpg'
+import aboutFirstImage from '../../assets/images/About/Pic 7.jpg'
+import aboutSecondImage from '../../assets/images/About/Pic 4.jpg'
+import aboutThirdImage from '../../assets/images/About/Pic 6.jpg'
 import heroImage from '../../assets/images/Background/About Background.jpg'
 import Reveal from '../../components/Reveal'
 
@@ -68,11 +68,11 @@ function AboutPage() {
             </Reveal>
             <Reveal className="md:col-span-7">
               <Image
-                src={companyFirstImage}
+                src={aboutFirstImage}
                 alt={
                   isVietnamese
-                    ? 'Các nghệ nhân tỉ mỉ hoàn thiện đồ trang trí trong xưởng'
-                    : 'Artisans carefully finishing decorative pieces in the workshop'
+                    ? 'Hai nghệ nhân mài tay một tấm sơn mài trong xưởng'
+                    : 'Two artisans sanding a lacquer panel by hand in the workshop'
                 }
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"
@@ -83,7 +83,7 @@ function AboutPage() {
           <section className="mt-20 grid gap-10 border-t border-ap-ink/20 pt-16 md:grid-cols-12 md:items-center md:gap-16 lg:mt-28 lg:pt-20">
             <Reveal className="md:col-span-5">
               <Image
-                src={companySecondImage}
+                src={aboutSecondImage}
                 alt={
                   isVietnamese
                     ? 'Người thợ đang chế tác chiếc tủ bằng tay'
@@ -149,7 +149,7 @@ function AboutPage() {
             </Reveal>
             <Reveal className="md:col-span-6">
               <Image
-                src={companyThirdImage}
+                src={aboutThirdImage}
                 alt={
                   isVietnamese
                     ? 'Đội ngũ Atelier Pascale cùng dùng bữa'
