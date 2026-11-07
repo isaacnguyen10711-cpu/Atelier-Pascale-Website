@@ -1,0 +1,37 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  # CI: make sure the code is fine before it goes anywhere
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+
+  # CD: only runs if the checks passed
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH into the server and run deploy.sh
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          command_timeout: 15m
+          # pull first so the server has the latest deploy.sh
+          script: |
+            cd ~/Atelier-Pascale-Website
+            git pull
+            bash deploy.sh
