@@ -77,8 +77,8 @@ function NewArrivalPage() {
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-ap-ink/70 md:text-lg md:leading-8">
                 {isVietnamese
-                  ? 'Hộp quà và đồ sơn mài mới, sẵn sàng cho mùa lễ hội và những dịp đặc biệt.'
-                  : 'New gift boxes and lacquerware, ready for the festive season and special occasions.'}
+                  ? 'Hộp quà và đồ sơn mài mới về, kịp cho mùa lễ hội và những dịp đặc biệt.'
+                  : 'Fresh gift boxes and lacquerware, just in time for the festive season and special occasions.'}
               </p>
             </div>
           </Reveal>
